@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DirChooserSample</string>
+    <string name="directory_selected_label">Directory selected:</string>
+    <string name="choose_directory">Choose Directory</string>
+    <string name="none">none</string>
+    <string name="btn_choose">Choose in Dialog</string>
+    <string name="btn_switch">Switch to Dialog Sample</string>
+
+</resources>
