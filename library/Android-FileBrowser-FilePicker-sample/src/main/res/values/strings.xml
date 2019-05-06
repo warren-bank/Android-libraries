@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FileBrowserSample</string>
+    <string name="label_selected">Selected File(s):</string>
+    <string name="none">none</string>
+    <string name="btn_open_filebrowser">FileBrowser</string>
+    <string name="btn_open_filechooser_s">FileChooser (single)</string>
+    <string name="btn_open_filechooser_m">FileChooser (multi)</string>
+
+</resources>

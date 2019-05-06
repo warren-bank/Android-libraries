@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_margin="8dp"
+              android:orientation="vertical">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_selected"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+            android:id="@+id/textSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/none"
+            tools:ignore="UnusedAttribute"/>
+
+    <Button
+            android:id="@+id/btn_open_filebrowser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_open_filebrowser"/>
+
+    <Button
+            android:id="@+id/btn_open_filechooser_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_open_filechooser_s"/>
+
+    <Button
+            android:id="@+id/btn_open_filechooser_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_open_filechooser_m"/>
+
+</LinearLayout>
