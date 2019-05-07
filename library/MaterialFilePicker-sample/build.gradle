@@ -1,0 +1,49 @@
+apply from: '../constants.gradle'
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility project.ext.javaVersion
+        targetCompatibility project.ext.javaVersion
+    }
+
+    defaultConfig {
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+
+        applicationId "com.dimorinny.sample"
+        versionName project.ext.releaseVersion
+        versionCode project.ext.releaseVersionCode
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        abortOnError true
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles = [
+                "proguard-rules.txt",
+                getDefaultProguardFile('proguard-android.txt')
+            ]
+        }
+        debug {
+            jniDebuggable = true
+        }
+    }
+}
+
+dependencies {
+    implementation project(':MaterialFilePicker-library')
+
+    implementation 'com.android.support:appcompat-v7:' + project.ext.supportLibraryVersion     // (1 MB) https://mvnrepository.com/artifact/com.android.support/appcompat-v7?repo=google
+    implementation 'com.android.support:support-v4:'   + project.ext.supportLibraryVersion     // (3 KB) https://mvnrepository.com/artifact/com.android.support/support-v4?repo=google
+}
+
+apply plugin: 'com.google.android.gms.strict-version-matcher-plugin'
