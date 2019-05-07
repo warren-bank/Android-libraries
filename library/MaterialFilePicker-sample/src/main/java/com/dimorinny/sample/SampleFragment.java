@@ -86,6 +86,7 @@ public class SampleFragment extends Fragment {
         new MaterialFilePicker()
                 .withSupportFragment(this)
                 .withRequestCode(FILE_PICKER_REQUEST_CODE)
+                .withRootPath("/")
                 .withHiddenFiles(true)
                 .start();
     }

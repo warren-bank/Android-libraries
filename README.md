@@ -41,10 +41,6 @@ __notes:__
     * I wish that it included:
       * Activity to choose a directory
       * configuration option to choose multiple files
-* what needs farther investigation.. given that I've only tested the sample app on KitKat:
-  * can only see directories on the internal SD card
-    * cannot navigate "up" to see the root directory
-    * cannot navigate to the external SD card
 
 __changes:__
 
