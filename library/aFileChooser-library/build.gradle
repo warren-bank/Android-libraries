@@ -1,0 +1,28 @@
+apply from: '../constants.gradle'
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility project.ext.javaVersion
+        targetCompatibility project.ext.javaVersion
+    }
+
+    defaultConfig {
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        abortOnError true
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:' + project.ext.supportLibraryVersion     // (3 KB) https://mvnrepository.com/artifact/com.android.support/support-v4?repo=google
+}
+
+apply plugin: 'com.google.android.gms.strict-version-matcher-plugin'
