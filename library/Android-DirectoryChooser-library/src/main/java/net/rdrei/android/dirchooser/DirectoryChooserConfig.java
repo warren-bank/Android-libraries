@@ -12,15 +12,8 @@ public abstract class DirectoryChooserConfig implements Parcelable {
     public static Builder builder() {
         return new AutoParcel_DirectoryChooserConfig.Builder()
                 .initialDirectory("")
-                .allowNewDirectoryNameModification(false)
                 .allowReadOnlyDirectory(false);
     }
-
-    /**
-     * Name of the directory to create. User can change this name when he creates the
-     * folder. To avoid this use {@link #allowNewDirectoryNameModification} argument.
-     */
-    abstract String newDirectoryName();
 
     /**
      * Optional argument to define the path of the directory
@@ -39,18 +32,10 @@ public abstract class DirectoryChooserConfig implements Parcelable {
     abstract boolean allowReadOnlyDirectory();
 
 
-    /**
-     * Argument to define whether or not the directory chooser
-     * allows modification of provided new directory name.
-     */
-    abstract boolean allowNewDirectoryNameModification();
-
     @AutoParcel.Builder
     public abstract static class Builder {
-        public abstract Builder newDirectoryName(String s);
         public abstract Builder initialDirectory(String s);
         public abstract Builder allowReadOnlyDirectory(boolean b);
-        public abstract Builder allowNewDirectoryNameModification(boolean b);
         public abstract DirectoryChooserConfig build();
     }
 }

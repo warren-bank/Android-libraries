@@ -21,7 +21,7 @@ public class DirChooserFragmentSample extends Activity implements DirectoryChoos
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dialog);
         final DirectoryChooserConfig config = DirectoryChooserConfig.builder()
-                .newDirectoryName("DialogSample")
+                .allowReadOnlyDirectory(false)  // demo modified behavior
                 .build();
         mDialog = DirectoryChooserFragment.newInstance(config);
 

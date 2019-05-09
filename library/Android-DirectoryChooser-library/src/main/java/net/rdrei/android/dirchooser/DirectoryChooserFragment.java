@@ -55,7 +55,6 @@ public class DirectoryChooserFragment extends DialogFragment {
     public static final String KEY_CURRENT_DIRECTORY = "CURRENT_DIRECTORY";
     private static final String ARG_CONFIG = "CONFIG";
     private static final String TAG = DirectoryChooserFragment.class.getSimpleName();
-    private String mNewDirectoryName;
     private String mInitialDirectory;
 
     private Option<OnFragmentInteractionListener> mListener = Option.none();
@@ -63,7 +62,6 @@ public class DirectoryChooserFragment extends DialogFragment {
     private Button mBtnConfirm;
     private Button mBtnCancel;
     private ImageButton mBtnNavUp;
-    private ImageButton mBtnCreateFolder;
     private TextView mTxtvSelectedFolder;
     private ListView mListDirectories;
 
@@ -119,7 +117,6 @@ public class DirectoryChooserFragment extends DialogFragment {
                     "creation.");
         }
 
-        mNewDirectoryName = mConfig.newDirectoryName();
         mInitialDirectory = mConfig.initialDirectory();
 
         if (savedInstanceState != null) {
@@ -129,12 +126,7 @@ public class DirectoryChooserFragment extends DialogFragment {
         if (getShowsDialog()) {
             setStyle(DialogFragment.STYLE_NO_TITLE, 0);
         } else {
-            setHasOptionsMenu(true);
-        }
-
-        if (!mConfig.allowNewDirectoryNameModification() && TextUtils.isEmpty(mNewDirectoryName)) {
-            throw new IllegalArgumentException("New directory name must have a strictly positive " +
-                    "length (not zero) when user is not allowed to modify it.");
+            setHasOptionsMenu(false);
         }
     }
 
@@ -148,7 +140,6 @@ public class DirectoryChooserFragment extends DialogFragment {
         mBtnConfirm = (Button) view.findViewById(R.id.btnConfirm);
         mBtnCancel = (Button) view.findViewById(R.id.btnCancel);
         mBtnNavUp = (ImageButton) view.findViewById(R.id.btnNavUp);
-        mBtnCreateFolder = (ImageButton) view.findViewById(R.id.btnCreateFolder);
         mTxtvSelectedFolder = (TextView) view.findViewById(R.id.txtvSelectedFolder);
         mListDirectories = (ListView) view.findViewById(R.id.directoryList);
 
@@ -200,17 +191,6 @@ public class DirectoryChooserFragment extends DialogFragment {
             }
         });
 
-        mBtnCreateFolder.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                openNewFolderDialog();
-            }
-        });
-
-        if (!getShowsDialog()) {
-            mBtnCreateFolder.setVisibility(View.GONE);
-        }
-
         adjustResourceLightness();
 
         mFilenames = new ArrayList<>();
@@ -250,7 +230,6 @@ public class DirectoryChooserFragment extends DialogFragment {
                 0.72 * Color.green(color) +
                 0.07 * Color.blue(color) < 128) {
             mBtnNavUp.setImageResource(R.drawable.navigation_up_light);
-            mBtnCreateFolder.setImageResource(R.drawable.ic_action_create_light);
         }
     }
 
@@ -288,93 +267,6 @@ public class DirectoryChooserFragment extends DialogFragment {
         if (mFileObserver != null) {
             mFileObserver.startWatching();
         }
-    }
-
-    @Override
-    public void onCreateOptionsMenu(final Menu menu, final MenuInflater inflater) {
-        inflater.inflate(R.menu.directory_chooser, menu);
-
-        final MenuItem menuItem = menu.findItem(R.id.new_folder_item);
-
-        if (menuItem == null) {
-            return;
-        }
-
-        menuItem.setVisible(isValidFile(mSelectedDir) && mNewDirectoryName != null);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(final MenuItem item) {
-        final int itemId = item.getItemId();
-
-        if (itemId == R.id.new_folder_item) {
-            openNewFolderDialog();
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    /**
-     * Shows a confirmation dialog that asks the user if he wants to create a
-     * new folder. User can modify provided name, if it was not disallowed.
-     */
-    private void openNewFolderDialog() {
-        @SuppressLint("InflateParams")
-        final View dialogView = getActivity().getLayoutInflater().inflate(
-                R.layout.dialog_new_folder, null);
-        final TextView msgView = (TextView) dialogView.findViewById(R.id.msgText);
-        final EditText editText = (EditText) dialogView.findViewById(R.id.editText);
-        editText.setText(mNewDirectoryName);
-        msgView.setText(getString(R.string.create_folder_msg, mNewDirectoryName));
-
-        final AlertDialog alertDialog = new AlertDialog.Builder(getActivity())
-                .setTitle(R.string.create_folder_label)
-                .setView(dialogView)
-                .setNegativeButton(R.string.cancel_label,
-                        new DialogInterface.OnClickListener() {
-
-                            @Override
-                            public void onClick(final DialogInterface dialog, final int which) {
-                                dialog.dismiss();
-                            }
-                        })
-                .setPositiveButton(R.string.confirm_label,
-                        new DialogInterface.OnClickListener() {
-
-                            @Override
-                            public void onClick(final DialogInterface dialog, final int which) {
-                                dialog.dismiss();
-                                mNewDirectoryName = editText.getText().toString();
-                                final int msg = createFolder();
-                                Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                .show();
-
-        alertDialog.getButton(DialogInterface.BUTTON_POSITIVE).setEnabled(editText.getText().length() != 0);
-
-        editText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(final CharSequence charSequence, final int i, final int i2, final int i3) {
-
-            }
-
-            @Override
-            public void onTextChanged(final CharSequence charSequence, final int i, final int i2, final int i3) {
-                final boolean textNotEmpty = charSequence.length() != 0;
-                alertDialog.getButton(DialogInterface.BUTTON_POSITIVE).setEnabled(textNotEmpty);
-                msgView.setText(getString(R.string.create_folder_msg, charSequence.toString()));
-            }
-
-            @Override
-            public void afterTextChanged(final Editable editable) {
-
-            }
-        });
-
-        editText.setVisibility(mConfig.allowNewDirectoryNameModification()
-                ? View.VISIBLE : View.GONE);
     }
 
     private static void debug(final String message, final Object... args) {
@@ -493,31 +385,6 @@ public class DirectoryChooserFragment extends DialogFragment {
             });
         }
 
-    }
-
-    /**
-     * Creates a new folder in the current directory with the name
-     * CREATE_DIRECTORY_NAME.
-     */
-    private int createFolder() {
-        if (mNewDirectoryName != null && mSelectedDir != null
-                && mSelectedDir.canWrite()) {
-            final File newDir = new File(mSelectedDir, mNewDirectoryName);
-            if (newDir.exists()) {
-                return R.string.create_folder_error_already_exists;
-            } else {
-                final boolean result = newDir.mkdir();
-                if (result) {
-                    return R.string.create_folder_success;
-                } else {
-                    return R.string.create_folder_error;
-                }
-            }
-        } else if (mSelectedDir != null && !mSelectedDir.canWrite()) {
-            return R.string.create_folder_error_no_write_access;
-        } else {
-            return R.string.create_folder_error;
-        }
     }
 
     /**
