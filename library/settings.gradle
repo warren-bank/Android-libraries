@@ -1,0 +1,2 @@
+include ':FilterableRecyclerView-library'
+include ':FilterableRecyclerView-sample'
