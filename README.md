@@ -34,23 +34,46 @@ __final class:__
   * OK.. I lied a little
     * this class isn't marked `final`..<br>but I can't think of any reason you'd want to extend it
   * all you need to do, is pass the following parameters to its constructor:
-    * `int row_layout_id`
-      * layout that gets inflated for each row
-      * reminder: this inflated `View` gets passed to `onCreate`
-    * `List<FilterableListItem> unfilteredList`
-      * the complete `List<>` of all data
-      * each element implements the `FilterableListItem` interface
-    * `FilterableListItemOnClickListener listener`
-      * an object that implements the `FilterableListItemOnClickListener` interface
-    * `Class filterableViewHolderClass`
-      * this is probably best explained by an example:
-        ```java
-          class SampleFilterableViewHolder extends FilterableViewHolder {
-              // definitions: constructor, onCreate, onUpdate
-          }
-          Class filterableViewHolderClass = SampleFilterableViewHolder.class;
-        ```
-      * a bit of reflection is used in order to call your Class constructor, rather than the abstract base abstract class
+    * _required:_
+      * `int row_layout_id`
+        * layout that gets inflated for each row
+        * reminder: this inflated `View` gets passed to `onCreate`
+      * `List<FilterableListItem> unfilteredList`
+        * the complete `List<>` of all data
+        * each element implements the `FilterableListItem` interface
+      * `FilterableListItemOnClickListener listener`
+        * an object that implements the `FilterableListItemOnClickListener` interface
+      * `Class filterableViewHolderClass`
+        * this is probably best explained by an example:
+          ```java
+            class SampleFilterableViewHolder extends FilterableViewHolder {
+                // definitions: constructor, onCreate, onUpdate
+            }
+            Class filterableViewHolderClass = SampleFilterableViewHolder.class;
+          ```
+        * a bit of reflection is used in order to call your `Class` constructor, rather than the abstract base abstract class
+    * _optional:_
+      * `Class parentClass`
+      * `Object parentInstance`
+        * these both pertain to `filterableViewHolderClass`, and are also best explained by an example:
+          ```java
+            public class ParentClass_Activity {
+                public class ChildClass_FilterableViewHolder extends FilterableViewHolder {
+                    // definitions: constructor, onCreate, onUpdate
+                }
+            }
+            Class filterableViewHolderClass = ChildClass_FilterableViewHolder.class;
+            Class parentClass               = ParentClass_Activity.class;
+            Object parentInstance           = ParentClass_Activity.this;
+          ```
+        * the explanation for needing these additional parameters when `filterableViewHolderClass` is an inner/nested class is a bit obscure
+          * the source code syntax for the inner class constructor hides the fact that the compiled `Constructor` includes an additional parameter
+          * the first parameter to the `Constructor` for an inner class is an instance of the parent `Class`
+          * for this reason, in the previous example:
+            * `ChildClass_FilterableViewHolder` is an inner class
+            * `ParentClass_Activity` is its parent class
+              * this `Class` is needed to find the `Constructor` for `ChildClass_FilterableViewHolder` by reflection
+              * an instance is needed to be passed to this `Constructor` when it is invoked
   * once you have an instance of `FilterableAdapter`:
     * configure the `RecyclerView` to use it
       * ex: `recyclerView.setAdapter(recyclerFilterableAdapter);`

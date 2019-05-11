@@ -56,35 +56,6 @@ class SampleFilterableListItemOnClickListener implements FilterableListItemOnCli
 
 // -----------------------------------------------------------------------------
 
-class SampleFilterableViewHolder extends FilterableViewHolder {
-    private TextView text1;
-    private TextView text2;
-
-    public SampleFilterableViewHolder(
-        View view,
-        List<FilterableListItem> filteredList,
-        FilterableListItemOnClickListener listener
-    ) {
-        super(view, filteredList, listener);
-    }
-
-    @Override
-    public void onCreate(View view) {
-        text1 = view.findViewById(android.R.id.text1);
-        text2 = view.findViewById(android.R.id.text2);
-    }
-
-    @Override
-    public void onUpdate(FilterableListItem filterableListItem) {
-        SampleFilterableListItem item = (SampleFilterableListItem) filterableListItem;
-
-        text1.setText(item.lname);
-        text2.setText(item.fname);
-    }
-}
-
-// -----------------------------------------------------------------------------
-
 public class MainActivity extends AppCompatActivity {
     private List<FilterableListItem>                   unfilteredList;
     private SampleFilterableListItemOnClickListener    recyclerListener;
@@ -93,6 +64,47 @@ public class MainActivity extends AppCompatActivity {
 
     private Filter                                     searchFilter;
     private SearchView                                 searchView;
+
+    protected boolean                                  parentVariable;
+
+    // -------------------------------------------------------------------------
+
+    public class SampleFilterableViewHolder extends FilterableViewHolder {
+        private TextView text1;
+        private TextView text2;
+
+        public SampleFilterableViewHolder(
+            View view,
+            List<FilterableListItem> filteredList,
+            FilterableListItemOnClickListener listener
+        ) {
+            super(view, filteredList, listener);
+        }
+
+        @Override
+        public void onCreate(View view) {
+            text1 = view.findViewById(android.R.id.text1);
+            text2 = view.findViewById(android.R.id.text2);
+        }
+
+        @Override
+        public void onUpdate(FilterableListItem filterableListItem) {
+            SampleFilterableListItem item = (SampleFilterableListItem) filterableListItem;
+
+            if (parentVariable) {
+                text1.setText(item.lname.toLowerCase());
+                text2.setText(item.fname.toLowerCase());
+            }
+            else {
+                text1.setText(item.lname.toUpperCase());
+                text2.setText(item.fname.toUpperCase());
+            }
+
+            MainActivity.this.parentVariable = (!parentVariable);
+        }
+    }
+
+    // -------------------------------------------------------------------------
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,7 +123,9 @@ public class MainActivity extends AppCompatActivity {
             android.R.layout.two_line_list_item,       // https://github.com/aosp-mirror/platform_frameworks_base/blob/master/core/res/res/layout/two_line_list_item.xml
             unfilteredList,
             recyclerListener,
-            SampleFilterableViewHolder.class
+            SampleFilterableViewHolder.class,
+            MainActivity.class,
+            MainActivity.this
         );
 
         recyclerView = findViewById(R.id.recycler_view);
@@ -125,6 +139,8 @@ public class MainActivity extends AppCompatActivity {
         );
 
         searchFilter = recyclerFilterableAdapter.getFilter();
+
+        parentVariable = true;
     }
 
     @Override

@@ -17,6 +17,8 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
     final private ArrayList<FilterableListItem> filteredList;
     final private FilterableListItemOnClickListener listener;
     final private Class filterableViewHolderClass;
+    final private Class parentClass;
+    final private Object parentInstance;
 
     public FilterableAdapter(
         int row_layout_id,
@@ -24,11 +26,31 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
         FilterableListItemOnClickListener listener,
         Class filterableViewHolderClass
     ) {
+        this(
+            row_layout_id,
+            unfilteredList,
+            listener,
+            filterableViewHolderClass,
+            (Class) null,
+            (Object) null
+        );
+    }
+
+    public FilterableAdapter(
+        int row_layout_id,
+        List<FilterableListItem> unfilteredList,
+        FilterableListItemOnClickListener listener,
+        Class filterableViewHolderClass,
+        Class parentClass,
+        Object parentInstance
+    ) {
         this.row_layout_id             = row_layout_id;
         this.unfilteredList            = new ArrayList<FilterableListItem>(unfilteredList);
         this.filteredList              = new ArrayList<FilterableListItem>();
         this.listener                  = listener;
         this.filterableViewHolderClass = filterableViewHolderClass;
+        this.parentClass               = parentClass;
+        this.parentInstance            = parentInstance;
 
         resetFilteredList();
     }
@@ -44,17 +66,35 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
     public FilterableViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         try {
             View view = LayoutInflater.from(parent.getContext()).inflate(row_layout_id, parent, false);
+            Class[] cArg;
+            FilterableViewHolder holder;
 
-            Class[] cArg = new Class[3];
-            cArg[0]      = View.class;
-            cArg[1]      = List.class;
-            cArg[2]      = FilterableListItemOnClickListener.class;
+            if ((parentClass == null) || (parentInstance == null)) {
+                cArg     = new Class[3];
+                cArg[0]  = View.class;
+                cArg[1]  = List.class;
+                cArg[2]  = FilterableListItemOnClickListener.class;
 
-            FilterableViewHolder holder = (FilterableViewHolder) filterableViewHolderClass.getDeclaredConstructor(cArg).newInstance(
-                view,
-                filteredList,
-                listener
-            );
+                holder = (FilterableViewHolder) filterableViewHolderClass.getDeclaredConstructor(cArg).newInstance(
+                    view,
+                    filteredList,
+                    listener
+                );
+            }
+            else {
+                cArg     = new Class[4];
+                cArg[0]  = parentClass;
+                cArg[1]  = View.class;
+                cArg[2]  = List.class;
+                cArg[3]  = FilterableListItemOnClickListener.class;
+
+                holder = (FilterableViewHolder) filterableViewHolderClass.getDeclaredConstructor(cArg).newInstance(
+                    parentInstance,
+                    view,
+                    filteredList,
+                    listener
+                );
+            }
 
             return holder;
         }
