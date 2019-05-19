@@ -41,6 +41,10 @@ __notes:__
       * [v0.5 source code](https://f-droid.org/archive/com.example.anycut_5_src.tar.gz)
       * [v0.5 APK (built by F-Droid)](https://f-droid.org/archive/com.example.anycut_5.apk)
 
+__changes:__
+
+* added Gradle build scripts
+
 __to do:__
 
-* update to use Gradle build scripts
+* add ability to modify shortcut configuration w/ long-click
