@@ -33,12 +33,10 @@ import android.widget.CompoundButton;
 public class Settings extends Activity {
 	private boolean mHiddenChanged = false;
 	private boolean mColorChanged = false;
-	private boolean mThumbnailChanged = false;
 	private boolean mSortChanged = false;
 	private boolean mSpaceChanged = false;
 	
 	private boolean hidden_state;
-	private boolean thumbnail_state;
 	private int color_state, sort_state, mSpaceState;
 	private Intent is = new Intent();
 	
@@ -49,19 +47,16 @@ public class Settings extends Activity {
 		
 		Intent i = getIntent();
 		hidden_state = i.getExtras().getBoolean("HIDDEN");
-		thumbnail_state = i.getExtras().getBoolean("THUMBNAIL");
 		color_state = i.getExtras().getInt("COLOR");
 		sort_state = i.getExtras().getInt("SORT");
 		mSpaceState = i.getExtras().getInt("SPACE");
 				
 		final CheckBox hidden_bx = (CheckBox)findViewById(R.id.setting_hidden_box);
-		final CheckBox thumbnail_bx = (CheckBox)findViewById(R.id.setting_thumbnail_box);
 		final CheckBox space_bx = (CheckBox)findViewById(R.id.setting_storage_box);
 		final ImageButton color_bt = (ImageButton)findViewById(R.id.setting_text_color_button);
 		final ImageButton sort_bt = (ImageButton)findViewById(R.id.settings_sort_button);
 		
 		hidden_bx.setChecked(hidden_state);
-		thumbnail_bx.setChecked(thumbnail_state);
 		space_bx.setChecked(mSpaceState == View.VISIBLE);
 		
 		color_bt.setOnClickListener(new OnClickListener() {
@@ -138,16 +133,6 @@ public class Settings extends Activity {
 			}
 		});
 		
-		thumbnail_bx.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-				thumbnail_state = isChecked;
-				
-				is.putExtra("THUMBNAIL", thumbnail_state);
-				mThumbnailChanged = true;
-			}
-		});
-		
 		space_bx.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -217,9 +202,6 @@ public class Settings extends Activity {
 		
 		if(!mColorChanged)
 			is.putExtra("COLOR", color_state);
-		
-		if(!mThumbnailChanged)
-			is.putExtra("THUMBNAIL", thumbnail_state);
 		
 		if(!mSortChanged)
 			is.putExtra("SORT", sort_state);

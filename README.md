@@ -1,4 +1,4 @@
-#### [Android libraries](https://github.com/warren-bank/Android-libraries/tree/nexes/Android-File-Manager)
+#### [Android libraries](https://github.com/warren-bank/Android-libraries/tree/fork/nexes/Android-File-Manager/01_read_only)
 
 __original application:__
 
@@ -34,3 +34,17 @@ __notes:__
 __changes:__
 
 * added Gradle build scripts
+
+__fork:__
+
+* strip functionality to a bare-bones directory browser
+* allow the "home" directory to be specified in an Intent
+  * example configuration to open a specific "home" directory from a homescreen shortcut using [AnyCut](https://github.com/warren-bank/Android-libraries/tree/nujham/AnyCut):
+    * _Make your own shortcut:_
+      * __Action:__<br>`com.nexes.manager.Main.ACTION_WIDGET`
+      * __Data:__<br>`file:/sdcard/Download`
+      * __Type:__<br>_[empty]_
+* fix _Alphabetic_ sorting to display directories before files
+* fix the way the "home" directory is initialized
+  * now: the "back stack" contains all of its parent directories, eventually leading back to "/"
+  * previously: the "back stack" only contained "/"
