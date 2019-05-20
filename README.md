@@ -10,7 +10,7 @@ __original application:__
 
 __screenshot:__
 
-![AnyCut](https://image.winudf.com/v2/image/Y29tLnNwcmluZy5iaXJkLmFueWN1dF9zY3JlZW5fMV8xNTI2MDE4NDg0XzAxMw/screen-1.jpg?h=500&fakeurl=1&type=.jpg)
+![AnyCut](./.screenshots/1.jpg)
 
 __notes:__
 
