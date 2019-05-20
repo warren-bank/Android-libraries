@@ -27,9 +27,10 @@ __notes:__
 * what I dislike:
   * for what it is:
     * absolutely nothing
+      * my only minor criticism would be that _alphabetic_ sort order mixes directories and files into a single sorted list
   * for what it is not:
     * the UI could use an update to _Material Design_
 
-__to do:__
+__changes:__
 
-* add Gradle build scripts
+* added Gradle build scripts
