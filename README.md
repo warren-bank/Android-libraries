@@ -3,7 +3,7 @@
 __original application:__
 
 * source code repo: [scale_videoview](https://github.com/father2sisters/scale_videoview)
-* author/copyright: [Father n 2 sisters](http://father2sisters.blogspot.com/2014/07/resize-videoview-on-android-with-pinch.html)
+* author/copyright: [Gyeongin-Yein Lee](http://father2sisters.blogspot.com/2014/07/resize-videoview-on-android-with-pinch.html)
 * license: _none specified_
 * forked from commit SHA: [e5e5c56](https://github.com/father2sisters/scale_videoview/tree/e5e5c56be952077f428e2cdd8d2fbb51f911ef69)
   * date of commit: Jul 4, 2014
@@ -43,3 +43,9 @@ __considerations:__
 __related:__
 
 * [ZoomableTextureView](https://github.com/Manuiq/ZoomableTextureView)
+
+__changes:__
+
+* added Gradle build scripts
+* removed raw MP4 video files
+  * added INTERNET permission and loaded the sample video from a [public URL](http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4)
