@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scale VideoView</string>
+    <string name="video_url_1">http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4</string>
+        <!-- 1280 x 720: Big Buck Bunny by Blender Foundation -->
+    <string name="video_url_2">http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4</string>
+        <!-- 1280 x 720: Elephant Dream by Blender Foundation -->
+    <string name="video_url_3">http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4</string>
+        <!-- 1280 x 546: Sintel by Blender Foundation -->
+
+</resources>
