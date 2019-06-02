@@ -1,7 +1,10 @@
 package com.nbsp.materialfilepicker.ui;
 
+import android.Manifest;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -41,6 +44,7 @@ public class FilePickerActivity extends AppCompatActivity implements DirectoryFr
 
     public static final String RESULT_FILE_PATH = "result_file_path";
     private static final int HANDLE_CLICK_DELAY = 150;
+    private static final int PERMISSIONS_REQUEST_CODE = 0;
 
     private Toolbar mToolbar;
     private String mStartPath = Environment.getExternalStorageDirectory().getAbsolutePath();
@@ -60,7 +64,7 @@ public class FilePickerActivity extends AppCompatActivity implements DirectoryFr
         initViews();
         initToolbar();
         initBackStackState();
-        initFragment();
+        checkPermissionsAndInitFragment();
     }
 
     @SuppressWarnings("unchecked")
@@ -144,6 +148,35 @@ public class FilePickerActivity extends AppCompatActivity implements DirectoryFr
                         mCurrentPath, mFilter))
                 .addToBackStack(null)
                 .commit();
+    }
+
+    private void checkPermissionsAndInitFragment() {
+        if (Build.VERSION.SDK_INT < 23) {
+            initFragment();
+        } else {
+            String permission = Manifest.permission.READ_EXTERNAL_STORAGE;
+
+            if (checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{permission}, PERMISSIONS_REQUEST_CODE);
+            } else {
+                initFragment();
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case PERMISSIONS_REQUEST_CODE: {
+                if ((grantResults.length > 0) && (grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
+                    initFragment();
+                } else {
+                    // permission denied: cancel
+                    setResult(RESULT_CANCELED);
+                    finish();
+                }
+            }
+        }
     }
 
     private void initBackStackState() {
