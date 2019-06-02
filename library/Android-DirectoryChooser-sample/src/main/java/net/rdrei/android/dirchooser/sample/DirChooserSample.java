@@ -1,8 +1,8 @@
 package net.rdrei.android.dirchooser.sample;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import net.rdrei.android.dirchooser.DirectoryChooserActivity;
 import net.rdrei.android.dirchooser.DirectoryChooserConfig;
 
-public class DirChooserSample extends Activity {
+public class DirChooserSample extends AppCompatActivity {
     private static final int REQUEST_DIRECTORY = 0;
     private static final String TAG = "DirChooserSample";
     private TextView mDirectoryTextView;
@@ -36,7 +36,7 @@ public class DirChooserSample extends Activity {
                                 DirChooserSample.this,
                                 DirectoryChooserActivity.class);
 
-                        final DirectoryChooserConfig config = DirectoryChooserConfig.builder().build();
+                        final DirectoryChooserConfig config = DirectoryChooserConfig.builder().initialDirectory("/").build();
 
                         chooserIntent.putExtra(
                                 DirectoryChooserActivity.EXTRA_CONFIG,

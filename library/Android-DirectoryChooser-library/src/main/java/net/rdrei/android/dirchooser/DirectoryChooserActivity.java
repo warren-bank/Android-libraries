@@ -2,11 +2,11 @@ package net.rdrei.android.dirchooser;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
-import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
@@ -14,8 +14,7 @@ import android.view.MenuItem;
  * Let's the user choose a directory on the storage device. The selected folder
  * will be sent back to the starting activity as an activity result.
  */
-public class DirectoryChooserActivity extends AppCompatActivity implements
-        DirectoryChooserFragment.OnFragmentInteractionListener {
+public class DirectoryChooserActivity extends AppCompatActivity implements DirectoryChooserFragment.OnFragmentInteractionListener {
     public static final String EXTRA_CONFIG = "config";
     public static final String RESULT_SELECTED_DIR = "selected_dir";
     public static final int RESULT_CODE_DIR_SELECTED = 1;
@@ -34,7 +33,7 @@ public class DirectoryChooserActivity extends AppCompatActivity implements
         }
 
         if (savedInstanceState == null) {
-            final FragmentManager fragmentManager = getFragmentManager();
+            final FragmentManager fragmentManager = getSupportFragmentManager();
             final DirectoryChooserFragment fragment = DirectoryChooserFragment.newInstance(config);
             fragmentManager.beginTransaction()
                     .add(R.id.main, fragment)

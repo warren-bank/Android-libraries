@@ -1,27 +1,22 @@
 package net.rdrei.android.dirchooser;
 
-import android.annotation.SuppressLint;
+import android.Manifest;
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.DialogFragment;
-import android.app.Fragment;
-import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.FileObserver;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.text.Editable;
-import android.text.TextUtils;
-import android.text.TextWatcher;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -29,11 +24,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.gu.option.Option;
 import com.gu.option.UnitFunction;
@@ -52,9 +45,10 @@ import java.util.List;
  * create an instance of this fragment.
  */
 public class DirectoryChooserFragment extends DialogFragment {
-    public static final String KEY_CURRENT_DIRECTORY = "CURRENT_DIRECTORY";
+    public  static final String KEY_CURRENT_DIRECTORY = "CURRENT_DIRECTORY";
     private static final String ARG_CONFIG = "CONFIG";
     private static final String TAG = DirectoryChooserFragment.class.getSimpleName();
+    private static final int PERMISSIONS_REQUEST_CODE = 0;
     private String mInitialDirectory;
 
     private Option<OnFragmentInteractionListener> mListener = Option.none();
@@ -117,7 +111,7 @@ public class DirectoryChooserFragment extends DialogFragment {
                     "creation.");
         }
 
-        mInitialDirectory = mConfig.initialDirectory();
+        mInitialDirectory  = mConfig.initialDirectory();
 
         if (savedInstanceState != null) {
             mInitialDirectory = savedInstanceState.getString(KEY_CURRENT_DIRECTORY);
@@ -198,16 +192,49 @@ public class DirectoryChooserFragment extends DialogFragment {
                 android.R.layout.simple_list_item_1, mFilenames);
         mListDirectories.setAdapter(mListDirectoriesAdapter);
 
+        checkPermissionsAndOpenInitialDirectory();
+
+        return view;
+    }
+
+    private void openInitialDirectory() {
         final File initialDir;
-        if (!TextUtils.isEmpty(mInitialDirectory) && isValidFile(new File(mInitialDirectory))) {
+        if ((mInitialDirectory != null) && (!mInitialDirectory.isEmpty()) && isValidFile(new File(mInitialDirectory))) {
             initialDir = new File(mInitialDirectory);
         } else {
             initialDir = Environment.getExternalStorageDirectory();
         }
 
         changeDirectory(initialDir);
+    }
 
-        return view;
+    private void checkPermissionsAndOpenInitialDirectory() {
+        if (Build.VERSION.SDK_INT < 23) {
+            openInitialDirectory();
+        } else {
+            String permission = Manifest.permission.READ_EXTERNAL_STORAGE;
+
+            if (ContextCompat.checkSelfPermission(getContext(), permission) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{permission}, PERMISSIONS_REQUEST_CODE);
+            } else {
+                openInitialDirectory();
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case PERMISSIONS_REQUEST_CODE: {
+                if ((grantResults.length > 0) && (grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
+                    openInitialDirectory();
+                } else {
+                    // permission denied: cancel
+                    mSelectedDir = null;
+                    returnSelectedFolder();
+                }
+            }
+        }
     }
 
     private void adjustResourceLightness() {
@@ -326,7 +353,7 @@ public class DirectoryChooserFragment extends DialogFragment {
         final Activity activity = getActivity();
         if (activity != null && mSelectedDir != null) {
             mBtnConfirm.setEnabled(isValidFile(mSelectedDir));
-            getActivity().invalidateOptionsMenu();
+            activity.invalidateOptionsMenu();
         }
     }
 

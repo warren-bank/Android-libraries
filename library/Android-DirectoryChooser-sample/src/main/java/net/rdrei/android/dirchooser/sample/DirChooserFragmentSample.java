@@ -1,9 +1,9 @@
 package net.rdrei.android.dirchooser.sample;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -11,7 +11,7 @@ import net.rdrei.android.dirchooser.DirectoryChooserConfig;
 import net.rdrei.android.dirchooser.DirectoryChooserFragment;
 
 
-public class DirChooserFragmentSample extends Activity implements DirectoryChooserFragment.OnFragmentInteractionListener {
+public class DirChooserFragmentSample extends AppCompatActivity implements DirectoryChooserFragment.OnFragmentInteractionListener {
 
     private TextView mDirectoryTextView;
     private DirectoryChooserFragment mDialog;
@@ -20,7 +20,7 @@ public class DirChooserFragmentSample extends Activity implements DirectoryChoos
     protected void onCreate(@Nullable final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dialog);
-        final DirectoryChooserConfig config = DirectoryChooserConfig.builder().build();
+        final DirectoryChooserConfig config = DirectoryChooserConfig.builder().initialDirectory("/").build();
         mDialog = DirectoryChooserFragment.newInstance(config);
 
         mDirectoryTextView = (TextView) findViewById(R.id.textDirectory);
@@ -29,7 +29,7 @@ public class DirChooserFragmentSample extends Activity implements DirectoryChoos
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        mDialog.show(getFragmentManager(), null);
+                        mDialog.show(getSupportFragmentManager(), null);
                     }
                 });
     }
