@@ -20,9 +20,7 @@ public class DirChooserFragmentSample extends Activity implements DirectoryChoos
     protected void onCreate(@Nullable final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dialog);
-        final DirectoryChooserConfig config = DirectoryChooserConfig.builder()
-                .allowReadOnlyDirectory(false)  // demo modified behavior
-                .build();
+        final DirectoryChooserConfig config = DirectoryChooserConfig.builder().build();
         mDialog = DirectoryChooserFragment.newInstance(config);
 
         mDirectoryTextView = (TextView) findViewById(R.id.textDirectory);

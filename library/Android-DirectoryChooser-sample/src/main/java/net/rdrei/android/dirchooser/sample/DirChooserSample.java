@@ -36,9 +36,7 @@ public class DirChooserSample extends Activity {
                                 DirChooserSample.this,
                                 DirectoryChooserActivity.class);
 
-                        final DirectoryChooserConfig config = DirectoryChooserConfig.builder()
-                                .allowReadOnlyDirectory(true)
-                                .build();
+                        final DirectoryChooserConfig config = DirectoryChooserConfig.builder().build();
 
                         chooserIntent.putExtra(
                                 DirectoryChooserActivity.EXTRA_CONFIG,

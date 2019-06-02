@@ -391,8 +391,7 @@ public class DirectoryChooserFragment extends DialogFragment {
      * Returns true if the selected file or directory would be valid selection.
      */
     private boolean isValidFile(final File file) {
-        return (file != null && file.isDirectory() && file.canRead() &&
-                (mConfig.allowReadOnlyDirectory() || file.canWrite()));
+        return (file != null && file.isDirectory() && file.canRead());
     }
 
     @Nullable
