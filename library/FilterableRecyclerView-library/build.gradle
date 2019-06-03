@@ -22,7 +22,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:recyclerview-v7:' + project.ext.supportLibraryVersion     // (346 KB) https://mvnrepository.com/artifact/com.android.support/recyclerview-v7?repo=google
+    implementation 'androidx.recyclerview:recyclerview:'    + project.ext.jetpackVersion          // (344 KB) https://mvnrepository.com/artifact/androidx.recyclerview/recyclerview?repo=google
 }
 
 apply plugin: 'com.google.android.gms.strict-version-matcher-plugin'
