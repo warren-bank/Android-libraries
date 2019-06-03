@@ -3,7 +3,6 @@ package com.github.warren_bank.filterablerecyclerview;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
 import android.widget.Filterable;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,12 +11,13 @@ import java.util.List;
 
 public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder> implements Filterable {
     final private int row_layout_id;
-    final private ArrayList<FilterableListItem> unfilteredList;
+    final private List<FilterableListItem> unfilteredList;
     final private ArrayList<FilterableListItem> filteredList;
     final private FilterableListItemOnClickListener listener;
     final private Class filterableViewHolderClass;
     final private Class parentClass;
     final private Object parentInstance;
+    final private Filter searchFilter;
 
     public FilterableAdapter(
         int row_layout_id,
@@ -44,12 +44,13 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
         Object parentInstance
     ) {
         this.row_layout_id             = row_layout_id;
-        this.unfilteredList            = new ArrayList<FilterableListItem>(unfilteredList);
+        this.unfilteredList            = unfilteredList;
         this.filteredList              = new ArrayList<FilterableListItem>();
         this.listener                  = listener;
         this.filterableViewHolderClass = filterableViewHolderClass;
         this.parentClass               = parentClass;
         this.parentInstance            = parentInstance;
+        this.searchFilter              = createSearchFilter();
 
         resetFilteredList();
     }
@@ -119,7 +120,12 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
 
     @Override
     public Filter getFilter() {
+        return searchFilter;
+    }
+
+    private Filter createSearchFilter() {
         return new Filter() {
+
             @Override
             protected FilterResults performFiltering(CharSequence charSequence) {
                 String charString = charSequence.toString();
@@ -146,5 +152,15 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
                 notifyDataSetChanged();
             }
         };
+    }
+
+    // To be called when "unfilteredList" is updated outside of this adapter. (note: this Object is stored by reference.)
+    // Under normal conditions, "notifyDataXXX" methods would be called on an adapter.
+    // However, these methods are "final".. so I couldn't extend them.
+    // This "refresh" method results in:
+    //   * data being copied (and optionally filtered) into "filteredList" from "unfilteredList"
+    //   * "notifyDataSetChanged" being called on the adapter after "filteredList" has been updated
+    public void refresh() {
+        searchFilter.filter(searchFilter.constraint);
     }
 }

@@ -1,5 +1,6 @@
 package com.github.warren_bank.filterablerecyclerview.sample;
 
+import com.github.warren_bank.filterablerecyclerview.Filter;
 import com.github.warren_bank.filterablerecyclerview.FilterableListItem;
 import com.github.warren_bank.filterablerecyclerview.FilterableListItemOnClickListener;
 import com.github.warren_bank.filterablerecyclerview.FilterableViewHolder;
@@ -10,7 +11,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Filter;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -143,6 +143,12 @@ public class MainActivity extends AppCompatActivity {
         parentVariable = true;
     }
 
+    // click handler: Floating Action Button
+    public void add_unfiltered_item(View v) {
+        unfilteredList.add(new SampleFilterableListItem("New", "Name"));
+        recyclerFilterableAdapter.refresh();
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
@@ -152,14 +158,14 @@ public class MainActivity extends AppCompatActivity {
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            public boolean onQueryTextSubmit(String query) {
-                searchFilter.filter(query);
+            public boolean onQueryTextSubmit(String constraint) {
+                searchFilter.query(constraint);
                 return false;
             }
 
             @Override
-            public boolean onQueryTextChange(String query) {
-                searchFilter.filter(query);
+            public boolean onQueryTextChange(String constraint) {
+                searchFilter.query(constraint);
                 return false;
             }
         });
