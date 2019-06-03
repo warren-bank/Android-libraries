@@ -42,8 +42,8 @@ android {
 dependencies {
     implementation project(':MaterialFilePicker-library')
 
-    implementation 'com.android.support:appcompat-v7:'      + project.ext.supportLibraryVersion     // (1.0 MB) https://mvnrepository.com/artifact/com.android.support/appcompat-v7?repo=google
-    implementation 'com.android.support:support-fragment:'  + project.ext.supportLibraryVersion     // (154 KB) https://mvnrepository.com/artifact/com.android.support/support-fragment?repo=google
+    implementation      'androidx.appcompat:appcompat:'            + project.ext.jetpackVersion            // (1.0 MB) https://mvnrepository.com/artifact/androidx.appcompat/appcompat?repo=google
+    implementation      'androidx.fragment:fragment:'              + project.ext.jetpackVersion            // (152 KB) https://mvnrepository.com/artifact/androidx.fragment/fragment?repo=google
 }
 
 apply plugin: 'com.google.android.gms.strict-version-matcher-plugin'
