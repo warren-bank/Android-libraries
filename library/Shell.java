@@ -165,7 +165,7 @@ public class Shell {
         }
     }
 
-    public static void startADB(int port) throws  IOException{
+    public static void startADBd(int port) throws  IOException{
         String cmds[] = {
                 "setprop service.adb.tcp.port " + port,
                 "stop adbd",
@@ -176,23 +176,23 @@ public class Shell {
         // TCP not enabled (first time)
         result = execForResult("getprop service.adb.tcp.port").stdout;
         if(result == null || !result.equals(Integer.toString(port))){
-            Log.i(TAG, "Starting ADB, current port = " + result + ", new port = " + Integer.toString(port));
+            Log.i(TAG, "Starting ADBd, current port = " + result + ", new port = " + Integer.toString(port));
             exec(cmds);
             return;
         }
 
-        // ADB.D not running
+        // ADBd not running
         result = execForResult("getprop init.svc.adbd").stdout;
         if(result == null || !result.equals("running")){
-            Log.i(TAG, "Starting ADB at port " + Integer.toString(port));
+            Log.i(TAG, "Starting ADBd at port " + Integer.toString(port));
             exec(cmds);
             return;
         }
 
-        Log.i(TAG, "ADB is running at port " + Integer.toString(port));
+        Log.i(TAG, "ADBd is running at port " + Integer.toString(port));
     }
 
-    public static void stopADB() throws  IOException{
-        startADB(-1);
+    public static void stopADBd() throws  IOException{
+        startADBd(-1);
     }
 }

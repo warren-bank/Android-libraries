@@ -27,4 +27,5 @@ __changes:__
     * ex: `execScript("/path/to/script.sh")`
   * File
     * ex: `execScript(new File("/path/to/script.sh"))`
-* added `stopADB`
+* renamed `startADB` to `startADBd`
+* added `stopADBd`
