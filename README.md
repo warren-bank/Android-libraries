@@ -12,3 +12,19 @@ __notes:__
 
 * what it does:
   * utility class containing static methods to execute commands as `root` user on a rooted device
+
+__changes:__
+
+* refactored code
+* changed signature of `execForResult`
+  * returns instance of `Shell.Result` inner-class, which contains:
+    * String stdout
+    * String stderr
+    * int status
+* added `execScriptForResult`
+* added `execScriptForResult` and `execScript` variations that take as input any of:
+  * String
+    * ex: `execScript("/path/to/script.sh")`
+  * File
+    * ex: `execScript(new File("/path/to/script.sh"))`
+* added `stopADB`
