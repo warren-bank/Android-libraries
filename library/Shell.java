@@ -13,10 +13,12 @@ import java.net.DatagramSocket;
 import java.net.Socket;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Shell {
 
-    public final class Result {
+    public static final class Result {
         public String stdout;
         public String stderr;
         public int    status;
@@ -29,6 +31,7 @@ public class Shell {
     }
 
     private static final String TAG = "Shell";
+    private static final Pattern INET_IP_PATTERN = Pattern.compile("\\binet (\\d+\\.\\d+\\.\\d+\\.\\d+)\\/\\d+\\b", Pattern.DOTALL);
 
     public static Result execForResult(String...strings) {
         Process su = null;
@@ -171,25 +174,70 @@ public class Shell {
                 "stop adbd",
                 "start adbd"
         };
-        String result;
 
         // TCP not enabled (first time)
-        result = execForResult("getprop service.adb.tcp.port").stdout;
-        if(result == null || !result.equals(Integer.toString(port))){
-            Log.i(TAG, "Starting ADBd, current port = " + result + ", new port = " + Integer.toString(port));
+        int current_port = getADBdPort();
+        if(current_port != port) {
+            Log.i(TAG, "Starting ADBd, current port = " + Integer.toString(current_port) + ", new port = " + Integer.toString(port));
             exec(cmds);
             return;
         }
 
         // ADBd not running
-        result = execForResult("getprop init.svc.adbd").stdout;
-        if(result == null || !result.equals("running")){
+        if(!isADBdRunning()) {
             Log.i(TAG, "Starting ADBd at port " + Integer.toString(port));
             exec(cmds);
             return;
         }
 
         Log.i(TAG, "ADBd is running at port " + Integer.toString(port));
+    }
+
+    public static int getADBdPort() {
+        Result result = execForResult("getprop service.adb.tcp.port");
+
+        if ((result.status > 0) || result.stdout.isEmpty()) {
+            return -1;
+        }
+
+        int port;
+        try {
+            port = Integer.parseInt(result.stdout, 10);
+        }
+        catch (Exception e) {
+            return -1;
+        }
+
+        return port;
+    }
+
+    public static boolean isADBdRunning() {
+        Result result = execForResult("getprop init.svc.adbd");
+
+        if ((result.status > 0) || result.stdout.isEmpty()) {
+            return false;
+        }
+
+        return result.stdout.equals("running");
+    }
+
+    public static String getWlanIpAddress() {
+        Result result = execForResult("ip -f inet addr show wlan0");
+
+        if ((result.status > 0) || result.stdout.isEmpty()) {
+            return null;
+        }
+
+        try {
+            Matcher matcher = INET_IP_PATTERN.matcher(result.stdout);
+            if (!matcher.find()) return null;
+
+            String url = matcher.group(1);
+            return url;
+        }
+        catch (Exception e) {
+            return null;
+        }
     }
 
     public static void stopADBd() throws  IOException{

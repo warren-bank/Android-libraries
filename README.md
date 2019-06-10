@@ -28,4 +28,8 @@ __changes:__
   * File
     * ex: `execScript(new File("/path/to/script.sh"))`
 * renamed `startADB` to `startADBd`
-* added `stopADBd`
+* added:
+  * `getADBdPort`
+  * `isADBdRunning`
+  * `stopADBd`
+  * `getWlanIpAddress`
