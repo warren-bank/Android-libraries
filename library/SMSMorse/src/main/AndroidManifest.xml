@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.jakewharton.smsmorse">
+
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <application
+    	android:icon="@drawable/icon"
+    	android:label="@string/app_name">
+        
+        <activity android:name=".ui.Preferences" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+        </activity>
+        
+        <activity android:name=".ui.About" android:label="@string/app_about_name"/>
+        
+        <receiver android:name=".transaction.EventReceiver" android:label="@string/app_receiver">
+			<intent-filter>
+				<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+				<action android:name="com.jakewharton.smsmorse.VIBRATE_MORSE" />
+			</intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>
