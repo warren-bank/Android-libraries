@@ -166,9 +166,9 @@ public class EventReceiver extends BroadcastReceiver {
 			);
 
 			if (smsValid && enabled && activeAudioMode && (keygaurdOn || !screenOffOnly)) {
-				final SmsMessage[] messages = (Build.VERSION.SDK_INT < 19)
-					? get_SmsMessages(extras)
-					: get_SmsMessages(intent);
+				final SmsMessage[] messages = 
+				//	(Build.VERSION.SDK_INT >= 19) ? get_SmsMessages(intent) : 
+					get_SmsMessages(extras);
 
 				//Assemble 
 				final ArrayList<Long> vibrations = new ArrayList<Long>();
@@ -201,11 +201,14 @@ public class EventReceiver extends BroadcastReceiver {
 	private final static SmsMessage[] get_SmsMessages(Bundle extras) {
 		//Create SMSMessages from PDUs in the Bundle
 		final Object[] pdus = (Object[])extras.get("pdus");
+		final String format = extras.getString("format", "3gpp");
 		final SmsMessage[] messages = new SmsMessage[pdus.length];
 
 		for (int i = 0; i < pdus.length; i++) {
 			try {
-				messages[i] = SmsMessage.createFromPdu((byte[])pdus[i]);
+				messages[i] = (Build.VERSION.SDK_INT >= 23)
+					? SmsMessage.createFromPdu((byte[])pdus[i], format)
+					: SmsMessage.createFromPdu((byte[])pdus[i]);
 			}
 			catch (Exception e) {}
 		}
