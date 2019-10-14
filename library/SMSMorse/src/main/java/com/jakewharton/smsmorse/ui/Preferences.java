@@ -19,7 +19,7 @@ import android.view.MenuItem;
 public class Preferences extends PreferenceActivity {
 	private static final int MENU_RESTORE_DEFAULTS = 0;
 	private static final int MENU_ABOUT            = 1;
-	
+
 	private CheckBoxPreference      mCheckBoxEnabled;
 	private ListPreference          mVibratePart;
 	private CheckBoxPreference      mVibrateCounts;
@@ -30,7 +30,7 @@ public class Preferences extends PreferenceActivity {
 	private CheckBoxPreference      mActiveVibrate;
 	private CheckBoxPreference      mActiveSilent;
 	//private CheckBoxPreference      mCheckBoxInputEnabled;
-	
+
 	private OnPreferenceChangeListener mVibratePartListener = new OnPreferenceChangeListener() {
 		public boolean onPreferenceChange(Preference preference, Object newValue) { 
 			preference.setSummary(getString(R.string.preference_vibrate_parts_summary) + " " + getResources().getStringArray(R.array.preference_vibrate_parts_entries)[Integer.parseInt((String)newValue)]);
@@ -49,7 +49,7 @@ public class Preferences extends PreferenceActivity {
 	private OnPreferenceChangeListener mEnabledListener = new OnPreferenceChangeListener() {
 		public boolean onPreferenceChange(Preference arg0, Object arg1) {
 			boolean state = (Boolean)arg1;
-			
+
 			mVibratePart.setEnabled(state);
 			mVibrateCounts.setEnabled(state);
 			mDotLength.setEnabled(state);
@@ -59,19 +59,19 @@ public class Preferences extends PreferenceActivity {
 			mActiveVibrate.setEnabled(state);
 			mActiveSilent.setEnabled(state);
 			//mCheckBoxInputEnabled.setEnabled(state);
-			
+
 			//if (!state || mCheckBoxEnabled.isChecked())
 			//	mInputEnabledListener.onPreferenceChange(arg0, arg1);
-			
+
 			return true;
 		}
 	};
 	/*private OnPreferenceChangeListener mInputEnabledListener = new OnPreferenceChangeListener() {
 		public boolean onPreferenceChange(Preference arg0, Object arg1) {
 			boolean state = (Boolean)arg1;
-			
+
 			//TODO: add input preferences here
-			
+
 			return true;
 		}
 	};*/
@@ -83,24 +83,24 @@ public class Preferences extends PreferenceActivity {
 	private void loadPreferences() {
 		addPreferencesFromResource(R.xml.preferences);
 		final PreferenceScreen screen = getPreferenceScreen();
-		
+
 		mCheckBoxEnabled = (CheckBoxPreference)screen.findPreference(getString(R.string.preference_enabled));
 		mVibratePart     = (ListPreference)screen.findPreference(getString(R.string.preference_vibrate_parts));
 		mTestText        = (EditTextPreference)screen.findPreference(getString(R.string.preference_test));
 		mVibrateCounts   = (CheckBoxPreference)screen.findPreference(getString(R.string.preference_vibrate_counts));
 		mDotLength       = (BetterSeekBarPreference)screen.findPreference(getString(R.string.preference_dot_length));
-		
+
 		mCheckBoxEnabled.setOnPreferenceChangeListener(mEnabledListener);
 		mVibratePart.setOnPreferenceChangeListener(mVibratePartListener);
 		//Trigger summary update
 		mVibratePartListener.onPreferenceChange(mVibratePart, mVibratePart.getValue());
 		mTestText.setOnPreferenceChangeListener(mTestTextListener);
-		
+
 		mScreenOffOnly = (CheckBoxPreference)screen.findPreference(getString(R.string.preference_screen_off_only));
 		mActiveNormal  = (CheckBoxPreference)screen.findPreference(getString(R.string.preference_vibrate_normal));
 		mActiveVibrate = (CheckBoxPreference)screen.findPreference(getString(R.string.preference_vibrate_vibrate));
 		mActiveSilent  = (CheckBoxPreference)screen.findPreference(getString(R.string.preference_vibrate_silent));
-		
+
 		//mCheckBoxInputEnabled = (CheckBoxPreference)screen.findPreference(getString(R.string.preference_input_enabled));
 		//mCheckBoxInputEnabled.setOnPreferenceChangeListener(mInputEnabledListener);
 	}
@@ -120,7 +120,7 @@ public class Preferences extends PreferenceActivity {
 				setPreferenceScreen(null);
 				loadPreferences();
 				return true;
-				
+
 			case MENU_ABOUT:
 				startActivity(new Intent(this, About.class));
 				return true;

@@ -17,7 +17,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 
 public class BetterSeekBarPreference extends DialogPreference {
     private static final int DEFAULT_VALUE = 100;
-    
+
     private Drawable mMyIcon;
     private int mMin;
     private int mMax;
@@ -36,7 +36,7 @@ public class BetterSeekBarPreference extends DialogPreference {
 
 	public BetterSeekBarPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        
+
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.BetterSeekBarPreference, 0, 0);
         mMin = 50;//a.getInt(R.styleable.BetterSeekBarPreference_min, 0);
         mMax = 250;//a.getInt(R.styleable.BetterSeekBarPreference_max, 100);
@@ -46,12 +46,12 @@ public class BetterSeekBarPreference extends DialogPreference {
         setDialogLayoutResource(R.layout.betterseekbar_dialog);
         setPositiveButtonText(android.R.string.ok);
         setNegativeButtonText(android.R.string.cancel);
-        
+
         // Steal the XML dialogIcon attribute's value
         mMyIcon = getDialogIcon();
         setDialogIcon(null);
     }
-	
+
 	public void setValue(int value) {
 		mValue = value;
 		if (mSeekBar != null) {
@@ -60,11 +60,11 @@ public class BetterSeekBarPreference extends DialogPreference {
 		setTextValue(value);
 		persistInt(value);
 	}
-	
+
 	public int getValue() {
 		return mValue + mMin;
 	}
-	
+
 	private void setTextValue(int value) {
 		if (mTextView != null) {
 			mTextView.setText("Value: " + (value + mMin));
@@ -77,7 +77,7 @@ public class BetterSeekBarPreference extends DialogPreference {
 			super.onRestoreInstanceState(state);
 			return;
 		}
-		
+
 		SavedState myState = (SavedState)state;
 		super.onRestoreInstanceState(myState.getSuperState());
 		setValue(myState.value);
@@ -89,7 +89,7 @@ public class BetterSeekBarPreference extends DialogPreference {
 		if (isPersistent()) {
 			return superState;
 		}
-		
+
 		final SavedState myState = new SavedState(superState);
 		myState.value = mValue;
 		return myState;
@@ -98,7 +98,7 @@ public class BetterSeekBarPreference extends DialogPreference {
 	@Override
 	protected void onDialogClosed(boolean positiveResult) {
 		super.onDialogClosed(positiveResult);
-		
+
 		if (positiveResult) {
 			setValue(mSeekBar.getProgress());
 		}
@@ -107,7 +107,7 @@ public class BetterSeekBarPreference extends DialogPreference {
     @Override
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
-        
+
         final ImageView iconView = (ImageView)view.findViewById(R.id.icon);
         if (mMyIcon != null) {
             iconView.setImageDrawable(mMyIcon);
@@ -135,10 +135,10 @@ public class BetterSeekBarPreference extends DialogPreference {
 	protected static SeekBar getSeekBar(View dialogView) {
         return (SeekBar)dialogView.findViewById(R.id.seekbar);
     }
-	
+
     private static class SavedState extends BaseSavedState {
         int value;
-        
+
         public SavedState(Parcel source) {
             super(source);
             value = source.readInt();
