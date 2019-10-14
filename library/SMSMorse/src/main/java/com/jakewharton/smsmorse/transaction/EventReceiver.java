@@ -11,11 +11,13 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.media.AudioManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.provider.Contacts;
-import android.telephony.gsm.SmsMessage;
+import android.provider.Telephony;
+import android.telephony.SmsMessage;
 import android.util.Log;
 
 public class EventReceiver extends BroadcastReceiver {
@@ -131,7 +133,7 @@ public class EventReceiver extends BroadcastReceiver {
 	private SharedPreferences settings;
 	private Resources         resources;
 	private Vibrator          vibrator;
-	
+
 	public void onReceive(Context context, Intent intent) {
 		//Save context-specific objects needed in other methods
 		settings  = PreferenceManager.getDefaultSharedPreferences(context);
@@ -161,16 +163,16 @@ public class EventReceiver extends BroadcastReceiver {
 			);
 			
 			if (smsValid && enabled && activeAudioMode && (keygaurdOn || !screenOffOnly)) {
-				//Create SMSMessages from PDUs in the Bundle
-				final Object[] pdus = (Object[])extras.get("pdus");
-				final SmsMessage[] messages = new SmsMessage[pdus.length];
-				for (int i = 0; i < pdus.length; i++)
-					messages[i] = SmsMessage.createFromPdu((byte[])pdus[i]);
-				
+				final SmsMessage[] messages = (Build.VERSION.SDK_INT < 19)
+					? get_SmsMessages(extras)
+					: get_SmsMessages(intent);
+
 				//Assemble 
 				final ArrayList<Long> vibrations = new ArrayList<Long>();
 				final int vibrateParts = Integer.parseInt(settings.getString(resources.getString(R.string.preference_vibrate_parts), DEFAULT_VIBRATE_PARTS));
 				for (SmsMessage message : messages) {
+					if (message == null)
+						continue;
 					if ((vibrateParts == VIBRATE_CONTENT_SENDER) || (vibrateParts == VIBRATE_CONTENT_SENDER_MESSAGE))
 						vibrations.addAll(convertSenderToVibrations(context, message.getOriginatingAddress()));
 					if (vibrateParts != VIBRATE_CONTENT_SENDER)
@@ -178,11 +180,32 @@ public class EventReceiver extends BroadcastReceiver {
 					if (vibrateParts == VIBRATE_CONTENT_MESSAGE_SENDER)
 						vibrations.addAll(convertSenderToVibrations(context, message.getOriginatingAddress()));
 				}
-				
+
 				vibrateMorse(vibrations);
 			}
 		}
 	}
+
+	private final static SmsMessage[] get_SmsMessages(Bundle extras) {
+		//Create SMSMessages from PDUs in the Bundle
+		final Object[] pdus = (Object[])extras.get("pdus");
+		final SmsMessage[] messages = new SmsMessage[pdus.length];
+
+		for (int i = 0; i < pdus.length; i++) {
+			try {
+				messages[i] = SmsMessage.createFromPdu((byte[])pdus[i]);
+			}
+			catch (Exception e) {}
+		}
+
+		return messages;
+    }
+
+	private final static SmsMessage[] get_SmsMessages(Intent intent) {
+		final SmsMessage[] messages = Telephony.Sms.Intents.getMessagesFromIntent(intent);
+		return messages;
+    }
+
 	private ArrayList<Long> convertSenderToVibrations(Context context, String sender) {
 		if (settings.getBoolean(context.getString(R.string.preference_lookup_contact_name), true)) {
 			final String[] projection = new String[] { Contacts.PeopleColumns.DISPLAY_NAME };
@@ -195,6 +218,7 @@ public class EventReceiver extends BroadcastReceiver {
 		}
 		return convertToVibrations(sender, true);
 	}
+
 	private void vibrateMorse(final ArrayList<Long> vibrationLongs) {
 		final long[] vibrations = new long[vibrationLongs.size()];
 		final StringBuffer morseVibrations = new StringBuffer("Vibrating Morse: ");
@@ -209,6 +233,7 @@ public class EventReceiver extends BroadcastReceiver {
 		vibrator.vibrate(vibrations, -1);
 		Log.i(TAG, morseVibrations.toString());
 	}
+
 	/*private String parseMorse(final long[] buttonPresses) {
 		final char  errorChar    = settings.getString(resources.getString(R.string.preference_error_char), DEFAULT_ERROR_CHAR).charAt(0);
 		final float errorAllowed = settings.getFloat(resources.getString(R.string.preference_error_allowed), DEFAULT_ERROR_ALLOWED);
@@ -270,15 +295,18 @@ public class EventReceiver extends BroadcastReceiver {
 		
 		return message.toString();
 	}
+
 	private int average(final ArrayList<Long> numberList) {
 		long sum = 0;
 		for (Long number : numberList)
 			sum += (Long)number;
 		return (int)(sum / numberList.size());
 	}*/
+
     private ArrayList<Long> convertToVibrations(final String message) {
     	return convertToVibrations(message, false);
     }
+
 	private ArrayList<Long> convertToVibrations(final String message, final boolean isNumber) {
     	final boolean vibrateCounts = settings.getBoolean(resources.getString(R.string.preference_vibrate_counts), DEFAULT_VIBRATE_COUNTS);
     	
