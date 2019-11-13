@@ -7,6 +7,8 @@ import javax.jmdns.ServiceEvent;
 import javax.jmdns.ServiceListener;
 
 import android.app.Activity;
+import android.content.Context;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,15 +17,32 @@ import android.widget.TextView;
 import javax.jmdns.ServiceInfo;
 
 public class DiscoveryActivity extends Activity {
-    private static final String BONJOUR_SERVICE_TYPE = "_androiddnssddemo._tcp.local.";
-    private static final int    BONJOUR_SERVICE_PORT = 7654;
+    private static final String NL = "\n  ";
 
-    private android.net.wifi.WifiManager.MulticastLock lock;
+    private String LABEL_EVENT_RESOLVED;
+    private String LABEL_EVENT_REMOVED;
+    private String LABEL_NAME;
+    private String LABEL_PORT;
+    private String LABEL_HOST;
+    private String BONJOUR_SERVICE_NAME;
+    private String BONJOUR_SERVICE_TYPE;
+    private int    BONJOUR_SERVICE_PORT;
+
+    private WifiManager.MulticastLock lock;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        LABEL_EVENT_RESOLVED = getString(R.string.discovery_output_label_event_resolved);
+        LABEL_EVENT_REMOVED  = getString(R.string.discovery_output_label_event_removed);
+        LABEL_NAME           = getString(R.string.discovery_output_label_name);
+        LABEL_PORT           = getString(R.string.discovery_output_label_port);
+        LABEL_HOST           = getString(R.string.discovery_output_label_host);
+        BONJOUR_SERVICE_NAME = getString(R.string.constant_bonjour_service_name);
+        BONJOUR_SERVICE_TYPE = getString(R.string.constant_bonjour_service_type);
+        BONJOUR_SERVICE_PORT = Integer.parseInt(getString(R.string.constant_bonjour_service_port), 10);
     }
 
     @Override
@@ -59,8 +78,8 @@ public class DiscoveryActivity extends Activity {
     private ServiceInfo serviceInfo;
 
     private void setUp() {
-        android.net.wifi.WifiManager wifi = (android.net.wifi.WifiManager) getSystemService(android.content.Context.WIFI_SERVICE);
-        lock = wifi.createMulticastLock("mylockthereturn");
+        WifiManager wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+        lock = wifi.createMulticastLock("MulticastLock");
         lock.setReferenceCounted(true);
         lock.acquire();
         try {
@@ -69,17 +88,16 @@ public class DiscoveryActivity extends Activity {
 
                 @Override
                 public void serviceResolved(ServiceEvent ev) {
-                    String NL = "\n  ";
                     String additions = "";
                     if (ev.getInfo().getInetAddresses() != null && ev.getInfo().getInetAddresses().length > 0) {
-                        additions = NL + "host = " + ev.getInfo().getInetAddresses()[0].getHostAddress();
+                        additions = NL + LABEL_HOST + " = " + ev.getInfo().getInetAddresses()[0].getHostAddress();
                     }
-                    notifyUser("Service resolved:" + NL + "name = " + ev.getInfo().getQualifiedName() + NL + "port = " + ev.getInfo().getPort() + additions);
+                    notifyUser(LABEL_EVENT_RESOLVED + ":" + NL + LABEL_NAME + " = " + ev.getInfo().getQualifiedName() + NL + LABEL_PORT + " = " + ev.getInfo().getPort() + additions);
                 }
 
                 @Override
                 public void serviceRemoved(ServiceEvent ev) {
-                    notifyUser("Service removed: " + ev.getName());
+                    notifyUser(LABEL_EVENT_REMOVED + ":" + NL + LABEL_NAME + " = " + ev.getName());
                 }
 
                 @Override
@@ -88,7 +106,7 @@ public class DiscoveryActivity extends Activity {
                     jmdns.requestServiceInfo(event.getType(), event.getName(), 1);
                 }
             });
-            serviceInfo = ServiceInfo.create(BONJOUR_SERVICE_TYPE, "AndroidTest", BONJOUR_SERVICE_PORT, "plain test service from android");
+            serviceInfo = ServiceInfo.create(BONJOUR_SERVICE_TYPE, BONJOUR_SERVICE_NAME, BONJOUR_SERVICE_PORT, "description");
             jmdns.registerService(serviceInfo);
         }
         catch (IOException e) {}

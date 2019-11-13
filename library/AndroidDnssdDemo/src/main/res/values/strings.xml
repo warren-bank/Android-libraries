@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AndroidDnssdDemo</string>
+
+    <string name="discovery_output_heading">mDNS Discovery</string>
+    <string name="discovery_output_label_event_resolved">Service resolved</string>
+    <string name="discovery_output_label_event_removed">Service removed</string>
+    <string name="discovery_output_label_name">name</string>
+    <string name="discovery_output_label_port">port</string>
+    <string name="discovery_output_label_host">host</string>
+
+    <!-- constants -->
+    <string translatable="false" name="constant_bonjour_service_name">AndroidTest</string>
+    <string translatable="false" name="constant_bonjour_service_type">_androiddnssddemo._tcp.local.</string>
+    <string translatable="false" name="constant_bonjour_service_port">7654</string>
 </resources>
