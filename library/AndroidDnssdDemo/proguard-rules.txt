@@ -1,3 +1,4 @@
 -keep class javax.jmdns.** { *; }
 
 -dontwarn javax.jmdns.test.**
+-dontwarn org.slf4j.**

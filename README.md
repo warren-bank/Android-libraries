@@ -21,7 +21,7 @@ __notes:__
     * displays their comings and goings
 * what I like:
   * it works!
-  * being an absolutely barebones app, it helped me to debug a much more complicated app that is using the same (though much newer version of the) [JmDNS](https://github.com/jmdns/jmdns) library
+  * being an absolutely barebones app, it helped me to debug a much more complicated app that is using the same [JmDNS](https://github.com/jmdns/jmdns) library
 
 __changes:__
 
