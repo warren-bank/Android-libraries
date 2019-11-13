@@ -1,5 +1,5 @@
 project.ext {
-    releaseVersionCode = 2
+    releaseVersionCode = 3
     releaseVersion     = '1.0.2'
     minSdkVersion      = 1
     targetSdkVersion   = 28

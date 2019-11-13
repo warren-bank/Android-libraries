@@ -30,6 +30,6 @@ __changes:__
 * reorganized the files kept
   - renamed the package
 * removed unnecessary UI elements
-* changes string values that were originally _cute_
+* changed string values that were originally _cute_
 * formatted the output for readability
 * moved network server to a non-UI Thread
