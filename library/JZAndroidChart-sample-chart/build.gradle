@@ -1,0 +1,58 @@
+apply from: '../constants.gradle'
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility project.ext.javaVersion
+        targetCompatibility project.ext.javaVersion
+    }
+
+    defaultConfig {
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+
+        applicationId "cn.jingzhuan.lib.chart.demo"
+        versionName project.ext.releaseVersion
+        versionCode project.ext.releaseVersionCode
+
+        dataBinding {
+            enabled true
+        }
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        abortOnError true
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles = [
+                "proguard-rules.txt",
+                getDefaultProguardFile('proguard-android.txt')
+            ]
+        }
+        debug {
+            jniDebuggable = true
+        }
+    }
+}
+
+dependencies {
+    implementation      project(':JZAndroidChart-library')
+
+    implementation      'com.android.support:appcompat-v7:'        + project.ext.supportLibraryVersion     // (  1 MB) https://mvnrepository.com/artifact/com.android.support/appcompat-v7?repo=google
+    implementation      'com.android.support:recyclerview-v7:'     + project.ext.supportLibraryVersion     // (346 KB) https://mvnrepository.com/artifact/com.android.support/recyclerview-v7?repo=google
+
+    implementation      'com.android.support.constraint:constraint-layout:1.1.3'                           // ( 62 KB) https://mvnrepository.com/artifact/com.android.support.constraint/constraint-layout
+
+    implementation      'com.airbnb.android:epoxy:'                + project.ext.epoxyLibraryVersion       // (178 KB) https://mvnrepository.com/artifact/com.airbnb.android/epoxy
+    implementation      'com.airbnb.android:epoxy-databinding:'    + project.ext.epoxyLibraryVersion       // ( 27 KB) https://mvnrepository.com/artifact/com.airbnb.android/epoxy-databinding
+
+    annotationProcessor 'com.airbnb.android:epoxy-processor:'      + project.ext.epoxyLibraryVersion
+}

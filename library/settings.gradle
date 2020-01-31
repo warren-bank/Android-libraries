@@ -1,0 +1,3 @@
+include ':JZAndroidChart-library'
+include ':JZAndroidChart-sample-chart'
+include ':JZAndroidChart-sample-chart2'
