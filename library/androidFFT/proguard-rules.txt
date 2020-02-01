@@ -1,3 +1,6 @@
--keep class com.jjoe64.graphview.LegendRenderer
+-keep class com.github.dinceruur.androidfft.** { *; }
+-keep class com.jjoe64.graphview.** { *; }
+
+-keep class org.apache.commons.math3.complex.Complex
 
 -dontwarn org.apache.commons.math3.geometry.euclidean.twod.Line

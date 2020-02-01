@@ -44,7 +44,7 @@ public class AccelerometerListener implements SensorEventListener{
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if(isActive){
+        if(isActive && (event != null) && (event.values != null) && (event.values.length == 3)){
             timeStamp = event.timestamp;
             sensorType = event.sensor.getType();
             switch(sensorType) {
@@ -53,9 +53,6 @@ public class AccelerometerListener implements SensorEventListener{
                     break;
             }
             interFaceDataListener.notifySensorChanged();
-
         }
     }
 }
-
-

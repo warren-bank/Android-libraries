@@ -33,9 +33,3 @@ __changes:__
 
 * replaced Gradle build scripts
 * reorganized directories
-
-__issues:__
-
-* tested on: `armeabi-v7a`
-  - when the "FFT" button is clicked, the native code executes
-    * the app immediately crashes with the error: `libc: Fatal signal 11 (SIGSEGV)`

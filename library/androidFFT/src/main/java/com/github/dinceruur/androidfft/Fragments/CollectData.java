@@ -204,9 +204,9 @@ public class CollectData extends Fragment implements CompoundButton.OnCheckedCha
                 mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
                 SensorManager.SENSOR_DELAY_FASTEST);
 
-        mSensorManager.registerListener(fastestListener,
-                mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD),
-                SensorManager.SENSOR_DELAY_FASTEST);
+//      mSensorManager.registerListener(fastestListener,
+//              mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD),
+//              SensorManager.SENSOR_DELAY_FASTEST);
 
         fastestListener.init();
     }
