@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" >
+
+                    <TextView
+                        android:id="@+id/label_sensor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ff3d00"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/label_app_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/label_sensor_name"
+                        android:text="@string/action_help"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_header_introduction_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="What does the diagnostic do?"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/text_introduction_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="The diagnostic tests the devices acceleration sensor for offset, skew, noise and frequency. Essentially, all of the useful information needed to compare different sensors."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff" />
+            
+              <TextView
+                android:id="@+id/text_header_introduction_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="How do I perform a diagnostic?"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/text_introduction_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Press the start button to begin the diagnostic and follow the instructions. The diagnostic will have you rest the phone on a flat surface on all six axis. Once performed, you will be provided with all of the diagnostic information."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

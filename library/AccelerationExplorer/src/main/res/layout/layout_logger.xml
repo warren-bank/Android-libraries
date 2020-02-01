@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acceleration_plot_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <fragment android:name="com.kircherelectronics.accelerationexplorer.fragment.StatusBarFragment"
+        android:id="@+id/status_bar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_status_bar" />
+
+    <fragment android:name="com.kircherelectronics.accelerationexplorer.fragment.LineChartFragment"
+        android:id="@+id/line_chart_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        tools:layout="@layout/fragment_line_chart" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <com.kircherelectronics.accelerationexplorer.view.VectorDrawableButton
+            android:id="@+id/button_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/action_start_log"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/dark_blue"
+            android:theme="@style/AppTheme.BlueButton"
+            android:textStyle="bold"
+            app:drawableBottomCompat="@drawable/ic_timeline_white_48px"/>
+    </LinearLayout>
+</LinearLayout>

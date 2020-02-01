@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <fragment android:name="com.kircherelectronics.accelerationexplorer.fragment.StatusBarFragment"
+        android:id="@+id/status_bar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_status_bar" />
+
+    <fragment android:name="com.kircherelectronics.accelerationexplorer.fragment.VectorGaugeFragment"
+        android:id="@+id/acceleration_gauge_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_vector_gauge" />
+</LinearLayout>

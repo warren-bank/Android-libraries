@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <fragment android:name="com.kircherelectronics.accelerationexplorer.fragment.StatusBarFragment"
+        android:id="@+id/status_bar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_status_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.kircherelectronics.accelerationexplorer.view.VectorDrawableButton
+                android:id="@+id/button_logger_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_logger"
+                android:backgroundTint="@color/dark_blue"
+                android:theme="@style/AppTheme.BlueButton"
+                android:textStyle="bold"
+                app:drawableBottomCompat="@drawable/ic_timeline_white_48px"/>
+
+            <com.kircherelectronics.accelerationexplorer.view.VectorDrawableButton
+                android:id="@+id/button_vector_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_vector"
+                android:backgroundTint="@color/dark_blue"
+                android:theme="@style/AppTheme.BlueButton"
+                android:textStyle="bold"
+                app:drawableBottomCompat="@drawable/ic_trending_flat_white_48px"/>
+
+            <com.kircherelectronics.accelerationexplorer.view.VectorDrawableButton
+                android:id="@+id/button_gauge_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_gauges"
+                android:backgroundTint="@color/dark_blue"
+                android:theme="@style/AppTheme.BlueButton"
+                android:textStyle="bold"
+                app:drawableBottomCompat="@drawable/ic_donut_large_white_48px"/>
+
+            <com.kircherelectronics.accelerationexplorer.view.VectorDrawableButton
+                android:id="@+id/button_config_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_settings"
+                android:backgroundTint="@color/dark_blue"
+                android:theme="@style/AppTheme.BlueButton"
+                android:textStyle="bold"
+                app:drawableBottomCompat="@drawable/ic_settings_white_48px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment android:name="com.kircherelectronics.accelerationexplorer.fragment.AccelerationGaugeFragment"
+                android:id="@+id/acceleration_gauge_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_acceleration_gauge" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" >
+
+                    <TextView
+                        android:id="@+id/label_sensor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ff3d00"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/label_app_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/label_sensor_name"
+                        android:text="@string/action_help"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_header_introduction_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="What does the vector do?"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_introduction_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="The vector plots the acceleration as a vector (a line with a direction and magnitude) in the x-axis and y-axis. The maximum magnitude (length) of the vector is limited to 1g, or 9.8m/sec^2."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/text_header_introduction_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="What smoothing filters are available?"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_introduction_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="There are three smoothing filters available. The first filter is a mean (averaging) filter that can be defined in terms of a time constant (the length of sensor data in terms of seconds). The second filter is a low-pass filter that can be defined in terms of a time constant (the length of sensor data in terms of seconds). The third filter is a median filter, also defined in terms of a time constant (units of seconds). A single filter, two filters three filters or no filters can be used at any time. In general, the larger the time constant, the smoother the data will be. The side-effect is that the larger the time constant, the more lagged the data becomes."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/text_header_introduction_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="What is linear acceleration?"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_introduction_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="In general, an acceleration sensor by itself cannot determine the difference between tilt (rotating the device, for instance) and linear acceleration (a car accelerating, for instance). Since the accelerometer cannot tell the difference between tilt and accleration, great care must be taken to mount or calibrate acceleration sensors if they are intended to measure linear acceleration. Sensor filters like a low-pass filter or sensor fusions with an IMU can help an acceleration sensor measure linear acceleration in any position, but they are far from perfect. Acceleration Explorer has a low-pass filter, IMU fusion and factory Android implementations of linear acceleration. Only one linear acceleration filter/fusion can be used at a time. "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/text_header_introduction_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="How can I use the sensor filters and fusions?"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_introduction_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="The sensor filters and fusions can be enabled and configured from the menu by tapping the Sensor menu-item."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
