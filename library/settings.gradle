@@ -1,0 +1,9 @@
+include ':libstreaming'
+
+include ':example1'
+include ':example2'
+include ':example3'
+
+project(':example1').projectDir = new File(rootDir, 'libstreaming-examples/example1')
+project(':example2').projectDir = new File(rootDir, 'libstreaming-examples/example2')
+project(':example3').projectDir = new File(rootDir, 'libstreaming-examples/example3')
