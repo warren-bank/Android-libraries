@@ -15,9 +15,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.regex.Pattern;
 
 public class FolderPicker extends Activity {
 
@@ -27,12 +29,13 @@ public class FolderPicker extends Activity {
 
     public static final String EXTRA_DATA = "data";
 
-    protected static final String EXTRA_THEME        = "theme";
-    protected static final String EXTRA_TITLE        = "title";
-    protected static final String EXTRA_DESCRIPTION  = "desc";
-    protected static final String EXTRA_LOCATION     = "location";
-    protected static final String EXTRA_PICK_FILES   = "pickFiles";
-    protected static final String EXTRA_EMPTY_FOLDER = "emptyFolder";
+    protected static final String EXTRA_THEME              = "theme";
+    protected static final String EXTRA_TITLE              = "title";
+    protected static final String EXTRA_DESCRIPTION        = "desc";
+    protected static final String EXTRA_LOCATION           = "location";
+    protected static final String EXTRA_EMPTY_FOLDER       = "emptyFolder";
+    protected static final String EXTRA_PICK_FILES         = "pickFiles";
+    protected static final String EXTRA_PICK_FILES_PATTERN = "pickFilesPattern";
 
     Comparator<FilePojo> comparatorAscending = new Comparator<FilePojo>() {
         @Override
@@ -40,6 +43,8 @@ public class FolderPicker extends Activity {
             return f1.getName().compareTo(f2.getName());
         }
     };
+
+    FileFilter mFilesFilter;
 
     //Folders and Files have separate lists because we show all folders first then files
     ArrayList<FilePojo> mFolderAndFileList;
@@ -108,6 +113,13 @@ public class FolderPicker extends Activity {
                 }
             }
 
+            if (mReceivedIntent.hasExtra(EXTRA_EMPTY_FOLDER)) {
+                mEmptyFolder = mReceivedIntent.getBooleanExtra(EXTRA_EMPTY_FOLDER, false);
+                if (mEmptyFolder) {
+                    findViewById(R.id.fp_tv_empty_dir).setVisibility(View.VISIBLE);
+                }
+            }
+
             if (mReceivedIntent.hasExtra(EXTRA_PICK_FILES)) {
                 mPickFiles = mReceivedIntent.getBooleanExtra(EXTRA_PICK_FILES, false);
                 if (mPickFiles) {
@@ -116,10 +128,21 @@ public class FolderPicker extends Activity {
                 }
             }
 
-            if (mReceivedIntent.hasExtra(EXTRA_EMPTY_FOLDER)) {
-                mEmptyFolder = mReceivedIntent.getBooleanExtra(EXTRA_EMPTY_FOLDER, false);
-                if (mEmptyFolder) {
-                    findViewById(R.id.fp_tv_empty_dir).setVisibility(View.VISIBLE);
+            if (mReceivedIntent.hasExtra(EXTRA_PICK_FILES_PATTERN)) {
+                String pickFilesPattern = mReceivedIntent.getStringExtra(EXTRA_PICK_FILES_PATTERN);
+                if (pickFilesPattern != null) {
+                    mFilesFilter = new FileFilter() {
+                        private Pattern mFilesPattern = Pattern.compile(pickFilesPattern, Pattern.CASE_INSENSITIVE);
+
+                        @Override
+                        public boolean accept(File file) {
+                            if (file.isDirectory()) return true;
+                            if (!file.isFile()) return false;
+
+                            String filename = file.getName();
+                            return mFilesPattern.matcher(filename).matches();
+                        }
+                    };
                 }
             }
 
@@ -222,7 +245,7 @@ public class FolderPicker extends Activity {
             File folder = new File(mLocation);
 
             mTvLocation.setText(String.format(getString(R.string.location_mask), folder.getAbsolutePath()));
-            File[] files = folder.listFiles();
+            File[] files = folder.listFiles(mFilesFilter);
 
             mFoldersList = new ArrayList<>();
             mFilesList = new ArrayList<>();
@@ -231,7 +254,7 @@ public class FolderPicker extends Activity {
                 if (currentFile.isDirectory()) {
                     FilePojo filePojo = new FilePojo(currentFile.getName(), true);
                     mFoldersList.add(filePojo);
-                } else {
+                } else if (currentFile.isFile()) {
                     FilePojo filePojo = new FilePojo(currentFile.getName(), false);
                     mFilesList.add(filePojo);
                 }
