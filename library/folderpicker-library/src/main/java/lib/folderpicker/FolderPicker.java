@@ -128,6 +128,25 @@ public class FolderPicker extends Activity {
         return false;
     }
 
+    /**
+     * Cleans up directory paths entered manually
+     *   ex: trailing directory separator, "/./", "/../", etc
+     */
+    private String normalizeLocation(String location) {
+        if (location == null) return null;
+
+        location = location.trim();
+        if (location.isEmpty()) return null;
+
+        try {
+            File folder = new File(location);
+            return folder.getCanonicalPath();
+        }
+        catch(Exception e) {
+            return null;
+        }
+    }
+
     boolean checkAndLoadLists(String location, boolean showToast) {
         if (checkLocation(location, showToast)) {
             mLocation = location;
@@ -148,6 +167,13 @@ public class FolderPicker extends Activity {
      * @return
      */
     private boolean checkLocation(String location, boolean showToast) {
+        if ((location == null) || location.isEmpty()) {
+            if (showToast) {
+                Toast.makeText(this, R.string.dir_is_not_exist, Toast.LENGTH_LONG).show();
+            }
+            return false;
+        }
+
         File folder = new File(location);
 
         if (!folder.exists()) {
@@ -353,6 +379,7 @@ public class FolderPicker extends Activity {
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
                         String location = et.getText().toString();
+                        location = normalizeLocation(location);
                         checkAndLoadLists(location);
                     }
                 });
