@@ -73,6 +73,7 @@ public class MainActivity extends Activity {
             .withBuilder()
             .withActivity(this)
             .withRequestCode(FOLDER_PICKER_CODE)
+            .withTheme(android.R.style.Theme_Black_NoTitleBar_Fullscreen)
             .start();
     }
 

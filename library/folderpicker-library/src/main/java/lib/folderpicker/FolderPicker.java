@@ -27,6 +27,7 @@ public class FolderPicker extends Activity {
 
     public static final String EXTRA_DATA = "data";
 
+    protected static final String EXTRA_THEME        = "theme";
     protected static final String EXTRA_TITLE        = "title";
     protected static final String EXTRA_DESCRIPTION  = "desc";
     protected static final String EXTRA_LOCATION     = "location";
@@ -55,20 +56,33 @@ public class FolderPicker extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fp_main_layout);
 
         if (!isExternalStorageReadable()) {
             Toast.makeText(this, getString(R.string.no_access_to_storage), Toast.LENGTH_LONG).show();
             finish();
         }
 
-        String location = Environment.getExternalStorageDirectory().getAbsolutePath();
+        mReceivedIntent = getIntent();
+
+        try {
+            if (mReceivedIntent.hasExtra(EXTRA_THEME)) {
+                int theme = mReceivedIntent.getIntExtra(EXTRA_THEME, -999);
+                if (theme != -999) {
+                    setTheme(theme);
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        setContentView(R.layout.fp_main_layout);
 
         mTvLocation = findViewById(R.id.fp_tv_location);
 
-        try {
-            mReceivedIntent = getIntent();
+        String location = Environment.getExternalStorageDirectory().getAbsolutePath();
 
+        try {
             if (mReceivedIntent.hasExtra(EXTRA_TITLE)) {
                 String title = mReceivedIntent.getStringExtra(EXTRA_TITLE);
                 if (title != null) {

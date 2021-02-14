@@ -6,6 +6,7 @@ import android.content.Intent;
 
 public class FolderPickerBuilder {
     // used by: getIntent()
+    private Integer EXTRA_THEME;
     private String  EXTRA_TITLE;
     private String  EXTRA_DESCRIPTION;
     private String  EXTRA_LOCATION;
@@ -29,6 +30,10 @@ public class FolderPickerBuilder {
     protected FolderPickerBuilder() {
     }
 
+    public FolderPickerBuilder withTheme(int theme) {
+        EXTRA_THEME = theme;
+        return this;
+    }
     public FolderPickerBuilder withTitle(String title) {
         EXTRA_TITLE = title;
         return this;
@@ -71,6 +76,8 @@ public class FolderPickerBuilder {
 
         Intent intent = new Intent(mContext, mFolderPickerClass);
 
+        if (EXTRA_THEME != null)
+            intent.putExtra(FolderPicker.EXTRA_THEME, EXTRA_THEME);
         if (EXTRA_TITLE != null)
             intent.putExtra(FolderPicker.EXTRA_TITLE, EXTRA_TITLE);
         if (EXTRA_DESCRIPTION != null)
