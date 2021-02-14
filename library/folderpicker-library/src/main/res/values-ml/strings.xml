@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">ഡയറക്ടറി നിലവിലില്ല</string>
     <string name="dir_read_permission_denied">ഡയറക്ടറിയില് നിന്നും വായിക്കുവാന് സാധ്യമല്ല</string>
     <string name="dir_write_permission_denied">ഡയറക്ടറിയിലേക്ക് എഴുതുവാന് സാധ്യമല്ല</string>
+    <string name="new_file_name_does_not_pass_filter">പുതിയ ഫയലിന്റെ ഫോര്മാറ്റ് ശരിയല്ല</string>
+    <string name="new_file_name_already_exists">പുതിയ ഫയല് നാമം നിലവിലുണ്ടു്</string>
 </resources>

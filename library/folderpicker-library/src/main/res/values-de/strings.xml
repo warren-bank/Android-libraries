@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Verzeichnis ist nicht vorhanden</string>
     <string name="dir_read_permission_denied">Aus Verzeichnis kann nicht gelesen werden</string>
     <string name="dir_write_permission_denied">In Verzeichnis kann nicht geschrieben werden</string>
+    <string name="new_file_name_does_not_pass_filter">Das Format des neuen Dateinamens ist falsch.</string>
+    <string name="new_file_name_already_exists">Der neue Dateiname ist bereits vorhanden.</string>
 </resources>

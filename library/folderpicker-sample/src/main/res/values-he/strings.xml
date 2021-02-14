@@ -2,8 +2,12 @@
     <string name="app_name">תיקיית בורר תיקיות</string>
     <string name="select_folder">בחירת תיקיה</string>
     <string name="folder_not_selected">התיקיה עדיין לא נבחרה.</string>
+    <string name="folder_pick_cancelled">בחירת התיקיה בוטלה</string>
     <string name="select_file">בחירת קובץ</string>
     <string name="file_not_selected">הקובץ עדיין לא נבחר.</string>
-    <string name="folder_pick_cancelled">בחירת התיקיה בוטלה.</string>
-    <string name="file_pick_cancelled">בחירת הקובץ בוטלה.</string>
+    <string name="file_pick_cancelled">בחירת הקובץ בוטלה</string>
+    <string name="select_newfile">בחירת קובץ חדש</string>
+    <string name="newfile_not_selected">נתיב הקובץ החדש עדיין לא נבחר.</string>
+    <string name="newfile_pick_cancelled">בחירת נתיב הקבצים החדשה בוטלה.</string>
+    <string name="prompt_newfile">שמירת קובץ חדש ל -:</string>
 </resources>

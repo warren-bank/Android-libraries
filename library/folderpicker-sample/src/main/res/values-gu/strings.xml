@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">ફોલ્ડર પિકર ડેમો</string>
     <string name="select_folder">ફોલ્ડર (_P)</string>
-    <string name="folder_not_selected">ફોલ્ડર હજુ પસંદ થયેલ નથી</string>
+    <string name="folder_not_selected">ફોલ્ડર હજુ પણ શોધાયુ નથી</string>
+    <string name="folder_pick_cancelled">ફોલ્ડર રદ થયેલ છે</string>
     <string name="select_file">Pick ફાઇલ</string>
-    <string name="file_not_selected">ફાઇલ હજુ પસંદ થયેલ નથી</string>
-    <string name="folder_pick_cancelled">ફોલ્ડર રદ થયેલ છે.</string>
-    <string name="file_pick_cancelled">ફાઇલ ને રદ થયેલ છે.</string>
+    <string name="file_not_selected">ફાઇલ હજુ પણ પહોંચેલ નથી</string>
+    <string name="file_pick_cancelled">ફાઇલ ને રદ થયેલ છે</string>
+    <string name="select_newfile">નવી ફાઈલ પસંદ કરો</string>
+    <string name="newfile_not_selected">નવી ફાઇલપાથ હજુ પસંદ થયેલ નથી</string>
+    <string name="newfile_pick_cancelled">નવી filepath પસંદગી રદ થયેલ છે</string>
+    <string name="prompt_newfile">નવી ફાઇલ ને સંગ્રહો:</string>
 </resources>

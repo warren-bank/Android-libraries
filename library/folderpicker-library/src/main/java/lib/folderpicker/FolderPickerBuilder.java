@@ -11,6 +11,7 @@ public class FolderPickerBuilder {
     private String  EXTRA_DESCRIPTION;
     private String  EXTRA_LOCATION;
     private Boolean EXTRA_EMPTY_FOLDER;
+    private String  EXTRA_NEW_FILE_PROMPT;
     private Boolean EXTRA_PICK_FILE;
     private String  EXTRA_PICK_FILE_PATTERN;
 
@@ -49,6 +50,10 @@ public class FolderPickerBuilder {
     }
     public FolderPickerBuilder withEmptyFolder(boolean emptyFolder) {
         EXTRA_EMPTY_FOLDER = emptyFolder;
+        return this;
+    }
+    public FolderPickerBuilder withNewFilePrompt(String newFilePrompt) {
+        EXTRA_NEW_FILE_PROMPT = newFilePrompt;
         return this;
     }
     public FolderPickerBuilder withFilePicker(boolean pickFile) {
@@ -91,6 +96,8 @@ public class FolderPickerBuilder {
             intent.putExtra(FolderPicker.EXTRA_LOCATION, EXTRA_LOCATION);
         if (EXTRA_EMPTY_FOLDER != null)
             intent.putExtra(FolderPicker.EXTRA_EMPTY_FOLDER, EXTRA_EMPTY_FOLDER);
+        if (EXTRA_NEW_FILE_PROMPT != null)
+            intent.putExtra(FolderPicker.EXTRA_NEW_FILE_PROMPT, EXTRA_NEW_FILE_PROMPT);
         if (EXTRA_PICK_FILE != null)
             intent.putExtra(FolderPicker.EXTRA_PICK_FILE, EXTRA_PICK_FILE);
         if (EXTRA_PICK_FILE_PATTERN != null)

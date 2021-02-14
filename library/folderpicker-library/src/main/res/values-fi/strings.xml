@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Hakemistoa ei ole</string>
     <string name="dir_read_permission_denied">Hakemistosta ei voi lukea</string>
     <string name="dir_write_permission_denied">Hakemiston kirjoitus ei onnistu</string>
+    <string name="new_file_name_does_not_pass_filter">Uuden tiedoston nimen muoto ei ole oikea</string>
+    <string name="new_file_name_already_exists">Uusi tiedoston nimi on jo käytössä</string>
 </resources>

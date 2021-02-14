@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Kataloogi ei ole olemas</string>
     <string name="dir_read_permission_denied">Kataloogi lugemine nurjus</string>
     <string name="dir_write_permission_denied">Kataloogi kirjutamine nurjus</string>
+    <string name="new_file_name_does_not_pass_filter">Uue failinime vorming ei ole korrektne</string>
+    <string name="new_file_name_already_exists">Uus failinimi on juba olemas</string>
 </resources>

@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Aplankas neegzistuoja</string>
     <string name="dir_read_permission_denied">Nepavyko perskaityti iš aplanko</string>
     <string name="dir_write_permission_denied">Nepavyko įrašyti į aplanką</string>
+    <string name="new_file_name_does_not_pass_filter">Naujo failo pavadinimo formatas nėra teisingas</string>
+    <string name="new_file_name_already_exists">Naujas failo pavadinimas jau egzistuoja</string>
 </resources>

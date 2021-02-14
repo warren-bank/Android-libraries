@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">फ़ोल्डर पिलर डेमो</string>
     <string name="select_folder">फ़ोल्डर चुनें</string>
-    <string name="folder_not_selected">फ़ोल्डर अभी तक चयनित नहीं है</string>
+    <string name="folder_not_selected">फ़ोल्डर अभी तक नहीं लिया गया है</string>
+    <string name="folder_pick_cancelled">फ़ोल्डर चयन रद्द</string>
     <string name="select_file">फ़ाइल चुनें</string>
-    <string name="file_not_selected">फ़ाइल अभी तक चयनित नहीं है</string>
-    <string name="folder_pick_cancelled">फ़ोल्डर चयन रद्द.</string>
-    <string name="file_pick_cancelled">फ़ाइल चयन रद्द.</string>
+    <string name="file_not_selected">फ़ाइल अभी तक नहीं लिया गया है</string>
+    <string name="file_pick_cancelled">फ़ाइल चयन रद्द</string>
+    <string name="select_newfile">नया फ़ाइल चुनें</string>
+    <string name="newfile_not_selected">नया फ़ाइलपद अभी तक चुना नहीं गया है</string>
+    <string name="newfile_pick_cancelled">नया फ़ाइलथ चयन रद्द</string>
+    <string name="prompt_newfile">नई फ़ाइल को सहेजें:</string>
 </resources>

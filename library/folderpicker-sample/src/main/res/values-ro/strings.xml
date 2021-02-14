@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Demo Selector Folder</string>
     <string name="select_folder">Selectare folder</string>
-    <string name="folder_not_selected">Folder neselectat încă</string>
+    <string name="folder_not_selected">Folderul nu este încă ales</string>
+    <string name="folder_pick_cancelled">Alegere folder anulată</string>
     <string name="select_file">Fişier de selecţie</string>
-    <string name="file_not_selected">Fişier neselectat încă</string>
-    <string name="folder_pick_cancelled">Alegere folder anulată.</string>
-    <string name="file_pick_cancelled">Alegere fişier anulată.</string>
+    <string name="file_not_selected">Fişierul nu este încă ales</string>
+    <string name="file_pick_cancelled">Alegere fişier anulată</string>
+    <string name="select_newfile">Selectare fişier nou</string>
+    <string name="newfile_not_selected">Noul fişier de fişiere nu este încă selectat</string>
+    <string name="newfile_pick_cancelled">Selecţie nouă de fişiere anulată</string>
+    <string name="prompt_newfile">Salvare fişier nou la:</string>
 </resources>

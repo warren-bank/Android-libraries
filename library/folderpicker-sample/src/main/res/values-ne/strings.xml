@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">फोल्डर पिकर डेमो</string>
     <string name="select_folder">फोल्डरहरू</string>
-    <string name="folder_not_selected">फोल्डर चयन गरिएको छैन</string>
+    <string name="folder_not_selected">फोल्डर अझै पनि उठाइएको छैन</string>
+    <string name="folder_pick_cancelled">फोल्डर उठान रद्द गरियो</string>
     <string name="select_file">फाइल प्याक गर्नुहोस्</string>
-    <string name="file_not_selected">फाइल चयन गरिएको छैन</string>
-    <string name="folder_pick_cancelled">फोल्डर उठान रद्द गरियो.</string>
-    <string name="file_pick_cancelled">फाइल पिक्चरमा रद्द गरियो.</string>
+    <string name="file_not_selected">फाइल अझै पनि उठाइएको छैन</string>
+    <string name="file_pick_cancelled">फाइल पिक्चरमा रद्द गरियो</string>
+    <string name="select_newfile">नयाँ फाइल चयन गर्नुहोस्</string>
+    <string name="newfile_not_selected">नयाँ फाइलपत्र अझै चयन गरिएको छैन</string>
+    <string name="newfile_pick_cancelled">नयाँ filepath चयन रद्द गरियो</string>
+    <string name="prompt_newfile">यसमा नयाँ फाइल बचत गर्नुहोस्:</string>
 </resources>

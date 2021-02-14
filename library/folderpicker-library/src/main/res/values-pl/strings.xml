@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Katalog nie istnieje</string>
     <string name="dir_read_permission_denied">Nie można odczytać z katalogu</string>
     <string name="dir_write_permission_denied">Nie można zapisać do katalogu</string>
+    <string name="new_file_name_does_not_pass_filter">Format nazwy nowego pliku jest niepoprawny</string>
+    <string name="new_file_name_already_exists">Nowa nazwa pliku już istnieje</string>
 </resources>

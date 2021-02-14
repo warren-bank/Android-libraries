@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">அடைவு இல்லை</string>
     <string name="dir_read_permission_denied">அடைவில் இருந்து படிக்க இயலவில்லை</string>
     <string name="dir_write_permission_denied">அடைவுக்கு எழுத இயலாது</string>
+    <string name="new_file_name_does_not_pass_filter">புதிய கோப்பு பெயர்களின் வடிவம் சரியாக இல்லை</string>
+    <string name="new_file_name_already_exists">புதிய கோப்பு பெயர் ஏற்கனவே உள்ளது</string>
 </resources>

@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Predstavitev Izbiralnika Mape</string>
     <string name="select_folder">Izberite mapo</string>
-    <string name="folder_not_selected">Mapa še ni izbrana</string>
+    <string name="folder_not_selected">Mapa še ni bila nabrala</string>
+    <string name="folder_pick_cancelled">Izbira mape je preklica</string>
     <string name="select_file">Izberite datoteko</string>
-    <string name="file_not_selected">Datoteka še ni izbrana</string>
-    <string name="folder_pick_cancelled">Izbira mape je preklica.</string>
-    <string name="file_pick_cancelled">Izbira datoteke je preklica.</string>
+    <string name="file_not_selected">Datoteka še ni bila nabrala</string>
+    <string name="file_pick_cancelled">Izbira datoteke je preklica</string>
+    <string name="select_newfile">Izberi novo datoteko</string>
+    <string name="newfile_not_selected">Nova pot datoteke še ni izbrana</string>
+    <string name="newfile_pick_cancelled">Nova izbira poti do datoteke je preklica</string>
+    <string name="prompt_newfile">Shrani novo datoteko v:</string>
 </resources>

@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Каталогу не існує</string>
     <string name="dir_read_permission_denied">Не вдалося прочитати з каталогу</string>
     <string name="dir_write_permission_denied">Неможливо записати у каталог</string>
+    <string name="new_file_name_does_not_pass_filter">Не вказано формат назви нового файла</string>
+    <string name="new_file_name_already_exists">Нова назва файла вже існує</string>
 </resources>

@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">המדריך אינו קיים.</string>
     <string name="dir_read_permission_denied">לא ניתן לקרוא ממדריך</string>
     <string name="dir_write_permission_denied">לא ניתן לכתוב למדריך</string>
+    <string name="new_file_name_does_not_pass_filter">מבנה שם הקובץ החדש שגוי.</string>
+    <string name="new_file_name_already_exists">שם קובץ חדש כבר קיים.</string>
 </resources>

@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Mappe Picker Demo</string>
     <string name="select_folder">Velg mappe</string>
-    <string name="folder_not_selected">Mappe ikke valgt ennå</string>
+    <string name="folder_not_selected">Mappen er ikke plukket ennå</string>
+    <string name="folder_pick_cancelled">Mappe som plukker avbrutt</string>
     <string name="select_file">Velg fil</string>
-    <string name="file_not_selected">Fil ikke valgt ennå</string>
-    <string name="folder_pick_cancelled">Mappe som plukker avbrutt.</string>
-    <string name="file_pick_cancelled">Filplukking avbrutt.</string>
+    <string name="file_not_selected">Filen er ennå ikke plukket</string>
+    <string name="file_pick_cancelled">Filplukking avbrutt</string>
+    <string name="select_newfile">Velg ny fil</string>
+    <string name="newfile_not_selected">Ny filepat er foreløpig ikke valgt</string>
+    <string name="newfile_pick_cancelled">Nytt filepath-valg annullert</string>
+    <string name="prompt_newfile">Lagre ny fil til:</string>
 </resources>

@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Aplankų pikapas demo</string>
     <string name="select_folder">Pasirinkti aplanką</string>
-    <string name="folder_not_selected">Aplankas dar nepasirinktas</string>
+    <string name="folder_not_selected">Aplankas dar nepateiktas</string>
+    <string name="folder_pick_cancelled">Aplankas išlaipinti</string>
     <string name="select_file">Pasirinkti failą</string>
-    <string name="file_not_selected">Failas dar nepasirinktas</string>
-    <string name="folder_pick_cancelled">Aplankas išlaipinti.</string>
-    <string name="file_pick_cancelled">Failas išskleidžiama..</string>
+    <string name="file_not_selected">Failas dar nepateiktas</string>
+    <string name="file_pick_cancelled">Failas išskleidžiama.</string>
+    <string name="select_newfile">Pasirinkite naują failą</string>
+    <string name="newfile_not_selected">Naujas filepatas dar nepasirinktas</string>
+    <string name="newfile_pick_cancelled">Nauja filepah atranka atšaukta</string>
+    <string name="prompt_newfile">Įrašyti naują failą į:</string>
 </resources>

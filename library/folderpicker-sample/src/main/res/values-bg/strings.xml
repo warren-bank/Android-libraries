@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Демонстрация на пикер на папка</string>
     <string name="select_folder">Избор на папка</string>
-    <string name="folder_not_selected">Папката не е избрана още</string>
+    <string name="folder_not_selected">Папката все още не е избрана</string>
+    <string name="folder_pick_cancelled">Сваляне на папка</string>
     <string name="select_file">Избор на файл</string>
-    <string name="file_not_selected">Файлът не е избран още</string>
-    <string name="folder_pick_cancelled">Сваляне на папка.</string>
-    <string name="file_pick_cancelled">Отписване на файл.</string>
+    <string name="file_not_selected">Файлът все още не е избран</string>
+    <string name="file_pick_cancelled">Отписване на файл</string>
+    <string name="select_newfile">Избор на нов файл</string>
+    <string name="newfile_not_selected">Новата филпона все още не е избрана</string>
+    <string name="newfile_pick_cancelled">Анулирането на нов избор на файл</string>
+    <string name="prompt_newfile">Запазване на нов файл:</string>
 </resources>

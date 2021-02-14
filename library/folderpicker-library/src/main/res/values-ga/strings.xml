@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Níl an chomhadlann ann</string>
     <string name="dir_read_permission_denied">Ní féidir an comhad a léamh</string>
     <string name="dir_write_permission_denied">Ní féidir scríobh a scríobh</string>
+    <string name="new_file_name_does_not_pass_filter">Ní féidir an t-ainm comhaid nua a cheartú</string>
+    <string name="new_file_name_already_exists">Tá ainm nua an chomhaid ann cheana</string>
 </resources>

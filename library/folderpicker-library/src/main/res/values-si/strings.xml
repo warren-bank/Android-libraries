@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">බහලුම නොපවතී</string>
     <string name="dir_read_permission_denied">ඩිරෙක්ටරියේ සිට කියවිය නොහැක</string>
     <string name="dir_write_permission_denied">ඩිරෙක්ටරියට ලියන්න බෑ</string>
+    <string name="new_file_name_does_not_pass_filter">නව ගොනු නාමයේ සංයුතිය නිවැරදි නොවේ</string>
+    <string name="new_file_name_already_exists">නව ගොනු නාමය දැනටමත් පවතී</string>
 </resources>

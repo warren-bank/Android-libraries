@@ -17,10 +17,11 @@ import lib.folderpicker.FolderPicker;
 public class MainActivity extends Activity {
 
     private static final int SDCARD_PERMISSION = 1,
-            FOLDER_PICKER_CODE = 2,
-            FILE_PICKER_CODE = 3;
+            FOLDER_PICKER_CODE   = 2,
+            FILE_PICKER_CODE     = 3,
+            NEW_FILE_PICKER_CODE = 4;
 
-    TextView tvFolder, tvFile;
+    TextView tvFolder, tvFile, tvNewFile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,15 +64,23 @@ public class MainActivity extends Activity {
             }
         });
 
-        tvFolder = (TextView) findViewById(R.id.tv_folder);
-        tvFile = (TextView) findViewById(R.id.tv_file);
+        findViewById(R.id.btn_newfile).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pickNewFile();
+            }
+        });
+
+        tvFolder  = (TextView) findViewById(R.id.tv_folder);
+        tvFile    = (TextView) findViewById(R.id.tv_file);
+        tvNewFile = (TextView) findViewById(R.id.tv_newfile);
 
     }
 
     void pickFolder() {
         FolderPicker
             .withBuilder()
-            .withActivity(this)
+            .withActivity(MainActivity.this)
             .withRequestCode(FOLDER_PICKER_CODE)
             .withTheme(android.R.style.Theme_Black_NoTitleBar_Fullscreen)
             .start();
@@ -80,13 +89,25 @@ public class MainActivity extends Activity {
     void pickFile() {
         FolderPicker
             .withBuilder()
-            .withActivity(this)
+            .withActivity(MainActivity.this)
             .withRequestCode(FILE_PICKER_CODE)
             .withFilePicker(true)
             .withFileFilter("^.*\\.(?:png|apng|jng|mng)$")
             .withTitle("Select file to upload")
             .withDescription("Possibly a pretty PNG picture?")
             .withPath(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getAbsolutePath())
+            .start();
+    }
+
+    void pickNewFile() {
+        FolderPicker
+            .withBuilder()
+            .withActivity(MainActivity.this)
+            .withRequestCode(NEW_FILE_PICKER_CODE)
+            .withNewFilePrompt( getString(R.string.prompt_newfile) )
+            .withFileFilter("^.*\\.(?:json|txt)$")
+            .withTitle("JSON Data Export")
+            .withPath("/storage")
             .start();
     }
 
@@ -109,6 +130,15 @@ public class MainActivity extends Activity {
                 tvFile.setText( Html.fromHtml(fileLocation) );
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 tvFile.setText(R.string.file_pick_cancelled);
+            }
+
+        } else if (requestCode == NEW_FILE_PICKER_CODE) {
+
+            if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
+                String fileLocation = "<b>Selected File: </b>"+ intent.getExtras().getString(FolderPicker.EXTRA_DATA);
+                tvNewFile.setText( Html.fromHtml(fileLocation) );
+            } else if (resultCode == Activity.RESULT_CANCELED) {
+                tvNewFile.setText(R.string.newfile_pick_cancelled);
             }
 
         }

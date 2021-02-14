@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">निर्देशिका मौजूद नहीं है</string>
     <string name="dir_read_permission_denied">डिरेक्ट्री से पढ़ा नहीं जा सका</string>
     <string name="dir_write_permission_denied">निर्देशिका में लिख नहीं सकता है</string>
+    <string name="new_file_name_does_not_pass_filter">नए फ़ाइल नाम का प्रारूप सही नहीं है</string>
+    <string name="new_file_name_already_exists">नया फ़ाइल नाम पहले से मौजूद है</string>
 </resources>

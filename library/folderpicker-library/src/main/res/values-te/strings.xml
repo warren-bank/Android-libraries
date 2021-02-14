@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">డైరెక్టరీ లేదు</string>
     <string name="dir_read_permission_denied">డైరెక్టరీ నుండి చదువుకోలేరు</string>
     <string name="dir_write_permission_denied">డైరెక్టరీకు వ్రాయలేము</string>
+    <string name="new_file_name_does_not_pass_filter">కొత్త ఫైల్ పేరు యొక్క ఫార్మాట్ సరికాదు</string>
+    <string name="new_file_name_already_exists">కొత్త ఫైల్ పేరు ఇప్పటికే వుంది</string>
 </resources>

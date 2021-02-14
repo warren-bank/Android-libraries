@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">\@ info: info</string>
     <string name="select_folder">Fillteán pictiúir</string>
-    <string name="folder_not_selected">Fillteán gan roghnaíodh fós</string>
+    <string name="folder_not_selected">Níl an fillteán ann go fóill</string>
+    <string name="folder_pick_cancelled">Cealaíodh an fillteán</string>
     <string name="select_file">Comhad pictiúir</string>
-    <string name="file_not_selected">Comhad gan roghnaithe go fóill</string>
-    <string name="folder_pick_cancelled">Cealaíodh an fillteán.</string>
-    <string name="file_pick_cancelled">Cealaíodh an comhad seo.</string>
+    <string name="file_not_selected">Níl an comhad roghnaithe go fóill</string>
+    <string name="file_pick_cancelled">Cealaíodh an comhad seo</string>
+    <string name="select_newfile">Roghnaigh Comhad Nua</string>
+    <string name="newfile_not_selected">Níl an chonair nua roghnaithe go fóill</string>
+    <string name="newfile_pick_cancelled">Cealaíodh an roghnúchán nua conair nua</string>
+    <string name="prompt_newfile">Sábháil Comhad Nua Go:</string>
 </resources>

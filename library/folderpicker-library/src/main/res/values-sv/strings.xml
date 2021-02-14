@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Katalogen finns inte</string>
     <string name="dir_read_permission_denied">Kan inte läsa från katalog</string>
     <string name="dir_write_permission_denied">Kan inte skriva till katalog</string>
+    <string name="new_file_name_does_not_pass_filter">Det går inte att ändra format på nytt filnamn</string>
+    <string name="new_file_name_already_exists">Det nya filnamnet finns redan</string>
 </resources>

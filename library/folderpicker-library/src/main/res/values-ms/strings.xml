@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Direktori tidak wujud</string>
     <string name="dir_read_permission_denied">Tidak dapat baca dari direktori</string>
     <string name="dir_write_permission_denied">Tidak dapat tulis ke direktori</string>
+    <string name="new_file_name_does_not_pass_filter">Format nama fail baru tidak betul</string>
+    <string name="new_file_name_already_exists">Nama fail baru sudah wujud</string>
 </resources>

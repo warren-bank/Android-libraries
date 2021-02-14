@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Katalogen finnes ikke</string>
     <string name="dir_read_permission_denied">Kan ikke lese fra katalog</string>
     <string name="dir_write_permission_denied">Kan ikke skrive til katalog</string>
+    <string name="new_file_name_does_not_pass_filter">Formatet på nytt filnavn er ikke riktig</string>
+    <string name="new_file_name_already_exists">Nytt filnavn finnes allerede</string>
 </resources>

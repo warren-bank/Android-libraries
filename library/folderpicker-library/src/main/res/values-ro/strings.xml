@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Directorul nu există</string>
     <string name="dir_read_permission_denied">Nu se poate citi din director</string>
     <string name="dir_write_permission_denied">Nu se poate scrie în director</string>
+    <string name="new_file_name_does_not_pass_filter">Formatul noului nume de fişier nu este corect</string>
+    <string name="new_file_name_already_exists">Numele de fişier nou există deja</string>
 </resources>

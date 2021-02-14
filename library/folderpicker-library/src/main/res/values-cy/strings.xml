@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Nid yw\'r cyfeiriadur yn bodoli</string>
     <string name="dir_read_permission_denied">Methu darllen o\'r cyfeiriadur</string>
     <string name="dir_write_permission_denied">Methu ysgrifennu at y cyfeiriadur</string>
+    <string name="new_file_name_does_not_pass_filter">Nid yw fformat enw ffeil newydd yn gywir</string>
+    <string name="new_file_name_already_exists">Mae enw ffeil newydd yn bodoli eisoes</string>
 </resources>

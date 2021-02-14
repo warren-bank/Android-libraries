@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Direktorija neeksistē</string>
     <string name="dir_read_permission_denied">Nevar nolasīt no direktorijas</string>
     <string name="dir_write_permission_denied">Neizdevās ierakstīt direktorijā</string>
+    <string name="new_file_name_does_not_pass_filter">Jauna faila nosaukuma formāts nav pareizs</string>
+    <string name="new_file_name_already_exists">Jauns faila nosaukums jau eksistē</string>
 </resources>

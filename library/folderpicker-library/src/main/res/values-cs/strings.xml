@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Adresář neexistuje</string>
     <string name="dir_read_permission_denied">Nelze číst z adresáře</string>
     <string name="dir_write_permission_denied">Do adresáře nelze zapisovat</string>
+    <string name="new_file_name_does_not_pass_filter">Formát nového názvu souboru není správný</string>
+    <string name="new_file_name_already_exists">Nový název souboru již existuje</string>
 </resources>

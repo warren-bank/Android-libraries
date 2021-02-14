@@ -2,8 +2,12 @@
     <string name="app_name">ഫോള്ഡര് പികര് ഡെമോ</string>
     <string name="select_folder">ഫോള്ഡര് പകര്ത്തുക</string>
     <string name="folder_not_selected">ഫോള്ഡര് ഇതുവരെ തിരഞ്ഞെടുത്തിട്ടില്ല</string>
+    <string name="folder_pick_cancelled">ഫോള്ഡര് ചിത്രീകരണം റദ്ദാക്കി</string>
     <string name="select_file">ഫയല് പകര്ത്തുക</string>
     <string name="file_not_selected">ഫയല് ഇതുവരെ തിരഞ്ഞെടുത്തിട്ടില്ല</string>
-    <string name="folder_pick_cancelled">ഫോള്ഡര് ചിത്രീകരണം റദ്ദാക്കി.</string>
-    <string name="file_pick_cancelled">ഫയല് ചിത്രീകരണം റദ്ദാക്കി.</string>
+    <string name="file_pick_cancelled">ഫയല് ചിത്രീകരണം റദ്ദാക്കി</string>
+    <string name="select_newfile">പുതിയ ഫയല് തെരഞ്ഞെടുക്കുക</string>
+    <string name="newfile_not_selected">പുതിയ filepath ഇനിയും തെരഞ്ഞെടുത്തിട്ടില്ല</string>
+    <string name="newfile_pick_cancelled">പുതിയ ഫിലിപ്പ് തെരഞ്ഞെടുത്തത് റദ്ദാക്കിയിരിക്കുന്നു</string>
+    <string name="prompt_newfile">പുതിയ ഫയല് സൂക്ഷിക്കുക:</string>
 </resources>

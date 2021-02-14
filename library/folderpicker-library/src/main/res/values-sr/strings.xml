@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Директоријум не постоји</string>
     <string name="dir_read_permission_denied">Није могуће прочитати из директоријума</string>
     <string name="dir_write_permission_denied">Није могуће писати у директоријум</string>
+    <string name="new_file_name_does_not_pass_filter">Формат новог имена датотеке није исправан</string>
+    <string name="new_file_name_already_exists">Ново име датотеке већ постоји</string>
 </resources>

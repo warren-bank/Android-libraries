@@ -2,8 +2,12 @@
     <string name="app_name">Mappa választó bemutató</string>
     <string name="select_folder">Mappa kiválasztása</string>
     <string name="folder_not_selected">A mappa még nincs kiválasztva</string>
+    <string name="folder_pick_cancelled">Mappa megszakítva</string>
     <string name="select_file">Fájl kiválasztása</string>
     <string name="file_not_selected">A fájl még nincs kiválasztva</string>
-    <string name="folder_pick_cancelled">Mappa megszakítva.</string>
-    <string name="file_pick_cancelled">Fájl kiválasztása megszakítva.</string>
+    <string name="file_pick_cancelled">Fájl kiválasztása megszakítva</string>
+    <string name="select_newfile">Új fájl kiválasztása</string>
+    <string name="newfile_not_selected">Az új filepath még nincs kiválasztva</string>
+    <string name="newfile_pick_cancelled">Új fájlútvonal kijelölés visszavonva</string>
+    <string name="prompt_newfile">Új fájl mentése ide:</string>
 </resources>

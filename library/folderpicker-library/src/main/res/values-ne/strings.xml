@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">डाइरेक्टरी अवस्थित छैन</string>
     <string name="dir_read_permission_denied">डाइरेक्टरी बाट पढ्न सकिँदैन</string>
     <string name="dir_write_permission_denied">डाइरेक्टरीमा लेख्न सकिँदैन</string>
+    <string name="new_file_name_does_not_pass_filter">नयाँ फाइल नामको ढाँचा ठीक छैन</string>
+    <string name="new_file_name_already_exists">नयाँ फाइल नाम पहिल्यै अवस्थित छ</string>
 </resources>

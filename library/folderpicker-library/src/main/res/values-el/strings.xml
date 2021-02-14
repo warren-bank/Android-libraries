@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Ο κατάλογος δεν υπάρχει.</string>
     <string name="dir_read_permission_denied">Αδυναμία ανάγνωσης από κατάλογο</string>
     <string name="dir_write_permission_denied">Αδυναμία εγγραφής στον κατάλογο</string>
+    <string name="new_file_name_does_not_pass_filter">Η μορφή του νέου αρχείου name δεν είναι σωστή</string>
+    <string name="new_file_name_already_exists">Υπάρχει ήδη νέο όνομα αρχείου.</string>
 </resources>

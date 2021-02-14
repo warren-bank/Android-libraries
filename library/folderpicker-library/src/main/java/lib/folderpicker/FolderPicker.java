@@ -34,6 +34,7 @@ public class FolderPicker extends Activity {
     protected static final String EXTRA_DESCRIPTION       = "desc";
     protected static final String EXTRA_LOCATION          = "location";
     protected static final String EXTRA_EMPTY_FOLDER      = "emptyFolder";
+    protected static final String EXTRA_NEW_FILE_PROMPT   = "newFilePrompt";
     protected static final String EXTRA_PICK_FILE         = "pickFile";
     protected static final String EXTRA_PICK_FILE_PATTERN = "pickFilePattern";
 
@@ -44,6 +45,7 @@ public class FolderPicker extends Activity {
         }
     };
 
+    Pattern mFilePattern;
     FileFilter mFileFilter;
 
     //Folders and Files have separate lists because we show all folders first then files
@@ -57,13 +59,14 @@ public class FolderPicker extends Activity {
     boolean mPickFile;
     Intent mReceivedIntent;
     boolean mEmptyFolder;
+    String mNewFilePrompt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         if (!isExternalStorageReadable()) {
-            Toast.makeText(this, getString(R.string.no_access_to_storage), Toast.LENGTH_LONG).show();
+            Toast.makeText(FolderPicker.this, getString(R.string.no_access_to_storage), Toast.LENGTH_LONG).show();
             finish();
         }
 
@@ -120,6 +123,10 @@ public class FolderPicker extends Activity {
                 }
             }
 
+            if (mReceivedIntent.hasExtra(EXTRA_NEW_FILE_PROMPT)) {
+                mNewFilePrompt = mReceivedIntent.getStringExtra(EXTRA_NEW_FILE_PROMPT);
+            }
+
             if (mReceivedIntent.hasExtra(EXTRA_PICK_FILE)) {
                 mPickFile = mReceivedIntent.getBooleanExtra(EXTRA_PICK_FILE, false);
                 if (mPickFile) {
@@ -131,9 +138,9 @@ public class FolderPicker extends Activity {
             if (mReceivedIntent.hasExtra(EXTRA_PICK_FILE_PATTERN)) {
                 String pickFilePattern = mReceivedIntent.getStringExtra(EXTRA_PICK_FILE_PATTERN);
                 if (pickFilePattern != null) {
-                    mFileFilter = new FileFilter() {
-                        private Pattern mFilePattern = Pattern.compile(pickFilePattern, Pattern.CASE_INSENSITIVE);
+                    mFilePattern = Pattern.compile(pickFilePattern, Pattern.CASE_INSENSITIVE);
 
+                    mFileFilter = new FileFilter() {
                         @Override
                         public boolean accept(File file) {
                             if (file.isDirectory()) return true;
@@ -206,7 +213,7 @@ public class FolderPicker extends Activity {
     private boolean checkLocation(String location, boolean showToast) {
         if ((location == null) || location.isEmpty()) {
             if (showToast) {
-                Toast.makeText(this, R.string.dir_is_not_exist, Toast.LENGTH_LONG).show();
+                Toast.makeText(FolderPicker.this, R.string.dir_is_not_exist, Toast.LENGTH_LONG).show();
             }
             return false;
         }
@@ -215,21 +222,21 @@ public class FolderPicker extends Activity {
 
         if (!folder.exists()) {
             if (showToast) {
-                Toast.makeText(this, R.string.dir_is_not_exist, Toast.LENGTH_LONG).show();
+                Toast.makeText(FolderPicker.this, R.string.dir_is_not_exist, Toast.LENGTH_LONG).show();
             }
             return false;
         }
 
         if (!folder.isDirectory()) {
             if (showToast) {
-                Toast.makeText(this, R.string.is_not_dir, Toast.LENGTH_LONG).show();
+                Toast.makeText(FolderPicker.this, R.string.is_not_dir, Toast.LENGTH_LONG).show();
             }
             return false;
         }
 
         if (!folder.canRead()) {
             if (showToast) {
-                Toast.makeText(this, R.string.dir_read_permission_denied, Toast.LENGTH_LONG).show();
+                Toast.makeText(FolderPicker.this, R.string.dir_read_permission_denied, Toast.LENGTH_LONG).show();
             }
             return false;
         }
@@ -284,7 +291,7 @@ public class FolderPicker extends Activity {
      */
     void showList() {
         try {
-            FolderAdapter FolderAdapter = new FolderAdapter(this, mFolderAndFileList);
+            FolderAdapter FolderAdapter = new FolderAdapter(FolderPicker.this, mFolderAndFileList);
             ListView listView = findViewById(R.id.fp_listView);
             listView.setAdapter(FolderAdapter);
 
@@ -307,9 +314,7 @@ public class FolderPicker extends Activity {
     void listClick(int position) {
         if (mPickFile && !mFolderAndFileList.get(position).isFolder()) {
             String data = mLocation + (mLocation.equals(File.separator) ? "" : File.separator) + mFolderAndFileList.get(position).getName();
-            mReceivedIntent.putExtra(EXTRA_DATA, data);
-            setResult(RESULT_OK, mReceivedIntent);
-            finish();
+            exit(data);
         } else {
             String location = mLocation + (mLocation.equals(File.separator) ? "" : File.separator) + mFolderAndFileList.get(position).getName();
             checkAndLoadLists(location);
@@ -333,31 +338,33 @@ public class FolderPicker extends Activity {
 
         } catch (Exception e) {
             e.printStackTrace();
-            Toast.makeText(this, String.format(getString(R.string.error_string_mask), e.toString()), Toast.LENGTH_LONG)
-                    .show();
+            Toast.makeText(FolderPicker.this, String.format(getString(R.string.error_string_mask), e.toString()), Toast.LENGTH_LONG).show();
         }
     }
 
     /**
-     * Show dialog fom enter new folder name;
-     * @param v
+     * Show dialog to enter name for new folder or file
      */
-    public void newFolderDialog(View v) {
+    public void newFolderOrFileDialog(boolean isFolder) {
         File folder = new File(mLocation);
         boolean showToast = true;
 
         if (!folder.canWrite()) {
             if (showToast) {
-                Toast.makeText(this, R.string.dir_write_permission_denied, Toast.LENGTH_LONG).show();
+                Toast.makeText(FolderPicker.this, R.string.dir_write_permission_denied, Toast.LENGTH_LONG).show();
             }
             return;
         }
 
-        LayoutInflater inflater = LayoutInflater.from(this);
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        LayoutInflater inflater = LayoutInflater.from(FolderPicker.this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(FolderPicker.this);
         View view = inflater.inflate(R.layout.dialog_folder_name, null);
         builder.setView(view);
-        builder.setTitle(getString(R.string.enter_folder_name));
+        builder.setTitle(
+            isFolder
+              ? getString(R.string.enter_folder_name)
+              : mNewFilePrompt
+        );
 
         final EditText et = view.findViewById(R.id.edit_text);
 
@@ -366,12 +373,41 @@ public class FolderPicker extends Activity {
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
-                        createNewFolder(et.getText().toString());
+                        String name = et.getText().toString().trim();
+                        if (name.isEmpty()) return;
+
+                        if (isFolder) {
+                            createNewFolder(name);
+                        }
+                        else {
+                            if ((mFilePattern != null) && !mFilePattern.matcher(name).matches()) {
+                                Toast.makeText(FolderPicker.this, getString(R.string.new_file_name_does_not_pass_filter), Toast.LENGTH_LONG).show();
+                                return;
+                            }
+
+                            String data = mLocation + (mLocation.equals(File.separator) ? "" : File.separator) + name;
+
+                            File file = new File(data);
+                            if (file.exists()) {
+                                Toast.makeText(FolderPicker.this, getString(R.string.new_file_name_already_exists), Toast.LENGTH_LONG).show();
+                                return;
+                            }
+
+                            exit(data);
+                        }
                     }
                 });
         dialog.setButton(DialogInterface.BUTTON_NEGATIVE, getString(R.string.cancel), (DialogInterface.OnClickListener)null);
 
         dialog.show();
+    }
+
+    /**
+     * Show dialog to enter new folder name;
+     * @param v
+     */
+    public void newFolderDialog(View v) {
+        newFolderOrFileDialog(true);
     }
 
     /**
@@ -381,10 +417,12 @@ public class FolderPicker extends Activity {
     public void select(View v) {
 
         if (mPickFile) {
-            Toast.makeText(this, getString(R.string.select_file), Toast.LENGTH_LONG).show();
+            Toast.makeText(FolderPicker.this, getString(R.string.select_file), Toast.LENGTH_LONG).show();
+        } else if (mNewFilePrompt != null) {
+            newFolderOrFileDialog(false);
         } else if (mReceivedIntent != null) {
             if (mEmptyFolder && !isDirEmpty(mLocation)) {
-                Toast.makeText(this, getString(R.string.select_empty_folder), Toast.LENGTH_LONG).show();
+                Toast.makeText(FolderPicker.this, getString(R.string.select_empty_folder), Toast.LENGTH_LONG).show();
                 return;
             }
             mReceivedIntent.putExtra(EXTRA_DATA, mLocation);
@@ -398,8 +436,8 @@ public class FolderPicker extends Activity {
      * @param v
      */
     public void edit(View v) {
-        LayoutInflater inflater = LayoutInflater.from(this);
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        LayoutInflater inflater = LayoutInflater.from(FolderPicker.this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(FolderPicker.this);
         View view = inflater.inflate(R.layout.dialog_edit_location, null);
         builder.setView(view);
         builder.setTitle(getString(R.string.edit_location));
@@ -466,7 +504,17 @@ public class FolderPicker extends Activity {
      * Set result and finish activity.
      */
     void exit() {
-        setResult(RESULT_CANCELED, mReceivedIntent);
+        exit(null);
+    }
+
+    void exit(String data) {
+        if ((data == null) || data.isEmpty()) {
+            setResult(RESULT_CANCELED, mReceivedIntent);
+        }
+        else {
+            mReceivedIntent.putExtra(EXTRA_DATA, data);
+            setResult(RESULT_OK, mReceivedIntent);
+        }
         finish();
     }
 }

@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">ડિરેક્ટરી અસ્તિત્વમાં નથી</string>
     <string name="dir_read_permission_denied">ડિરેક્ટરીમાંથી વાંચી શકતા નથી</string>
     <string name="dir_write_permission_denied">ડિરેક્ટરીમાં લખી શકતા નથી</string>
+    <string name="new_file_name_does_not_pass_filter">નવી ફાઇલ નામ નું બંધારણ યોગ્ય નથી</string>
+    <string name="new_file_name_already_exists">નવી ફાઇલ નામ પહેલાથી જ હાજર છે</string>
 </resources>

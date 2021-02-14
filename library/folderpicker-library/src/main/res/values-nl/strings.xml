@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">Directory bestaat niet</string>
     <string name="dir_read_permission_denied">Kan niet lezen van map</string>
     <string name="dir_write_permission_denied">Schrijven naar map is niet mogelijk</string>
+    <string name="new_file_name_does_not_pass_filter">Indeling van nieuwe bestandsnaam is onjuist</string>
+    <string name="new_file_name_already_exists">Nieuwe bestandsnaam bestaat al</string>
 </resources>

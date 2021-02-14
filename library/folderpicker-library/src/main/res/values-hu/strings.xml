@@ -20,4 +20,6 @@
     <string name="dir_is_not_exist">A könyvtár nem létezik</string>
     <string name="dir_read_permission_denied">Nem olvasható a könyvtárból</string>
     <string name="dir_write_permission_denied">Nem lehet írni a könyvtárba</string>
+    <string name="new_file_name_does_not_pass_filter">Az új fájlnév formátuma helytelen</string>
+    <string name="new_file_name_already_exists">Az új fájlnév már létezik</string>
 </resources>
