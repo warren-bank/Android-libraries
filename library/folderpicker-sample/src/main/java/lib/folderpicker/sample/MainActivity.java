@@ -69,20 +69,23 @@ public class MainActivity extends Activity {
     }
 
     void pickFolder() {
-        Intent intent = new Intent(this, FolderPicker.class);
-        startActivityForResult(intent, FOLDER_PICKER_CODE);
+        FolderPicker
+            .withBuilder()
+            .withActivity(this)
+            .withRequestCode(FOLDER_PICKER_CODE)
+            .start();
     }
 
     void pickFile() {
-        Intent intent = new Intent(this, FolderPicker.class);
-
-        //Optional
-        intent.putExtra("title", "Select file to upload");
-        intent.putExtra("location", Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getAbsolutePath());
-        intent.putExtra("pickFiles", true);
-        //Optional
-
-        startActivityForResult(intent, FILE_PICKER_CODE);
+        FolderPicker
+            .withBuilder()
+            .withActivity(this)
+            .withRequestCode(FILE_PICKER_CODE)
+            .withFilePicker(true)
+            .withTitle("Select file to upload")
+            .withDescription("Possibly a pretty picture?")
+            .withPath(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getAbsolutePath())
+            .start();
     }
 
 
@@ -90,8 +93,8 @@ public class MainActivity extends Activity {
 
         if (requestCode == FOLDER_PICKER_CODE) {
 
-            if (resultCode == Activity.RESULT_OK && intent.hasExtra("data")) {
-                String folderLocation = "<b>Selected Folder: </b>"+ intent.getExtras().getString("data");
+            if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
+                String folderLocation = "<b>Selected Folder: </b>"+ intent.getExtras().getString(FolderPicker.EXTRA_DATA);
                 tvFolder.setText( Html.fromHtml(folderLocation) );
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 tvFolder.setText(R.string.folder_pick_cancelled);
@@ -99,8 +102,8 @@ public class MainActivity extends Activity {
 
         } else if (requestCode == FILE_PICKER_CODE) {
 
-            if (resultCode == Activity.RESULT_OK && intent.hasExtra("data")) {
-                String fileLocation = "<b>Selected File: </b>"+ intent.getExtras().getString("data");
+            if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
+                String fileLocation = "<b>Selected File: </b>"+ intent.getExtras().getString(FolderPicker.EXTRA_DATA);
                 tvFile.setText( Html.fromHtml(fileLocation) );
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 tvFile.setText(R.string.file_pick_cancelled);

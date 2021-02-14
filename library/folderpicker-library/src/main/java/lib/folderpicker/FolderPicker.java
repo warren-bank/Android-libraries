@@ -21,19 +21,24 @@ import java.util.Comparator;
 
 public class FolderPicker extends Activity {
 
+    public static final FolderPickerBuilder withBuilder() {
+        return new FolderPickerBuilder();
+    }
+
+    public static final String EXTRA_DATA = "data";
+
+    protected static final String EXTRA_TITLE        = "title";
+    protected static final String EXTRA_DESCRIPTION  = "desc";
+    protected static final String EXTRA_LOCATION     = "location";
+    protected static final String EXTRA_PICK_FILES   = "pickFiles";
+    protected static final String EXTRA_EMPTY_FOLDER = "emptyFolder";
+
     Comparator<FilePojo> comparatorAscending = new Comparator<FilePojo>() {
         @Override
         public int compare(FilePojo f1, FilePojo f2) {
             return f1.getName().compareTo(f2.getName());
         }
     };
-
-    public static final String EXTRA_DATA = "data";
-    public static final String EXTRA_TITLE = "title";
-    public static final String EXTRA_DESCRIPTION = "desc";
-    public static final String EXTRA_LOCATION = "location";
-    public static final String EXTRA_PICK_FILES = "pickFiles";
-    public static final String EXTRA_EMPTY_FOLDER = "emptyFolder";
 
     //Folders and Files have separate lists because we show all folders first then files
     ArrayList<FilePojo> mFolderAndFileList;
