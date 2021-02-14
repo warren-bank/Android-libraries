@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">資料夾選取器示範</string>
+    <string name="select_folder">挑選資料夾</string>
+    <string name="folder_not_selected">尚未選取資料夾</string>
+    <string name="select_file">挑選檔案</string>
+    <string name="file_not_selected">尚未選取檔案</string>
+    <string name="folder_pick_cancelled">已取消提取資料夾.</string>
+    <string name="file_pick_cancelled">已取消擷取檔案.</string>
+</resources>

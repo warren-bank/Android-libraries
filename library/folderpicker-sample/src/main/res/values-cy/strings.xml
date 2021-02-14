@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Name</string>
+    <string name="select_folder">Dewis Plygell</string>
+    <string name="folder_not_selected">Plygell heb ei dewis eto</string>
+    <string name="select_file">Dewis Ffeil</string>
+    <string name="file_not_selected">Ni ddetholwyd y ffeil eto</string>
+    <string name="folder_pick_cancelled">Diddymwyd y dewis plygell.</string>
+    <string name="file_pick_cancelled">Diddymwyd y dewis ffeil.</string>
+</resources>

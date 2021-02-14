@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mappa választó bemutató</string>
+    <string name="select_folder">Mappa kiválasztása</string>
+    <string name="folder_not_selected">A mappa még nincs kiválasztva</string>
+    <string name="select_file">Fájl kiválasztása</string>
+    <string name="file_not_selected">A fájl még nincs kiválasztva</string>
+    <string name="folder_pick_cancelled">Mappa megszakítva.</string>
+    <string name="file_pick_cancelled">Fájl kiválasztása megszakítva.</string>
+</resources>

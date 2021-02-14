@@ -1,0 +1,23 @@
+<resources>
+    <string name="home">Casa</string>
+    <string name="up">Up</string>
+    <string name="neww">Nuevo</string>
+    <string name="select">Seleccione</string>
+    <string name="cancel">Cancelar</string>
+    <string name="title">Seleccionar carpeta</string>
+    <string name="location">Ubicación</string>
+    <string name="enter_folder_name">Especifique el nombre de carpeta</string>
+    <string name="edit_location">Editar ubicación</string>
+    <string name="create">Crear</string>
+    <string name="ok">Ok</string>
+    <string name="select_file">Tiene que seleccionar un archivo</string>
+    <string name="select_empty_folder">Tiene que seleccionar una carpeta vacía</string>
+    <string name="no_access_to_storage">Permiso de acceso de almacenamiento no proporcionado</string>
+    <string name="location_mask">Ubicación: %s</string>
+    <string name="error_string_mask">Error: %s</string>
+    <string name="select_empty_dir">Seleccione un directorio vacío</string>
+    <string name="is_not_dir">Este no es un directorio</string>
+    <string name="dir_is_not_exist">El directorio no existe</string>
+    <string name="dir_read_permission_denied">No se puede leer del directorio</string>
+    <string name="dir_write_permission_denied">No puede escribir en el directorio</string>
+</resources>

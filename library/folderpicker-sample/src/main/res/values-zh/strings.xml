@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">文件夹选取器演示</string>
+    <string name="select_folder">选取文件夹</string>
+    <string name="folder_not_selected">尚未选择文件夹</string>
+    <string name="select_file">选取文件</string>
+    <string name="file_not_selected">尚未选择文件</string>
+    <string name="folder_pick_cancelled">文件夹提货已取消.</string>
+    <string name="file_pick_cancelled">文件提货已取消.</string>
+</resources>

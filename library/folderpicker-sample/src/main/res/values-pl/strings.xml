@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demo folderu wyboru folderu</string>
+    <string name="select_folder">Wybierz folder</string>
+    <string name="folder_not_selected">Folder nie został jeszcze wybrany</string>
+    <string name="select_file">Wybierz plik</string>
+    <string name="file_not_selected">Plik nie został jeszcze wybrany</string>
+    <string name="folder_pick_cancelled">Anulowano pobieranie folderu.</string>
+    <string name="file_pick_cancelled">Pobieranie pliku zostało anulowane.</string>
+</resources>

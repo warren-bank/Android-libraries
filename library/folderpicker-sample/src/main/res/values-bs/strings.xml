@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demo za probirač mapa</string>
+    <string name="select_folder">Izaberite folder</string>
+    <string name="folder_not_selected">Mapa nije izabrana</string>
+    <string name="select_file">Izaberite datoteku</string>
+    <string name="file_not_selected">Datoteka nije izabrana</string>
+    <string name="folder_pick_cancelled">Biranje foldera je otkazano.</string>
+    <string name="file_pick_cancelled">Opozvano biranje datoteke.</string>
+</resources>

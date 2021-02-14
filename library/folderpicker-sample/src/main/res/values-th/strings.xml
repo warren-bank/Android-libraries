@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">โปรแกรมสาธิตเครื่องมือโฟลเดอร์</string>
+    <string name="select_folder">เลือกโฟลเดอร์</string>
+    <string name="folder_not_selected">โฟลเดอร์ยังไม่ถูกเลือก</string>
+    <string name="select_file">เลือกไฟล์</string>
+    <string name="file_not_selected">ยังไม่ได้เลือกไฟล์</string>
+    <string name="folder_pick_cancelled">การเลือกโฟลเดอร์ถูกยกเลิก.</string>
+    <string name="file_pick_cancelled">การเลือกไฟล์ถูกยกเลิก.</string>
+</resources>

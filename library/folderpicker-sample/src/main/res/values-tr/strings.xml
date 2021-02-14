@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Klasör Seçici Gösterimi</string>
+    <string name="select_folder">Klasör Seç</string>
+    <string name="folder_not_selected">Klasör henüz seçilmedi</string>
+    <string name="select_file">Dosya Seç</string>
+    <string name="file_not_selected">Dosya henüz seçilmedi</string>
+    <string name="folder_pick_cancelled">Klasör çekme işlemi iptal edildi.</string>
+    <string name="file_pick_cancelled">Dosya çekme işlemi iptal edildi.</string>
+</resources>

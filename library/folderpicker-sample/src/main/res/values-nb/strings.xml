@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mappe Picker Demo</string>
+    <string name="select_folder">Velg mappe</string>
+    <string name="folder_not_selected">Mappe ikke valgt ennå</string>
+    <string name="select_file">Velg fil</string>
+    <string name="file_not_selected">Fil ikke valgt ennå</string>
+    <string name="folder_pick_cancelled">Mappe som plukker avbrutt.</string>
+    <string name="file_pick_cancelled">Filplukking avbrutt.</string>
+</resources>

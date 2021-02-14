@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Démonstration du sélecteur de dossier</string>
+    <string name="select_folder">Dossier de sélection</string>
+    <string name="folder_not_selected">Le dossier n\'est pas encore sélectionné</string>
+    <string name="select_file">Fichier de sélection</string>
+    <string name="file_not_selected">Fichier non sélectionné pour l\'instant</string>
+    <string name="folder_pick_cancelled">Sélection de dossier annulée.</string>
+    <string name="file_pick_cancelled">Sélection de fichier annulée.</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ukážka pre výber zložky</string>
+    <string name="select_folder">Vybrať priečinok</string>
+    <string name="folder_not_selected">Priečinok ešte nebol vybratý</string>
+    <string name="select_file">Vybrať súbor</string>
+    <string name="file_not_selected">Súbor ešte nebol vybratý</string>
+    <string name="folder_pick_cancelled">Výber zložky bol zrušený.</string>
+    <string name="file_pick_cancelled">Výber súboru bol zrušený.</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mape Picker Demo</string>
+    <string name="select_folder">Izvēlēties mapi</string>
+    <string name="folder_not_selected">Mape nav izvēlēta vēl</string>
+    <string name="select_file">Izvēlēties failu</string>
+    <string name="file_not_selected">Fails nav izvēlēts vēl</string>
+    <string name="folder_pick_cancelled">Atņemta mape.</string>
+    <string name="file_pick_cancelled">Atceltā atcelšana.</string>
+</resources>

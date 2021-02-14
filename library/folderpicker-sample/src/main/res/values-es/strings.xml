@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demostración del selector de carpetas</string>
+    <string name="select_folder">Seleccionar carpeta</string>
+    <string name="folder_not_selected">Carpeta no seleccionada todavía</string>
+    <string name="select_file">Archivo de selección</string>
+    <string name="file_not_selected">Archivo no seleccionado todavía</string>
+    <string name="folder_pick_cancelled">Recogida de la carpeta cancelada.</string>
+    <string name="file_pick_cancelled">Recogida de archivo cancelada.</string>
+</resources>

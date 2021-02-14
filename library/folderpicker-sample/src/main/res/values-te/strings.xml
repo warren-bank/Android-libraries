@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ఫోల్డర్ పికెర్ డెమో</string>
+    <string name="select_folder">పిక్ ఫోల్డర్</string>
+    <string name="folder_not_selected">ఫోల్డర్ ఇంకా ఎన్నుకోలేదు</string>
+    <string name="select_file">పిక్ దస్త్రం</string>
+    <string name="file_not_selected">\@ info: status</string>
+    <string name="folder_pick_cancelled">ఫోల్డర్ పిక్చింగ్ రద్దుచేయబడింది.</string>
+    <string name="file_pick_cancelled">\@ info: status.</string>
+</resources>

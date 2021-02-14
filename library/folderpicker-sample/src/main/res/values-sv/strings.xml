@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demo för mappväljaren</string>
+    <string name="select_folder">Välj mapp</string>
+    <string name="folder_not_selected">Mappen är inte vald ännu</string>
+    <string name="select_file">Välj fil</string>
+    <string name="file_not_selected">Filen har inte valts ännu</string>
+    <string name="folder_pick_cancelled">Mappplockning.</string>
+    <string name="file_pick_cancelled">Filplockning avbröts.</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ഫോള്ഡര് പികര് ഡെമോ</string>
+    <string name="select_folder">ഫോള്ഡര് പകര്ത്തുക</string>
+    <string name="folder_not_selected">ഫോള്ഡര് ഇതുവരെ തിരഞ്ഞെടുത്തിട്ടില്ല</string>
+    <string name="select_file">ഫയല് പകര്ത്തുക</string>
+    <string name="file_not_selected">ഫയല് ഇതുവരെ തിരഞ്ഞെടുത്തിട്ടില്ല</string>
+    <string name="folder_pick_cancelled">ഫോള്ഡര് ചിത്രീകരണം റദ്ദാക്കി.</string>
+    <string name="file_pick_cancelled">ഫയല് ചിത്രീകരണം റദ്ദാക്കി.</string>
+</resources>

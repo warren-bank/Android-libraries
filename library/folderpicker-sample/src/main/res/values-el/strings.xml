@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Επίδειξη Picker φακέλων</string>
+    <string name="select_folder">Επιλογή φακέλου</string>
+    <string name="folder_not_selected">Ο φάκελος δεν έχει επιλεγεί ακόμα</string>
+    <string name="select_file">Επιλογή αρχείου</string>
+    <string name="file_not_selected">Δεν έχει επιλεγεί αρχείο ακόμα</string>
+    <string name="folder_pick_cancelled">Η επιλογή φακέλων ακυρώθηκε.</string>
+    <string name="file_pick_cancelled">Η επιλογή αρχείου ακυρώθηκε.</string>
+</resources>

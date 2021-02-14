@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demo výběru složky</string>
+    <string name="select_folder">Vybrat složku</string>
+    <string name="folder_not_selected">Složka dosud nebyla vybrána</string>
+    <string name="select_file">Vybrat soubor</string>
+    <string name="file_not_selected">Soubor nebyl dosud vybrán</string>
+    <string name="folder_pick_cancelled">Výběr složky zrušen.</string>
+    <string name="file_pick_cancelled">Stažení souboru bylo zrušeno.</string>
+</resources>

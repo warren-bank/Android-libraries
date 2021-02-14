@@ -1,0 +1,13 @@
+{
+  "name": "@warren-bank/android-folder-picker-library",
+  "private": true,
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "@warren-bank/translate-android-strings": "^1.6.0"
+  },
+  "scripts": {
+    "translate:lib": "node_modules/.bin/translate-android-strings -i \"en\" -f \"library/folderpicker-library/src/main/res/values/strings.xml\" -d \"library/folderpicker-library/src/main/res\" -m -b \": [\\x25]s\" --nc --nw",
+    "translate:app": "node_modules/.bin/translate-android-strings -i \"en\" -f \"library/folderpicker-sample/src/main/res/values/strings.xml\"  -d \"library/folderpicker-sample/src/main/res\"  -m --nc --nw",
+    "translate": "npm run translate:lib && npm run translate:app"
+  }
+}

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ديمو حافظة الحافظة</string>
+    <string name="select_folder">اختر حافظة</string>
+    <string name="folder_not_selected">لم يتم تحديد الحافظة بعد</string>
+    <string name="select_file">اختيار ملف</string>
+    <string name="file_not_selected">لم يتم تحديد الملف بعد</string>
+    <string name="folder_pick_cancelled">تم الغاء التقاط الحافظة.</string>
+    <string name="file_pick_cancelled">تم الغاء اختيار ملف.</string>
+</resources>

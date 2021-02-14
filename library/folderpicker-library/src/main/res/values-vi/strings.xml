@@ -1,0 +1,23 @@
+<resources>
+    <string name="home">Nhà</string>
+    <string name="up">Lên</string>
+    <string name="neww">Mới</string>
+    <string name="select">Chọn</string>
+    <string name="cancel">Hủy</string>
+    <string name="title">Chọn thư mục</string>
+    <string name="location">Vị trí</string>
+    <string name="enter_folder_name">Nhập tên thư mục</string>
+    <string name="edit_location">Sửa vị trí</string>
+    <string name="create">Tạo</string>
+    <string name="ok">Được.</string>
+    <string name="select_file">Bạn phải chọn một tập tin</string>
+    <string name="select_empty_folder">Bạn phải chọn thư mục rỗng</string>
+    <string name="no_access_to_storage">Không cho phép truy cập lưu trư ̃</string>
+    <string name="location_mask">Vị trí: %s</string>
+    <string name="error_string_mask">Lỗi: %s</string>
+    <string name="select_empty_dir">Chọn thư mục trống</string>
+    <string name="is_not_dir">Đây không phải là thư mục</string>
+    <string name="dir_is_not_exist">Thư mục không tồn tại</string>
+    <string name="dir_read_permission_denied">Không thể đọc từ thư mục</string>
+    <string name="dir_write_permission_denied">Không thể ghi vào thư mục</string>
+</resources>

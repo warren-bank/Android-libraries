@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Folder Pwerrej Demo</string>
+    <string name="select_folder">Pick folder</string>
+    <string name="folder_not_selected">Folder mhux magħżul għadu</string>
+    <string name="select_file">Pick File</string>
+    <string name="file_not_selected">Fajl mhux magħżul għadu</string>
+    <string name="folder_pick_cancelled">Folder picking kkanċella.</string>
+    <string name="file_pick_cancelled">Fajl picking ikkanċella.</string>
+</resources>

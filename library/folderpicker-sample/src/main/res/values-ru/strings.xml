@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Демонстрационная демонстрация папки</string>
+    <string name="select_folder">Выбрать папку</string>
+    <string name="folder_not_selected">Папка еще не выбрана</string>
+    <string name="select_file">Выбрать файл</string>
+    <string name="file_not_selected">Файл еще не выбран</string>
+    <string name="folder_pick_cancelled">Выбор папки отменен.</string>
+    <string name="file_pick_cancelled">Комплектация файла отменена.</string>
+</resources>

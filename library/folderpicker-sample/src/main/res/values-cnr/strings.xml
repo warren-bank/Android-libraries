@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mapa za odabir mapa</string>
+    <string name="select_folder">Izaberite mapu.</string>
+    <string name="folder_not_selected">Jedan fascikl nije izabran.</string>
+    <string name="select_file">Izaberite datoteku.</string>
+    <string name="file_not_selected">Jedna datoteka još nije izabrana.</string>
+    <string name="folder_pick_cancelled">Jedan folder je otkazan..</string>
+    <string name="file_pick_cancelled">Jedna datoteka je otkazana..</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ordner-Picker-Demo</string>
+    <string name="select_folder">Ordner auswählen</string>
+    <string name="folder_not_selected">Ordner noch nicht ausgewählt</string>
+    <string name="select_file">Datei auswählen</string>
+    <string name="file_not_selected">Datei noch nicht ausgewählt</string>
+    <string name="folder_pick_cancelled">Ordnerentnahme abgebrochen.</string>
+    <string name="file_pick_cancelled">Dateientnahme abgebrochen.</string>
+</resources>

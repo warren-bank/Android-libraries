@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Folder Picker Demo</string>
+    <string name="select_folder">Pilih Folder</string>
+    <string name="folder_not_selected">Folder tidak dipilih</string>
+    <string name="select_file">Pilih Berkas</string>
+    <string name="file_not_selected">Berkas tidak dipilih</string>
+    <string name="folder_pick_cancelled">Memilih folder dibatalkan.</string>
+    <string name="file_pick_cancelled">Memilih berkas dibatalkan.</string>
+</resources>

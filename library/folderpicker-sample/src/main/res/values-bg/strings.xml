@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Демонстрация на пикер на папка</string>
+    <string name="select_folder">Избор на папка</string>
+    <string name="folder_not_selected">Папката не е избрана още</string>
+    <string name="select_file">Избор на файл</string>
+    <string name="file_not_selected">Файлът не е избран още</string>
+    <string name="folder_pick_cancelled">Сваляне на папка.</string>
+    <string name="file_pick_cancelled">Отписване на файл.</string>
+</resources>

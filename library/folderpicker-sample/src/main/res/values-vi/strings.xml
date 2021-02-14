@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Trình chọn bộ chọn thư mục</string>
+    <string name="select_folder">Chọn thư mục</string>
+    <string name="folder_not_selected">Thư mục chưa được chọn</string>
+    <string name="select_file">Chọn tập tin</string>
+    <string name="file_not_selected">Tập tin chưa được chọn</string>
+    <string name="folder_pick_cancelled">Chọn thư mục bị hủy.</string>
+    <string name="file_pick_cancelled">Chọn tập tin bị hủy.</string>
+</resources>
