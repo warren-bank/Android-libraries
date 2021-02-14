@@ -19,4 +19,6 @@
     <string name="select_empty_dir">Select an empty directory</string>
     <string name="is_not_dir">This is not a directory</string>
     <string name="dir_is_not_exist">Directory does not exist</string>
+    <string name="dir_read_permission_denied">Cannot read from directory</string>
+    <string name="dir_write_permission_denied">Cannot write to directory</string>
 </resources>

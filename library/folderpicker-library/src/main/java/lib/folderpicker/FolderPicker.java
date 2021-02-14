@@ -158,6 +158,14 @@ public class FolderPicker extends Activity {
             }
             return false;
         }
+
+        if (!folder.canRead()) {
+            if (showToast) {
+                Toast.makeText(this, R.string.dir_read_permission_denied, Toast.LENGTH_LONG).show();
+            }
+            return false;
+        }
+
         return true;
     }
 
@@ -267,6 +275,16 @@ public class FolderPicker extends Activity {
      * @param v
      */
     public void newFolderDialog(View v) {
+        File folder = new File(mLocation);
+        boolean showToast = true;
+
+        if (!folder.canWrite()) {
+            if (showToast) {
+                Toast.makeText(this, R.string.dir_write_permission_denied, Toast.LENGTH_LONG).show();
+            }
+            return;
+        }
+
         LayoutInflater inflater = LayoutInflater.from(this);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View view = inflater.inflate(R.layout.dialog_folder_name, null);

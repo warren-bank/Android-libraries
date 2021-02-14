@@ -19,4 +19,6 @@
     <string name="select_empty_dir">Выберите пустой каталог</string>
     <string name="is_not_dir">Это не каталог</string>
     <string name="dir_is_not_exist">Каталог не существует</string>
+    <string name="dir_read_permission_denied">Невозможно прочитать из каталога</string>
+    <string name="dir_write_permission_denied">Невозможно записать в каталог</string>
 </resources>
