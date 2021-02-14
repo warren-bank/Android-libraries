@@ -34,6 +34,7 @@ public class FolderPicker extends Activity {
     public static final String EXTRA_LOCATION = "location";
     public static final String EXTRA_PICK_FILES = "pickFiles";
     public static final String EXTRA_EMPTY_FOLDER = "emptyFolder";
+
     //Folders and Files have separate lists because we show all folders first then files
     ArrayList<FilePojo> mFolderAndFileList;
     ArrayList<FilePojo> mFoldersList;
@@ -229,14 +230,13 @@ public class FolderPicker extends Activity {
      */
     void listClick(int position) {
         if (mPickFiles && !mFolderAndFileList.get(position).isFolder()) {
-            String data = mLocation + File.separator + mFolderAndFileList.get(position).getName();
+            String data = mLocation + (mLocation.equals(File.separator) ? "" : File.separator) + mFolderAndFileList.get(position).getName();
             mReceivedIntent.putExtra(EXTRA_DATA, data);
             setResult(RESULT_OK, mReceivedIntent);
             finish();
         } else {
-            String location = mLocation + File.separator + mFolderAndFileList.get(position).getName();
+            String location = mLocation + (mLocation.equals(File.separator) ? "" : File.separator) + mFolderAndFileList.get(position).getName();
             checkAndLoadLists(location);
-//            checkAndloadLists(mLocation);
         }
     }
 
@@ -251,7 +251,7 @@ public class FolderPicker extends Activity {
      */
     void createNewFolder(String filename) {
         try {
-            File file = new File(mLocation + File.separator + filename);
+            File file = new File(mLocation + (mLocation.equals(File.separator) ? "" : File.separator) + filename);
             file.mkdirs();
             checkAndLoadLists(mLocation);
 
@@ -330,7 +330,6 @@ public class FolderPicker extends Activity {
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
                         String location = et.getText().toString();
-//                        loadLists(mLocation);
                         checkAndLoadLists(location);
                     }
                 });
@@ -362,9 +361,8 @@ public class FolderPicker extends Activity {
     public void goBack(View v) {
         if (mLocation != null && !mLocation.equals("") && !mLocation.equals("/")) {
             int start = mLocation.lastIndexOf('/');
-            String newLocation = mLocation.substring(0, start);
-//            mLocation = newLocation;
-//            loadLists(newLocation);
+            String newLocation = (start == 0) ? File.separator : mLocation.substring(0, start);
+
             if (!checkAndLoadLists(newLocation, false)) {
                 exit();
             }

@@ -58,9 +58,6 @@ __notes:__
 * what I dislike:
   * almost nothing.. great library
     * I only _dislike_ that I didn't find it sooner! :)
-  * cannot navigate to root directory
-    * can manually enter `/` path using the new "edit" button
-    * however when a file or directory is selected after doing so, its file path begins with `//`
 
 __changes:__
 
