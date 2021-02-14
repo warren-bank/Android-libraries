@@ -11,8 +11,8 @@ public class FolderPickerBuilder {
     private String  EXTRA_DESCRIPTION;
     private String  EXTRA_LOCATION;
     private Boolean EXTRA_EMPTY_FOLDER;
-    private Boolean EXTRA_PICK_FILES;
-    private String  EXTRA_PICK_FILES_PATTERN;
+    private Boolean EXTRA_PICK_FILE;
+    private String  EXTRA_PICK_FILE_PATTERN;
 
     // required by: getIntent()
     // can be substituted for by: withActivity()
@@ -51,12 +51,12 @@ public class FolderPickerBuilder {
         EXTRA_EMPTY_FOLDER = emptyFolder;
         return this;
     }
-    public FolderPickerBuilder withFilePicker(boolean pickFiles) {
-        EXTRA_PICK_FILES = pickFiles;
+    public FolderPickerBuilder withFilePicker(boolean pickFile) {
+        EXTRA_PICK_FILE = pickFile;
         return this;
     }
-    public FolderPickerBuilder withFileFilter(String pickFilesPattern) {
-        EXTRA_PICK_FILES_PATTERN = pickFilesPattern;
+    public FolderPickerBuilder withFileFilter(String pickFilePattern) {
+        EXTRA_PICK_FILE_PATTERN = pickFilePattern;
         return this;
     }
     public FolderPickerBuilder withContext(Context context) {
@@ -91,10 +91,10 @@ public class FolderPickerBuilder {
             intent.putExtra(FolderPicker.EXTRA_LOCATION, EXTRA_LOCATION);
         if (EXTRA_EMPTY_FOLDER != null)
             intent.putExtra(FolderPicker.EXTRA_EMPTY_FOLDER, EXTRA_EMPTY_FOLDER);
-        if (EXTRA_PICK_FILES != null)
-            intent.putExtra(FolderPicker.EXTRA_PICK_FILES, EXTRA_PICK_FILES);
-        if (EXTRA_PICK_FILES_PATTERN != null)
-            intent.putExtra(FolderPicker.EXTRA_PICK_FILES_PATTERN, EXTRA_PICK_FILES_PATTERN);
+        if (EXTRA_PICK_FILE != null)
+            intent.putExtra(FolderPicker.EXTRA_PICK_FILE, EXTRA_PICK_FILE);
+        if (EXTRA_PICK_FILE_PATTERN != null)
+            intent.putExtra(FolderPicker.EXTRA_PICK_FILE_PATTERN, EXTRA_PICK_FILE_PATTERN);
 
         return intent;
     }

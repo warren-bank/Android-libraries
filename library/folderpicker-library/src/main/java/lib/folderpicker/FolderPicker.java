@@ -29,13 +29,13 @@ public class FolderPicker extends Activity {
 
     public static final String EXTRA_DATA = "data";
 
-    protected static final String EXTRA_THEME              = "theme";
-    protected static final String EXTRA_TITLE              = "title";
-    protected static final String EXTRA_DESCRIPTION        = "desc";
-    protected static final String EXTRA_LOCATION           = "location";
-    protected static final String EXTRA_EMPTY_FOLDER       = "emptyFolder";
-    protected static final String EXTRA_PICK_FILES         = "pickFiles";
-    protected static final String EXTRA_PICK_FILES_PATTERN = "pickFilesPattern";
+    protected static final String EXTRA_THEME             = "theme";
+    protected static final String EXTRA_TITLE             = "title";
+    protected static final String EXTRA_DESCRIPTION       = "desc";
+    protected static final String EXTRA_LOCATION          = "location";
+    protected static final String EXTRA_EMPTY_FOLDER      = "emptyFolder";
+    protected static final String EXTRA_PICK_FILE         = "pickFile";
+    protected static final String EXTRA_PICK_FILE_PATTERN = "pickFilePattern";
 
     Comparator<FilePojo> comparatorAscending = new Comparator<FilePojo>() {
         @Override
@@ -44,7 +44,7 @@ public class FolderPicker extends Activity {
         }
     };
 
-    FileFilter mFilesFilter;
+    FileFilter mFileFilter;
 
     //Folders and Files have separate lists because we show all folders first then files
     ArrayList<FilePojo> mFolderAndFileList;
@@ -54,7 +54,7 @@ public class FolderPicker extends Activity {
     TextView mTvLocation;
 
     String mLocation;
-    boolean mPickFiles;
+    boolean mPickFile;
     Intent mReceivedIntent;
     boolean mEmptyFolder;
 
@@ -120,19 +120,19 @@ public class FolderPicker extends Activity {
                 }
             }
 
-            if (mReceivedIntent.hasExtra(EXTRA_PICK_FILES)) {
-                mPickFiles = mReceivedIntent.getBooleanExtra(EXTRA_PICK_FILES, false);
-                if (mPickFiles) {
+            if (mReceivedIntent.hasExtra(EXTRA_PICK_FILE)) {
+                mPickFile = mReceivedIntent.getBooleanExtra(EXTRA_PICK_FILE, false);
+                if (mPickFile) {
                     findViewById(R.id.fp_btn_select).setVisibility(View.GONE);
                     findViewById(R.id.fp_btn_new).setVisibility(View.GONE);
                 }
             }
 
-            if (mReceivedIntent.hasExtra(EXTRA_PICK_FILES_PATTERN)) {
-                String pickFilesPattern = mReceivedIntent.getStringExtra(EXTRA_PICK_FILES_PATTERN);
-                if (pickFilesPattern != null) {
-                    mFilesFilter = new FileFilter() {
-                        private Pattern mFilesPattern = Pattern.compile(pickFilesPattern, Pattern.CASE_INSENSITIVE);
+            if (mReceivedIntent.hasExtra(EXTRA_PICK_FILE_PATTERN)) {
+                String pickFilePattern = mReceivedIntent.getStringExtra(EXTRA_PICK_FILE_PATTERN);
+                if (pickFilePattern != null) {
+                    mFileFilter = new FileFilter() {
+                        private Pattern mFilePattern = Pattern.compile(pickFilePattern, Pattern.CASE_INSENSITIVE);
 
                         @Override
                         public boolean accept(File file) {
@@ -140,7 +140,7 @@ public class FolderPicker extends Activity {
                             if (!file.isFile()) return false;
 
                             String filename = file.getName();
-                            return mFilesPattern.matcher(filename).matches();
+                            return mFilePattern.matcher(filename).matches();
                         }
                     };
                 }
@@ -245,7 +245,7 @@ public class FolderPicker extends Activity {
             File folder = new File(mLocation);
 
             mTvLocation.setText(String.format(getString(R.string.location_mask), folder.getAbsolutePath()));
-            File[] files = folder.listFiles(mFilesFilter);
+            File[] files = folder.listFiles(mFileFilter);
 
             mFoldersList = new ArrayList<>();
             mFilesList = new ArrayList<>();
@@ -266,7 +266,7 @@ public class FolderPicker extends Activity {
             mFolderAndFileList.addAll(mFoldersList);
 
             //if we have to show files, then add files also to the final list
-            if (mPickFiles) {
+            if (mPickFile) {
                 Collections.sort(mFilesList, comparatorAscending );
                 mFolderAndFileList.addAll(mFilesList);
             }
@@ -305,7 +305,7 @@ public class FolderPicker extends Activity {
      * @param position
      */
     void listClick(int position) {
-        if (mPickFiles && !mFolderAndFileList.get(position).isFolder()) {
+        if (mPickFile && !mFolderAndFileList.get(position).isFolder()) {
             String data = mLocation + (mLocation.equals(File.separator) ? "" : File.separator) + mFolderAndFileList.get(position).getName();
             mReceivedIntent.putExtra(EXTRA_DATA, data);
             setResult(RESULT_OK, mReceivedIntent);
@@ -380,7 +380,7 @@ public class FolderPicker extends Activity {
      */
     public void select(View v) {
 
-        if (mPickFiles) {
+        if (mPickFile) {
             Toast.makeText(this, getString(R.string.select_file), Toast.LENGTH_LONG).show();
         } else if (mReceivedIntent != null) {
             if (mEmptyFolder && !isDirEmpty(mLocation)) {
