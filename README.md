@@ -1,13 +1,13 @@
-#### [Android libraries](https://github.com/warren-bank/Android-libraries/tree/kashifo/android-folder-picker-library)
+#### [Android libraries](https://github.com/warren-bank/Android-libraries/tree/fork/kashifo/android-folder-picker-library/PR13-gee12)
 
 __original application:__
 
-* source code repo: [android-folder-picker-library](https://github.com/kashifo/android-folder-picker-library)
-* author/copyright: [Kashif Anwaar](https://github.com/kashifo)
-* license: [Apache 2.0](https://github.com/kashifo/android-folder-picker-library/blob/f9d1ea948ca63333540432d7fcf5276b071994df/LICENSE)
-* forked from commit SHA: [f9d1ea9](https://github.com/kashifo/android-folder-picker-library/tree/f9d1ea948ca63333540432d7fcf5276b071994df)
-  * date of commit: May 23, 2018
-  * tag: v2.4
+* source code repo: [android-folder-picker-library](https://github.com/gee12/android-folder-picker-library)
+* author/copyright: [gee12](https://github.com/gee12)
+* license: [Apache 2.0](https://github.com/gee12/android-folder-picker-library/blob/d85e79b697664cc081fef43dea431aa53a8e3b47/LICENSE)
+* forked from commit SHA: [d85e79b](https://github.com/gee12/android-folder-picker-library/tree/d85e79b697664cc081fef43dea431aa53a8e3b47)
+  * date of commit: Jan 04, 2021
+  * PR: [#13](https://github.com/kashifo/android-folder-picker-library/pull/13)
 
 __screenshot:__
 
@@ -21,10 +21,14 @@ __notes:__
   * Activity that can be opened for a result
     * starting Intent can configure some features and behavior
       * `title`<br>_string_: prominently displayed in top center
+      * `desc`<br>_string_: subtitle displayed in smaller font below `title`
       * `location`<br>_string_: initial directory path
       * `pickFiles`<br>_boolean_:
         * _true_: choose a file
         * _false_: choose a directory (default)
+      * `emptyFolder`<br>_boolean_:
+        * _true_: when choosing a directory, only accept a directory selection that doesn't contain any contents (files or directories)
+        * _false_: when choosing a directory, accept any (default)
     * displays a list of file system directories and files
     * can navigate up or down the tree
     * can "cancel"
@@ -39,6 +43,9 @@ __notes:__
       * can click on a file in the current directory
         * closes Activity
         * returns a result that includes the selected file
+* what this fork adds:
+  * "edit" button to change the current directory by manually entering a file path with the keyboard
+  * "home" button to change the current directory to the [primary shared/external storage directory](https://developer.android.com/reference/android/os/Environment#getExternalStorageDirectory())
 * what I like:
   * size of the library is incredibly compact
     * no dependencies
@@ -51,6 +58,9 @@ __notes:__
 * what I dislike:
   * almost nothing.. great library
     * I only _dislike_ that I didn't find it sooner! :)
+  * cannot navigate to root directory
+    * can manually enter `/` path using the new "edit" button
+    * however when a file or directory is selected after doing so, its file path begins with `//`
 
 __changes:__
 
