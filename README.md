@@ -2,35 +2,33 @@
 
 __original application:__
 
-* source code repo: [android-folder-picker-library](https://github.com/gee12/android-folder-picker-library)
-* author/copyright: [gee12](https://github.com/gee12)
-* license: [Apache 2.0](https://github.com/gee12/android-folder-picker-library/blob/d85e79b697664cc081fef43dea431aa53a8e3b47/LICENSE)
-* forked from commit SHA: [d85e79b](https://github.com/gee12/android-folder-picker-library/tree/d85e79b697664cc081fef43dea431aa53a8e3b47)
-  * date of commit: Jan 04, 2021
-  * PR: [#13](https://github.com/kashifo/android-folder-picker-library/pull/13)
+* source code repo: [android-folder-picker-library](https://github.com/kashifo/android-folder-picker-library)
+* author/copyright: [Kashif Anwaar](https://github.com/kashifo)
+* contributors:
+  * [gee12](https://github.com/gee12/android-folder-picker-library)
+  * [warren-bank](https://github.com/warren-bank/Android-libraries/tree/fork/kashifo/android-folder-picker-library/PR13-gee12)
+* license: [Apache 2.0](https://github.com/kashifo/android-folder-picker-library/blob/f9d1ea948ca63333540432d7fcf5276b071994df/LICENSE)
+* forked from commit SHA: [f9d1ea9](https://github.com/kashifo/android-folder-picker-library/tree/f9d1ea948ca63333540432d7fcf5276b071994df)
+  * date of commit: May 23, 2018
+  * tag: v2.4
 
-__screenshot:__
+__screenshots / _folderpicker-sample_:__
 
-| ![folderpicker](./.screenshots/1.png) | ![folderpicker](./.screenshots/2.png) | ![folderpicker](./.screenshots/3.png) |
-|:-----------------:|:-------------------:|:---------------:|
-| Can pick a folder | Can create a folder | Can pick a file |
+![folderpicker](./.screenshots/folderpicker-sample/1-sample-app.png)
+![folderpicker](./.screenshots/folderpicker-sample/2-pick-folder.png)
+![folderpicker](./.screenshots/folderpicker-sample/3-edit-location-dialog.png)
+![folderpicker](./.screenshots/folderpicker-sample/4-pick-file.png)
+![folderpicker](./.screenshots/folderpicker-sample/5-new-file-prompt.png)
 
 __notes:__
 
 * what it does:
   * Activity that can be opened for a result
     * starting Intent can configure some features and behavior
-      * `title`<br>_string_: prominently displayed in top center
-      * `desc`<br>_string_: subtitle displayed in smaller font below `title`
-      * `location`<br>_string_: initial directory path
-      * `pickFiles`<br>_boolean_:
-        * _true_: choose a file
-        * _false_: choose a directory (default)
-      * `emptyFolder`<br>_boolean_:
-        * _true_: when choosing a directory, only accept a directory selection that doesn't contain any contents (files or directories)
-        * _false_: when choosing a directory, accept any (default)
+      * constructed using a Builder class, which greatly simplifies usage of the library
     * displays a list of file system directories and files
     * can navigate up or down the tree
+    * can manually "edit" the current directory path
     * can "cancel"
       * closes Activity
       * returns a result that indicates no selection was made
@@ -41,11 +39,18 @@ __notes:__
         * returns a result that includes the selected directory
     * when choosing a file:
       * can click on a file in the current directory
-        * closes Activity
-        * returns a result that includes the selected file
-* what this fork adds:
-  * "edit" button to change the current directory by manually entering a file path with the keyboard
-  * "home" button to change the current directory to the [primary shared/external storage directory](https://developer.android.com/reference/android/os/Environment#getExternalStorageDirectory())
+        * can validate filenames with a regex pattern
+        * if the filename is acceptable
+          * closes Activity
+          * returns a result that includes the selected file
+    * when choosing a new file:
+      * can choose a directory
+      * after the current directory has been selected
+        * can enter the new filename into a dialog
+          * can validate filenames with a regex pattern
+          * if the filename is acceptable
+            * closes Activity
+            * returns a result that includes the absolute file path for the new file
 * what I like:
   * size of the library is incredibly compact
     * no dependencies
@@ -56,8 +61,42 @@ __notes:__
     * minimal (in a good way)
       * contains only what is needed for the desired functionality, and no more
 * what I dislike:
-  * almost nothing.. great library
-    * I only _dislike_ that I didn't find it sooner! :)
+  * absolutely nothing.. great library
+
+__builder:__
+
+```java
+import lib.folderpicker.FolderPicker;
+
+FolderPicker.withBuilder()
+  .withTheme(int_themeResId)
+  .withTitle(str_title_line1)
+  .withDescription(str_description_line2)
+  .withPath(str_dirpath)
+  .withHomeButton(bool_show)
+  .withEmptyFolder(bool_only_accept_dir_with_no_contents)
+  .withNewFilePrompt(str_ask_for_new_filename_after_directory_is_chosen)
+  .withFilePicker(bool_show_files_and_accept_by_click)
+  .withFileFilter(str_regex_pattern_to_validate_acceptable_filename_is_chosen)
+  .withContext(context)
+      // used to construct the Intent;
+      // only required when no Activity is provided.
+      // ie: using builder to return the Intent, rather than to start it immediately
+  .withActivity(activity)
+      // used to start the Intent;
+      // also used as a Context to construct the Intent (unless another Context is provided)
+  .withRequestCode(int_request_code)
+      // used to start the Intent (for a result)
+  .getIntent()
+      // 1 of 2 possible ways to end the builder chain of commands:
+      //   returns the constructed Intent
+  .start()
+      // 1 of 2 possible ways to end the builder chain of commands:
+      //   returns a boolean to indicate success
+      //   ie: all the information required was provided;
+      //       an Intent was constructed and started for a result
+;
+```
 
 __changes:__
 
@@ -65,3 +104,5 @@ __changes:__
 * updated demo app:
   * removed support library
   * lowered minSDK to match the library
+* a _lot_ of bug fixes, new features, and general improvements to the library
+  * [GPL 2.0](https://github.com/warren-bank/Android-libraries/blob/fork/kashifo/android-folder-picker-library/PR13-gee12/LICENSE.txt) license applies to all contributions
