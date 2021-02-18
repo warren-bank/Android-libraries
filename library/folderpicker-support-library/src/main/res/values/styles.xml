@@ -1,6 +1,6 @@
 <resources>
   <style name="FolderPickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
-    <!-- assign default values to required attributes -->
+    <!-- assign default values to attributes required by layout -->
     <item name="colorPrimary">@color/folderPicker_colorPrimary</item>
     <item name="colorOnPrimary">@color/folderPicker_colorOnPrimary</item>
     <item name="colorSecondary">@color/folderPicker_colorSecondary</item>
