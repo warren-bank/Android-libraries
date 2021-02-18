@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Demo za probirač mapa</string>
+    <string name="select_folder">Izaberite folder</string>
+    <string name="folder_not_selected">Mapa još nije izabrana</string>
+    <string name="folder_pick_cancelled">Biranje foldera je otkazano</string>
+    <string name="select_file">Izaberite datoteku</string>
+    <string name="file_not_selected">Datoteka još nije izabrana</string>
+    <string name="file_pick_cancelled">Opozvano biranje datoteke</string>
+    <string name="select_newfile">Izaberi novu datoteku</string>
+    <string name="newfile_not_selected">Novi filepath još nije izabran</string>
+    <string name="newfile_pick_cancelled">Novi izbor fipaleta je opozvan</string>
+    <string name="prompt_newfile">Spremi novu datoteku u:</string>
+</resources>

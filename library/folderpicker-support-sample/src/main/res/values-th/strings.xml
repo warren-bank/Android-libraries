@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">โปรแกรมสาธิตเครื่องมือโฟลเดอร์</string>
+    <string name="select_folder">เลือกโฟลเดอร์</string>
+    <string name="folder_not_selected">โฟลเดอร์ยังไม่ถูกเลือก</string>
+    <string name="folder_pick_cancelled">การเลือกโฟลเดอร์ถูกยกเลิก</string>
+    <string name="select_file">เลือกไฟล์</string>
+    <string name="file_not_selected">ยังไม่ได้เลือกไฟล์</string>
+    <string name="file_pick_cancelled">การเลือกไฟล์ถูกยกเลิก</string>
+    <string name="select_newfile">เลือกไฟล์ใหม่</string>
+    <string name="newfile_not_selected">ไฟล์พาธใหม่ยังไม่ถูกเลือก</string>
+    <string name="newfile_pick_cancelled">การเลือกพาธไฟล์ใหม่ถูกยกเลิก</string>
+    <string name="prompt_newfile">บันทึกไฟล์ใหม่ไปยัง:</string>
+</resources>

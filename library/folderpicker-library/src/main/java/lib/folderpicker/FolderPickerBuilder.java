@@ -25,7 +25,9 @@ public class FolderPickerBuilder {
     private Integer mRequestCode;
 
     // internal
-    private Class<? extends FolderPicker> mFolderPickerClass = FolderPicker.class;
+    protected Class<? extends FolderPicker> getFolderPickerClass() {
+        return FolderPicker.class;
+    }
 
     // constructor can only be called by: FolderPicker.withBuilder()
     // public method is static
@@ -89,7 +91,7 @@ public class FolderPickerBuilder {
         if (mContext == null)
             return null;
 
-        Intent intent = new Intent(mContext, mFolderPickerClass);
+        Intent intent = new Intent(mContext, getFolderPickerClass());
 
         if (EXTRA_THEME != null)
             intent.putExtra(FolderPicker.EXTRA_THEME, EXTRA_THEME);

@@ -96,14 +96,12 @@
             android:visibility="gone"
             style="@style/ToolButtons"
             android:id="@+id/fp_btn_home"
-            android:background="@drawable/fp_outline_black_1dp"
             android:drawableTop="@drawable/fp_ic_action_home"
             android:onClick="home"
             android:text="@string/home" />
 
         <TextView
             style="@style/ToolButtons"
-            android:background="@drawable/fp_outline_black_1dp"
             android:drawableTop="@drawable/fp_ic_action_up"
             android:onClick="goBack"
             android:text="@string/up" />
@@ -111,7 +109,6 @@
         <TextView
             style="@style/ToolButtons"
             android:id="@+id/fp_btn_new"
-            android:background="@drawable/fp_outline_black_1dp"
             android:drawableTop="@drawable/fp_ic_action_add"
             android:onClick="newFolderDialog"
             android:text="@string/neww" />
@@ -119,14 +116,12 @@
         <TextView
             style="@style/ToolButtons"
             android:id="@+id/fp_btn_select"
-            android:background="@drawable/fp_outline_black_1dp"
             android:drawableTop="@drawable/fp_ic_action_back"
             android:onClick="select"
             android:text="@string/select" />
 
         <TextView
             style="@style/ToolButtons"
-            android:background="@drawable/fp_outline_black_1dp"
             android:drawableTop="@drawable/fp_ic_action_cancel"
             android:onClick="cancel"
             android:text="@string/cancel" />
@@ -136,7 +131,7 @@
     <ListView
         android:id="@+id/fp_listView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/fp_buttonsLayout" />
 
 </RelativeLayout>

@@ -17,11 +17,12 @@ import lib.folderpicker.FolderPicker;
 public class MainActivity extends Activity {
 
     private static final int SDCARD_PERMISSION = 1,
-            FOLDER_PICKER_CODE   = 2,
-            FILE_PICKER_CODE     = 3,
-            NEW_FILE_PICKER_CODE = 4;
+            FOLDER_PICKER_CODE       = 2,
+            EMPTY_FOLDER_PICKER_CODE = 3,
+            FILE_PICKER_CODE         = 4,
+            NEW_FILE_PICKER_CODE     = 5;
 
-    TextView tvFolder, tvFile, tvNewFile;
+    TextView tvFolder, tvEmptyFolder, tvFile, tvNewFile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,13 @@ public class MainActivity extends Activity {
             }
         });
 
+        findViewById(R.id.btn_empty_folder).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pickEmptyFolder();
+            }
+        });
+
         findViewById(R.id.btn_file).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,9 +79,10 @@ public class MainActivity extends Activity {
             }
         });
 
-        tvFolder  = (TextView) findViewById(R.id.tv_folder);
-        tvFile    = (TextView) findViewById(R.id.tv_file);
-        tvNewFile = (TextView) findViewById(R.id.tv_newfile);
+        tvFolder      = (TextView) findViewById(R.id.tv_folder);
+        tvEmptyFolder = (TextView) findViewById(R.id.tv_empty_folder);
+        tvFile        = (TextView) findViewById(R.id.tv_file);
+        tvNewFile     = (TextView) findViewById(R.id.tv_newfile);
 
     }
 
@@ -82,6 +91,18 @@ public class MainActivity extends Activity {
             .withBuilder()
             .withActivity(MainActivity.this)
             .withRequestCode(FOLDER_PICKER_CODE)
+            .withTheme(android.R.style.Theme_Black_NoTitleBar_Fullscreen)
+            .start();
+    }
+
+    void pickEmptyFolder() {
+        FolderPicker
+            .withBuilder()
+            .withActivity(MainActivity.this)
+            .withRequestCode(EMPTY_FOLDER_PICKER_CODE)
+            .withTitle("Select folder")
+            .withDescription("Cannot contain any files or subdirectories")
+            .withEmptyFolder(true)
             .withTheme(android.R.style.Theme_Black_NoTitleBar_Fullscreen)
             .start();
     }
@@ -112,7 +133,6 @@ public class MainActivity extends Activity {
             .start();
     }
 
-
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
 
         if (requestCode == FOLDER_PICKER_CODE) {
@@ -122,6 +142,15 @@ public class MainActivity extends Activity {
                 tvFolder.setText( Html.fromHtml(folderLocation) );
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 tvFolder.setText(R.string.folder_pick_cancelled);
+            }
+
+        } else if (requestCode == EMPTY_FOLDER_PICKER_CODE) {
+
+            if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
+                String folderLocation = "<b>Selected Folder: </b>"+ intent.getExtras().getString(FolderPicker.EXTRA_DATA);
+                tvEmptyFolder.setText( Html.fromHtml(folderLocation) );
+            } else if (resultCode == Activity.RESULT_CANCELED) {
+                tvEmptyFolder.setText(R.string.folder_pick_cancelled);
             }
 
         } else if (requestCode == FILE_PICKER_CODE) {

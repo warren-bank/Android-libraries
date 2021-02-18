@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Folder Picker Demo</string>
+    <string name="select_folder">Valitse kansio</string>
+    <string name="folder_not_selected">Kansio ei ole vielä valittu</string>
+    <string name="folder_pick_cancelled">Kansion peruutus on peruutettu</string>
+    <string name="select_file">Valitse tiedosto</string>
+    <string name="file_not_selected">Tiedostoa ei ole vielä valittu</string>
+    <string name="file_pick_cancelled">Tiedoston valinta on peruutettu</string>
+    <string name="select_newfile">Valitse uusi tiedosto</string>
+    <string name="newfile_not_selected">Uutta filepolkua ei ole vielä valittu</string>
+    <string name="newfile_pick_cancelled">Uusi tiedostopolun valinta on peruutettu</string>
+    <string name="prompt_newfile">Tallenna uusi tiedosto:</string>
+</resources>

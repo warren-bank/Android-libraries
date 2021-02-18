@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Demostración del selector de carpetas</string>
+    <string name="select_folder">Seleccionar carpeta</string>
+    <string name="folder_not_selected">La carpeta aún no se ha seleccionado</string>
+    <string name="folder_pick_cancelled">Recogida de la carpeta cancelada</string>
+    <string name="select_file">Archivo de selección</string>
+    <string name="file_not_selected">El archivo aún no se ha seleccionado</string>
+    <string name="file_pick_cancelled">Recogida de archivo cancelada</string>
+    <string name="select_newfile">Seleccionar archivo nuevo</string>
+    <string name="newfile_not_selected">Todavía no se ha seleccionado la nueva vía de acceso de archivo</string>
+    <string name="newfile_pick_cancelled">Se ha cancelado la selección de filepath nueva</string>
+    <string name="prompt_newfile">Guardar nuevo archivo en:</string>
+</resources>

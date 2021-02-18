@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Folder Picker Demo</string>
+    <string name="select_folder">Folder اٹھاؤ</string>
+    <string name="folder_not_selected">فولڈر ابھی تک نہیں اٹھایا</string>
+    <string name="folder_pick_cancelled">فولڈرز نے منسوخ کردیا</string>
+    <string name="select_file">فائل فوٹو</string>
+    <string name="file_not_selected">فائل ابھی نہیں پکڑی گئی</string>
+    <string name="file_pick_cancelled">فائل منسوخ</string>
+    <string name="select_newfile">نئی فائل منتخب کریں</string>
+    <string name="newfile_not_selected">نیا filepath ابھی تک منتخب نہیں کیا</string>
+    <string name="newfile_pick_cancelled">نئے filepath کا انتخاب منسوخ</string>
+    <string name="prompt_newfile">نئی فائل کو محفوظ کریں:</string>
+</resources>

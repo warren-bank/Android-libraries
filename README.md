@@ -1,4 +1,4 @@
-#### [Android libraries](https://github.com/warren-bank/Android-libraries/tree/fork/kashifo/android-folder-picker-library/PR13-gee12)
+#### [Android libraries](https://github.com/warren-bank/Android-libraries/tree/fork/kashifo/android-folder-picker-library/material-design)
 
 __original application:__
 
@@ -7,6 +7,7 @@ __original application:__
 * contributors:
   * [gee12](https://github.com/gee12/android-folder-picker-library)
   * [warren-bank](https://github.com/warren-bank/Android-libraries/tree/fork/kashifo/android-folder-picker-library/PR13-gee12)
+  * [warren-bank](https://github.com/warren-bank/Android-libraries/tree/fork/kashifo/android-folder-picker-library/material-design)
 * license: [Apache 2.0](https://github.com/kashifo/android-folder-picker-library/blob/f9d1ea948ca63333540432d7fcf5276b071994df/LICENSE)
 * forked from commit SHA: [f9d1ea9](https://github.com/kashifo/android-folder-picker-library/tree/f9d1ea948ca63333540432d7fcf5276b071994df)
   * date of commit: May 23, 2018
@@ -19,6 +20,14 @@ __screenshots / _folderpicker-sample_:__
 ![folderpicker](./.screenshots/folderpicker-sample/3-edit-location-dialog.png)
 ![folderpicker](./.screenshots/folderpicker-sample/4-pick-file.png)
 ![folderpicker](./.screenshots/folderpicker-sample/5-new-file-prompt.png)
+
+__screenshots / _folderpicker-support-sample_:__
+
+![folderpicker](./.screenshots/folderpicker-support-sample/1-sample-app.png)
+![folderpicker](./.screenshots/folderpicker-support-sample/2-pick-folder.png)
+![folderpicker](./.screenshots/folderpicker-support-sample/3-edit-location-dialog.png)
+![folderpicker](./.screenshots/folderpicker-support-sample/4-pick-file.png)
+![folderpicker](./.screenshots/folderpicker-support-sample/5-new-file-prompt.png)
 
 __notes:__
 
@@ -53,9 +62,11 @@ __notes:__
             * returns a result that includes the absolute file path for the new file
 * what I like:
   * size of the library is incredibly compact
-    * no dependencies
-  * supports nearly all versions of Android
-    * minSDK = 9
+  * comes in 2x variations:
+    1. uses no dependencies
+       * minSDK = 9
+    2. uses androidx support libraries
+       * minSDK = 16
   * quality of coding is excellent
   * the UI:
     * minimal (in a good way)
@@ -65,9 +76,20 @@ __notes:__
 
 __builder:__
 
-```java
-import lib.folderpicker.FolderPicker;
+import one of the 2x library variations:
 
+* no dependencies:
+  ```java
+    import lib.folderpicker.FolderPicker;
+  ```
+* androidx:
+  ```java
+    import lib.folderpicker.support.FolderPicker;
+  ```
+
+use the Builder class to configure and start _FolderPicker_:
+
+```java
 FolderPicker.withBuilder()
   .withTheme(int_themeResId)
   .withTitle(str_title_line1)
@@ -105,4 +127,4 @@ __changes:__
   * removed support library
   * lowered minSDK to match the library
 * a _lot_ of bug fixes, new features, and general improvements to the library
-  * [GPL 2.0](https://github.com/warren-bank/Android-libraries/blob/fork/kashifo/android-folder-picker-library/PR13-gee12/LICENSE.txt) license applies to all contributions
+  * [GPL 2.0](https://github.com/warren-bank/Android-libraries/blob/fork/kashifo/android-folder-picker-library/material-design/LICENSE.txt) license applies to all contributions

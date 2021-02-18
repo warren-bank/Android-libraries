@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Cartella Picker Demo</string>
+    <string name="select_folder">Cartella Pick</string>
+    <string name="folder_not_selected">La cartella non è ancora prelevata</string>
+    <string name="folder_pick_cancelled">Cartella picking annullata</string>
+    <string name="select_file">Scegli file</string>
+    <string name="file_not_selected">Il file non è ancora scelto</string>
+    <string name="file_pick_cancelled">File picking annullato</string>
+    <string name="select_newfile">Seleziona nuovo file</string>
+    <string name="newfile_not_selected">Il nuovo filepath non è ancora selezionato</string>
+    <string name="newfile_pick_cancelled">Nuova selezione filepath annullata</string>
+    <string name="prompt_newfile">Salva nuovo file a:</string>
+</resources>

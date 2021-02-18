@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ukážka pre výber zložky</string>
+    <string name="select_folder">Vybrať priečinok</string>
+    <string name="folder_not_selected">Zložka ešte nie je vybraná</string>
+    <string name="folder_pick_cancelled">Výber zložky bol zrušený</string>
+    <string name="select_file">Vybrať súbor</string>
+    <string name="file_not_selected">Súbor ešte nie je vybraný</string>
+    <string name="file_pick_cancelled">Výber súboru bol zrušený</string>
+    <string name="select_newfile">Vybrať nový súbor</string>
+    <string name="newfile_not_selected">Ešte nie je vybratá nová cesta k súboru</string>
+    <string name="newfile_pick_cancelled">Bol zrušený nový výber súboru filepath</string>
+    <string name="prompt_newfile">Uložiť nový súbor do:</string>
+</resources>

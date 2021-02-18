@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mapa za odabir mapa</string>
+    <string name="select_folder">Izaberite mapu.</string>
+    <string name="folder_not_selected">Jedan fascikl još nije izabran.</string>
+    <string name="folder_pick_cancelled">Jedan folder je otkazan.</string>
+    <string name="select_file">Izaberite datoteku.</string>
+    <string name="file_not_selected">Jedna datoteka još nije izabrana.</string>
+    <string name="file_pick_cancelled">Jedna datoteka je otkazana.</string>
+    <string name="select_newfile">Izaberite novu datoteku.</string>
+    <string name="newfile_not_selected">Još nije izabran novi filo-nur.</string>
+    <string name="newfile_pick_cancelled">Poništena je jedna nova selekcija u filu.</string>
+    <string name="prompt_newfile">Treba da sačuvaš jednu novu datoteku.:</string>
+</resources>

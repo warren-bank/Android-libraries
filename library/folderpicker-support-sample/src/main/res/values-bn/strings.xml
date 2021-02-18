@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ফোল্ডার পিকার ডেমো</string>
+    <string name="select_folder">ফোল্ডার</string>
+    <string name="folder_not_selected">ফোল্ডার এখনো গ্রহণ করা হয় নি</string>
+    <string name="folder_pick_cancelled">ফোল্ডার বাতিল করা হয়েছে</string>
+    <string name="select_file">Pick ফাইল</string>
+    <string name="file_not_selected">ফাইলটি এখনো গ্রহণ করা যায়নি</string>
+    <string name="file_pick_cancelled">ফাইল পিককিং বাতিল করা হয়েছে</string>
+    <string name="select_newfile">নতুন ফাইল নির্বাচন করুন</string>
+    <string name="newfile_not_selected">নতুন filepath এখনো নির্বাচিত নয়</string>
+    <string name="newfile_pick_cancelled">নতুন filepath নির্বাচন বাতিল করা হয়েছে</string>
+    <string name="prompt_newfile">নতুন ফাইল সংরক্ষণ করুন:</string>
+</resources>

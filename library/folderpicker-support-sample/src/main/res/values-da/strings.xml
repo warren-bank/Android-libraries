@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Demo af folderen Picker</string>
+    <string name="select_folder">Vælg folder</string>
+    <string name="folder_not_selected">Folderen er endnu ikke valgt</string>
+    <string name="folder_pick_cancelled">Folderen er annulleret</string>
+    <string name="select_file">Vælg fil</string>
+    <string name="file_not_selected">Filen er endnu ikke valgt</string>
+    <string name="file_pick_cancelled">Filplukning annulleret</string>
+    <string name="select_newfile">Vælg ny fil</string>
+    <string name="newfile_not_selected">Ny filsti er endnu ikke valgt</string>
+    <string name="newfile_pick_cancelled">Nyt valg af filsti er annulleret</string>
+    <string name="prompt_newfile">Gem ny fil til:</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Демонстрація теки Picker</string>
+    <string name="select_folder">Вибрати теку</string>
+    <string name="folder_not_selected">Тека ще не відібрана</string>
+    <string name="folder_pick_cancelled">Тека з \' ємне</string>
+    <string name="select_file">Вибрати файл</string>
+    <string name="file_not_selected">Файл ще не відібрано</string>
+    <string name="file_pick_cancelled">Збирання файла скасовано</string>
+    <string name="select_newfile">Вибрати новий файл</string>
+    <string name="newfile_not_selected">Нова файлова система ще не вибрано</string>
+    <string name="newfile_pick_cancelled">Вибір нового набору файлів скасовано</string>
+    <string name="prompt_newfile">Зберегти новий файл до:</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Klasör Seçici Gösterimi</string>
+    <string name="select_folder">Klasör Seç</string>
+    <string name="folder_not_selected">Klasör henüz seçilmemiş</string>
+    <string name="folder_pick_cancelled">Klasör çekme işlemi iptal edildi</string>
+    <string name="select_file">Dosya Seç</string>
+    <string name="file_not_selected">Dosya henüz seçilmemiş</string>
+    <string name="file_pick_cancelled">Dosya çekme işlemi iptal edildi</string>
+    <string name="select_newfile">Yeni Dosya Seç</string>
+    <string name="newfile_not_selected">Yeni dosya yolu henüz seçilmedi</string>
+    <string name="newfile_pick_cancelled">Yeni dosya yolu seçimi iptal edildi</string>
+    <string name="prompt_newfile">Yeni Dosyayı Buraya Kaydet:</string>
+</resources>

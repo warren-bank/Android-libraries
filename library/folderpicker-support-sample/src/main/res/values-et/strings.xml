@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kaustade valija demo</string>
+    <string name="select_folder">Vali kataloog</string>
+    <string name="folder_not_selected">Kausta pole veel valimata</string>
+    <string name="folder_pick_cancelled">Tühistatud kataloog</string>
+    <string name="select_file">Vali fail</string>
+    <string name="file_not_selected">Fail pole veel valimata</string>
+    <string name="file_pick_cancelled">Tühistatud fail</string>
+    <string name="select_newfile">Uue faili valimine</string>
+    <string name="newfile_not_selected">Uus filepath pole veel valitud</string>
+    <string name="newfile_pick_cancelled">Tühistatud uus failivalik</string>
+    <string name="prompt_newfile">Salvesta uus fail kuni:</string>
+</resources>

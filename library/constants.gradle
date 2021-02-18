@@ -1,9 +1,22 @@
 project.ext {
-  releaseVersionCode = 13
-  releaseVersion     = '2.4.9'
-  javaVersion        = JavaVersion.VERSION_1_8
-  minSdkVersion      = 9
-  targetSdkVersion   = 28
-  compileSdkVersion  = 28
-  buildToolsVersion  = '28.0.3'
+  // used by: library, sample, support-library, support-sample
+  releaseVersionCode          = 14
+  releaseVersion              = '2.5.0'
+  javaVersion                 = JavaVersion.VERSION_1_8
+  targetSdkVersion            = 30
+  compileSdkVersion           = 30
+  buildToolsVersion           = '30.0.3'
+
+  // used by: library, sample
+  minSdkVersion               = 9
+
+  // used by: support-library, support-sample
+  libSupportMinSdkVersion     = 16
+  libSupportAnnotation        = '1.1.0'
+  libSupportAppCompat         = '1.2.0'
+
+  // used by: support-sample
+  libSupportCoordinatorLayout = '1.1.0'
+  libSupportRecyclerView      = '1.1.0'
+  libSupportMaterial          = '1.3.0'
 }

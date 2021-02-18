@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">폴더 피커 데모</string>
+    <string name="select_folder">선택 폴더</string>
+    <string name="folder_not_selected">폴더가 아직 선택되지 않았습니다.</string>
+    <string name="folder_pick_cancelled">폴더 피킹 취소</string>
+    <string name="select_file">피킹 파일</string>
+    <string name="file_not_selected">파일이 아직 선택되지 않았습니다.</string>
+    <string name="file_pick_cancelled">파일 피킹 취소</string>
+    <string name="select_newfile">새 파일 선택</string>
+    <string name="newfile_not_selected">새 파일 경로가 아직 선택되지 않았습니다.</string>
+    <string name="newfile_pick_cancelled">새 파일 경로 선택사항이 취소되었습니다.</string>
+    <string name="prompt_newfile">새 파일 저장:</string>
+</resources>

@@ -1,2 +1,5 @@
 include ':folderpicker-library'
 include ':folderpicker-sample'
+
+include ':folderpicker-support-library'
+include ':folderpicker-support-sample'

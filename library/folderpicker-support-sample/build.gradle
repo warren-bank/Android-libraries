@@ -1,0 +1,49 @@
+apply from: '../constants.gradle'
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion project.ext.compileSdkVersion
+  buildToolsVersion project.ext.buildToolsVersion
+
+  compileOptions {
+    sourceCompatibility project.ext.javaVersion
+    targetCompatibility project.ext.javaVersion
+  }
+
+  defaultConfig {
+    minSdkVersion project.ext.libSupportMinSdkVersion
+    targetSdkVersion project.ext.targetSdkVersion
+
+    applicationId "lib.folderpicker.support.sample"
+    versionName project.ext.releaseVersion
+    versionCode project.ext.releaseVersionCode
+  }
+
+  lintOptions {
+    disable 'MissingTranslation'
+    abortOnError true
+  }
+
+  buildTypes {
+    release {
+      shrinkResources true
+      minifyEnabled true
+      proguardFiles = [
+        "proguard-rules.txt",
+        getDefaultProguardFile('proguard-android.txt')
+      ]
+    }
+    debug {
+      jniDebuggable = true
+    }
+  }
+}
+
+dependencies {
+  implementation project(':folderpicker-library')
+  implementation project(':folderpicker-support-library')
+
+  implementation 'androidx.appcompat:appcompat:'                  + project.ext.libSupportAppCompat            // (1.0 MB) https://mvnrepository.com/artifact/androidx.appcompat/appcompat?repo=google
+  implementation 'androidx.coordinatorlayout:coordinatorlayout:'  + project.ext.libSupportCoordinatorLayout    // ( 44 KB) https://mvnrepository.com/artifact/androidx.coordinatorlayout/coordinatorlayout?repo=google
+  implementation 'com.google.android.material:material:'          + project.ext.libSupportMaterial             // (566 KB) https://mvnrepository.com/artifact/com.google.android.material/material?repo=google
+}

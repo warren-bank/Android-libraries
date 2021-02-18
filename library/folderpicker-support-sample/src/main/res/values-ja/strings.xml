@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">フォルダー・ピッカー・デモ</string>
+    <string name="select_folder">フォルダーの選択</string>
+    <string name="folder_not_selected">フォルダーはまだピックされてい</string>
+    <string name="folder_pick_cancelled">フォルダー・ピッキング</string>
+    <string name="select_file">ファイルの選出</string>
+    <string name="file_not_selected">ファイルはまだピックされてい</string>
+    <string name="file_pick_cancelled">ファイル・ピッキング</string>
+    <string name="select_newfile">新規ファイルの選択</string>
+    <string name="newfile_not_selected">新規ファイル・パスはまだ選択されていません</string>
+    <string name="newfile_pick_cancelled">新規ファイル・パス選択が取り消されました</string>
+    <string name="prompt_newfile">新規ファイルの保存先:</string>
+</resources>

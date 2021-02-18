@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="folderPicker_colorPrimaryDark_1">@android:color/holo_blue_dark</color>
+  <color name="folderPicker_colorAccent_1">@android:color/holo_blue_light</color>
+  <color name="folderPicker_colorPrimary_1">@android:color/holo_blue_light</color>
+  <color name="folderPicker_colorOnPrimary_1">@android:color/white</color>
+  <color name="folderPicker_colorSecondary_1">#F6F6F6</color>
+  <color name="folderPicker_colorOnSecondary_1">#333333</color>
+
+  <color name="folderPicker_colorPrimaryDark_2">@android:color/holo_green_dark</color>
+  <color name="folderPicker_colorAccent_2">@android:color/holo_green_light</color>
+  <color name="folderPicker_colorPrimary_2">@android:color/holo_green_light</color>
+  <color name="folderPicker_colorOnPrimary_2">@android:color/white</color>
+  <color name="folderPicker_colorSecondary_2">#F6F6F6</color>
+  <color name="folderPicker_colorOnSecondary_2">#333333</color>
+
+  <color name="folderPicker_colorPrimaryDark_3">@android:color/holo_orange_dark</color>
+  <color name="folderPicker_colorAccent_3">@android:color/holo_orange_light</color>
+  <color name="folderPicker_colorPrimary_3">@android:color/holo_orange_light</color>
+  <color name="folderPicker_colorOnPrimary_3">@android:color/white</color>
+  <color name="folderPicker_colorSecondary_3">#F6F6F6</color>
+  <color name="folderPicker_colorOnSecondary_3">#333333</color>
+</resources>

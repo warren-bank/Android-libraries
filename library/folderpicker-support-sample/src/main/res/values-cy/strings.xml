@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Name</string>
+    <string name="select_folder">Dewis Plygell</string>
+    <string name="folder_not_selected">Nid yw\'r blygell wedi ei nodi eto</string>
+    <string name="folder_pick_cancelled">Diddymwyd y dewis plygell</string>
+    <string name="select_file">Dewis Ffeil</string>
+    <string name="file_not_selected">Nid yw\'r ffeil wedi ei ddewis eto</string>
+    <string name="file_pick_cancelled">Diddymwyd y dewis ffeil</string>
+    <string name="select_newfile">Dewis Ffeil Newydd</string>
+    <string name="newfile_not_selected">Nid yw\'r ffilath newydd wedi ei ddewis eto</string>
+    <string name="newfile_pick_cancelled">Canslwyd dewis ffilath newydd</string>
+    <string name="prompt_newfile">Cadw Ffeil Newydd i:</string>
+</resources>
