@@ -95,6 +95,7 @@ public class MainActivity extends Activity {
             .withFileFilter("^.*\\.(?:png|apng|jng|mng)$")
             .withTitle("Select file to upload")
             .withDescription("Possibly a pretty PNG picture?")
+            .withHomeButton(true)
             .withPath(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getAbsolutePath())
             .start();
     }

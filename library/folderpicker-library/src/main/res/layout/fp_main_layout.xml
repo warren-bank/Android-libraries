@@ -15,6 +15,7 @@
         android:textColor="#333" />
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/fp_tv_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,10 +31,10 @@
         android:gravity="center_horizontal"
         android:text="Description"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:visibility="gone"
         android:textColor="#999" />
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/fp_tv_empty_dir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,7 +50,6 @@
         android:gravity="center_horizontal"
         android:text="@string/select_empty_dir"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:visibility="gone"
         android:textColor="#999" />
 
     <TextView
@@ -93,7 +93,9 @@
         android:padding="5sp">
 
         <TextView
+            android:visibility="gone"
             style="@style/ToolButtons"
+            android:id="@+id/fp_btn_home"
             android:background="@drawable/fp_outline_black_1dp"
             android:drawableTop="@drawable/fp_ic_action_home"
             android:onClick="home"

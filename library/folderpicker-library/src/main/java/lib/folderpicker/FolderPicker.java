@@ -33,6 +33,7 @@ public class FolderPicker extends Activity {
     protected static final String EXTRA_TITLE             = "title";
     protected static final String EXTRA_DESCRIPTION       = "desc";
     protected static final String EXTRA_LOCATION          = "location";
+    protected static final String EXTRA_HOME_BUTTON       = "homeButton";
     protected static final String EXTRA_EMPTY_FOLDER      = "emptyFolder";
     protected static final String EXTRA_NEW_FILE_PROMPT   = "newFilePrompt";
     protected static final String EXTRA_PICK_FILE         = "pickFile";
@@ -54,6 +55,7 @@ public class FolderPicker extends Activity {
     ArrayList<FilePojo> mFilesList;
 
     TextView mTvLocation;
+    String mHomeLocation;
 
     String mLocation;
     boolean mPickFile;
@@ -86,9 +88,8 @@ public class FolderPicker extends Activity {
 
         setContentView(R.layout.fp_main_layout);
 
-        mTvLocation = findViewById(R.id.fp_tv_location);
-
-        String location = Environment.getExternalStorageDirectory().getAbsolutePath();
+        mTvLocation   = findViewById(R.id.fp_tv_location);
+        mHomeLocation = Environment.getExternalStorageDirectory().getAbsolutePath();
 
         try {
             if (mReceivedIntent.hasExtra(EXTRA_TITLE)) {
@@ -112,7 +113,14 @@ public class FolderPicker extends Activity {
                 if (newLocation != null) {
                     File folder = new File(newLocation);
                     if (folder.exists())
-                        location = newLocation;
+                        mHomeLocation = newLocation;
+                }
+            }
+
+            if (mReceivedIntent.hasExtra(EXTRA_HOME_BUTTON)) {
+                boolean homeButton = mReceivedIntent.getBooleanExtra(EXTRA_HOME_BUTTON, false);
+                if (homeButton) {
+                    findViewById(R.id.fp_btn_home).setVisibility(View.VISIBLE);
                 }
             }
 
@@ -157,7 +165,7 @@ public class FolderPicker extends Activity {
             e.printStackTrace();
         }
 
-        checkAndLoadLists(location);
+        checkAndLoadLists(mHomeLocation);
     }
 
     /**
@@ -322,8 +330,7 @@ public class FolderPicker extends Activity {
     }
 
     public void home(View v) {
-        String location = Environment.getExternalStorageDirectory().getAbsolutePath();
-        checkAndLoadLists(location);
+        checkAndLoadLists(mHomeLocation);
     }
 
     /**
