@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Ma jistgħux jiktbu għal direttorju</string>
     <string name="new_file_name_does_not_pass_filter">Format ta \' isem fajl ġdid mhuwiex korrett</string>
     <string name="new_file_name_already_exists">Isem fajl ġdid diġà jeżisti</string>
+    <string name="press_back_button_again_to_exit">Agħfas \'Lura\' mill-ġdid biex tikkanċella</string>
+    <string name="press_up_button_again_to_exit">Agħfas \'Sa\' mill-ġdid biex tikkanċella</string>
 </resources>

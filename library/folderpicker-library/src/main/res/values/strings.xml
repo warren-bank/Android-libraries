@@ -23,4 +23,6 @@
     <string name="dir_write_permission_denied">Cannot write to directory</string>
     <string name="new_file_name_does_not_pass_filter">Format of new file name is not correct</string>
     <string name="new_file_name_already_exists">New file name already exists</string>
+    <string name="press_back_button_again_to_exit">Press \'Back\' again to cancel</string>
+    <string name="press_up_button_again_to_exit">Press \'Up\' again to cancel</string>
 </resources>

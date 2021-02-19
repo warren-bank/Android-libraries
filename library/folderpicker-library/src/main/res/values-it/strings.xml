@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Impossibile scrivere alla directory</string>
     <string name="new_file_name_does_not_pass_filter">Il formato del nuovo nome del file non è corretto</string>
     <string name="new_file_name_already_exists">Nuovo nome file già esistente</string>
+    <string name="press_back_button_again_to_exit">Premi \'Indietro\' di nuovo per annullare</string>
+    <string name="press_up_button_again_to_exit">Premere di nuovo \'Su\' per annullare</string>
 </resources>

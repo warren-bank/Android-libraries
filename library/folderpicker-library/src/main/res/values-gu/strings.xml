@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">ડિરેક્ટરીમાં લખી શકતા નથી</string>
     <string name="new_file_name_does_not_pass_filter">નવી ફાઇલ નામ નું બંધારણ યોગ્ય નથી</string>
     <string name="new_file_name_already_exists">નવી ફાઇલ નામ પહેલાથી જ હાજર છે</string>
+    <string name="press_back_button_again_to_exit">રદ કરવા માટે ફરીથી \'પાછળ\' દબાવો</string>
+    <string name="press_up_button_again_to_exit">રદ કરવા માટે ફરીથી \'ઉપર\' દબાવો</string>
 </resources>

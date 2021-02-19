@@ -1,6 +1,6 @@
 <resources>
     <string name="home">Rumah</string>
-    <string name="up">Up</string>
+    <string name="up">Atas</string>
     <string name="neww">Baru</string>
     <string name="select">Pilih</string>
     <string name="cancel">Batalkan</string>
@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Tidak dapat menulis ke direktori</string>
     <string name="new_file_name_does_not_pass_filter">Format nama berkas baru tidak benar</string>
     <string name="new_file_name_already_exists">Nama berkas baru sudah ada</string>
+    <string name="press_back_button_again_to_exit">Tekan \'Kembali\' lagi untuk membatalkan</string>
+    <string name="press_up_button_again_to_exit">Tekan \'Atas\' lagi untuk membatalkan</string>
 </resources>

@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">डाइरेक्टरीमा लेख्न सकिँदैन</string>
     <string name="new_file_name_does_not_pass_filter">नयाँ फाइल नामको ढाँचा ठीक छैन</string>
     <string name="new_file_name_already_exists">नयाँ फाइल नाम पहिल्यै अवस्थित छ</string>
+    <string name="press_back_button_again_to_exit">रद्द गर्न \'पछाडि\' थिच्नुहोस्</string>
+    <string name="press_up_button_again_to_exit">रद्द गर्न \'माथि\' थिच्नुहोस्</string>
 </resources>

@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Dizine yazılamıyor</string>
     <string name="new_file_name_does_not_pass_filter">Yeni dosya adının biçimi yanlış</string>
     <string name="new_file_name_already_exists">Yeni dosya adı zaten var</string>
+    <string name="press_back_button_again_to_exit">İptal etmek için \'Geri\' düğmesini yeniden tıklatın</string>
+    <string name="press_up_button_again_to_exit">İptal etmek için \'Yukarı\' tuşuna yeniden basın</string>
 </resources>

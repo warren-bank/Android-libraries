@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Không thể ghi vào thư mục</string>
     <string name="new_file_name_does_not_pass_filter">Ðịnh dạng tên tập tin mới không đúng</string>
     <string name="new_file_name_already_exists">Tên tập tin mới đã tồn tại</string>
+    <string name="press_back_button_again_to_exit">Bấm \'Trở lại\' một lần nữa để hủy</string>
+    <string name="press_up_button_again_to_exit">Bấm \'Lên\' một lần nữa để hủy</string>
 </resources>

@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Αδυναμία εγγραφής στον κατάλογο</string>
     <string name="new_file_name_does_not_pass_filter">Η μορφή του νέου αρχείου name δεν είναι σωστή</string>
     <string name="new_file_name_already_exists">Υπάρχει ήδη νέο όνομα αρχείου.</string>
+    <string name="press_back_button_again_to_exit">Πατήστε \'Επιστροφή\' για ακύρωση</string>
+    <string name="press_up_button_again_to_exit">Πατήστε \'Επάνω\' για ακύρωση</string>
 </resources>

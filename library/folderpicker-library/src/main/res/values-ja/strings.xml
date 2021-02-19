@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">ディレクトリーに書き込めません</string>
     <string name="new_file_name_does_not_pass_filter">新規ファイル名の形式が正しくありません</string>
     <string name="new_file_name_already_exists">新規ファイル名は既に存在し</string>
+    <string name="press_back_button_again_to_exit">取り消すには「戻る」を再度押してください</string>
+    <string name="press_up_button_again_to_exit">取り消すには「上」を押してください</string>
 </resources>

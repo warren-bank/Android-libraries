@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">ไม่สามารถเขียนลงในไดเร็กทอรี</string>
     <string name="new_file_name_does_not_pass_filter">รูปแบบของชื่อไฟล์ใหม่ไม่ถูกต้อง</string>
     <string name="new_file_name_already_exists">ชื่อไฟล์ใหม่มีอยู่แล้ว</string>
+    <string name="press_back_button_again_to_exit">กด \'ย้อนกลับ\' อีกครั้งเพื่อยกเลิก</string>
+    <string name="press_up_button_again_to_exit">กด \'ขึ้น\' อีกครั้งเพื่อยกเลิก</string>
 </resources>

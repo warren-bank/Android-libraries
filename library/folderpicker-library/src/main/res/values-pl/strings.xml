@@ -1,6 +1,6 @@
 <resources>
     <string name="home">Spis treści</string>
-    <string name="up">Początek rozdziału</string>
+    <string name="up">W górę</string>
     <string name="neww">Nowy</string>
     <string name="select">Wybierz</string>
     <string name="cancel">Anuluj</string>
@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Nie można zapisać do katalogu</string>
     <string name="new_file_name_does_not_pass_filter">Format nazwy nowego pliku jest niepoprawny</string>
     <string name="new_file_name_already_exists">Nowa nazwa pliku już istnieje</string>
+    <string name="press_back_button_again_to_exit">Ponownie naciśnij przycisk \'Wstecz\', aby anulować</string>
+    <string name="press_up_button_again_to_exit">Naciśnij ponownie klawisz \'W górę\', aby anulować</string>
 </resources>

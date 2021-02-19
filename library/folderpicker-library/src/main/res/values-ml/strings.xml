@@ -9,7 +9,7 @@
     <string name="enter_folder_name">ഫോള്ഡര് പേരു് നല്കുക</string>
     <string name="edit_location">സ്ഥാനം ചിട്ടപ്പെടുത്തുക</string>
     <string name="create">സൃഷ്ടിക്കുക</string>
-    <string name="ok">ഓക്ക്Constellation name (optional)</string>
+    <string name="ok">ശരി</string>
     <string name="select_file">ഒരു ഫയല് തെരഞ്ഞെടുക്കേണ്ടതുണ്ട്</string>
     <string name="select_empty_folder">ഒരു ഒഴിവായ ഫോള്ഡര് തെരഞ്ഞെടുക്കേണ്ടതുണ്ട്</string>
     <string name="no_access_to_storage">സ്റ്റോറേജ് പ്രവേശന അനുവാദം നല്കിയിട്ടില്ല</string>
@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">ഡയറക്ടറിയിലേക്ക് എഴുതുവാന് സാധ്യമല്ല</string>
     <string name="new_file_name_does_not_pass_filter">പുതിയ ഫയലിന്റെ ഫോര്മാറ്റ് ശരിയല്ല</string>
     <string name="new_file_name_already_exists">പുതിയ ഫയല് നാമം നിലവിലുണ്ടു്</string>
+    <string name="press_back_button_again_to_exit">റദ്ദാക്കാന് \'തിരികെ\' അമര്ത്തുക</string>
+    <string name="press_up_button_again_to_exit">റദ്ദാക്കാന് വീണ്ടും \'മുകളില്\' അമര്ത്തുക</string>
 </resources>

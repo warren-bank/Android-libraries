@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">அடைவுக்கு எழுத இயலாது</string>
     <string name="new_file_name_does_not_pass_filter">புதிய கோப்பு பெயர்களின் வடிவம் சரியாக இல்லை</string>
     <string name="new_file_name_already_exists">புதிய கோப்பு பெயர் ஏற்கனவே உள்ளது</string>
+    <string name="press_back_button_again_to_exit">மீண்டும் ரத்து செய்ய \'பின்\' அழுத்தவும்</string>
+    <string name="press_up_button_again_to_exit">ரத்து செய்ய \'மேல்\' அழுத்தவும்</string>
 </resources>

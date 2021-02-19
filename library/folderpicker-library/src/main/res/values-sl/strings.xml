@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Ni moč pisati v imenik</string>
     <string name="new_file_name_does_not_pass_filter">Format novega imena datoteke ni pravilen</string>
     <string name="new_file_name_already_exists">Novo ime datoteke že obstaja</string>
+    <string name="press_back_button_again_to_exit">Za preklic pritisnite \'Nazaj\'.</string>
+    <string name="press_up_button_again_to_exit">Za preklic pritisnite \'Navzgor\'.</string>
 </resources>

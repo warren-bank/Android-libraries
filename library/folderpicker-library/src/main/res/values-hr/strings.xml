@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Ne može se pisati u direktorij</string>
     <string name="new_file_name_does_not_pass_filter">Format novog imena datoteke nije ispravan</string>
     <string name="new_file_name_already_exists">Ime nove datoteke već postoji</string>
+    <string name="press_back_button_again_to_exit">Pritisnite \'Natrag\' ponovno za opoziv</string>
+    <string name="press_up_button_again_to_exit">Pritisnite \'Gore.\' ponovno za opoziv</string>
 </resources>

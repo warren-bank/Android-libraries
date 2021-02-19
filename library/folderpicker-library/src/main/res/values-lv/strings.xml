@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Neizdevās ierakstīt direktorijā</string>
     <string name="new_file_name_does_not_pass_filter">Jauna faila nosaukuma formāts nav pareizs</string>
     <string name="new_file_name_already_exists">Jauns faila nosaukums jau eksistē</string>
+    <string name="press_back_button_again_to_exit">Nospiediet \'Atpakaļ\' atkal atcelt</string>
+    <string name="press_up_button_again_to_exit">Nospiediet \'Augšup\' atkal, lai atceltu</string>
 </resources>

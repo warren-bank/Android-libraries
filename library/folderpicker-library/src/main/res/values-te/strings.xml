@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">డైరెక్టరీకు వ్రాయలేము</string>
     <string name="new_file_name_does_not_pass_filter">కొత్త ఫైల్ పేరు యొక్క ఫార్మాట్ సరికాదు</string>
     <string name="new_file_name_already_exists">కొత్త ఫైల్ పేరు ఇప్పటికే వుంది</string>
+    <string name="press_back_button_again_to_exit">రద్దు చేయడానికి మళ్ళీ \'బ్యాక్\' ప్రెస్</string>
+    <string name="press_up_button_again_to_exit">రద్దు చేయడానికి మళ్ళీ \'పైప్\' ప్రెస్</string>
 </resources>

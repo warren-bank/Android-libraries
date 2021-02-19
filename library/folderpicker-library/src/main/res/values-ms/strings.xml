@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Tidak dapat tulis ke direktori</string>
     <string name="new_file_name_does_not_pass_filter">Format nama fail baru tidak betul</string>
     <string name="new_file_name_already_exists">Nama fail baru sudah wujud</string>
+    <string name="press_back_button_again_to_exit">Tekan \'Undur\' lagi untuk dibatalkan</string>
+    <string name="press_up_button_again_to_exit">Tekan \'Atas\' lagi untuk batal</string>
 </resources>

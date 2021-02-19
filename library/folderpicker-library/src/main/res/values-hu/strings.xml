@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Nem lehet írni a könyvtárba</string>
     <string name="new_file_name_does_not_pass_filter">Az új fájlnév formátuma helytelen</string>
     <string name="new_file_name_already_exists">Az új fájlnév már létezik</string>
+    <string name="press_back_button_again_to_exit">Nyomja meg a \'Vissza\' gombot a visszavonáshoz</string>
+    <string name="press_up_button_again_to_exit">Nyomja meg a \'Fel\' gombot a visszavonáshoz</string>
 </resources>

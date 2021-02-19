@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Não é possível gravar no diretório</string>
     <string name="new_file_name_does_not_pass_filter">Formato do novo nome do arquivo não está correto</string>
     <string name="new_file_name_already_exists">Novo nome do arquivo já existe</string>
+    <string name="press_back_button_again_to_exit">Pressione \'Voltar\' novamente para cancelar</string>
+    <string name="press_up_button_again_to_exit">Pressione \'Para cima\' novamente para cancelar</string>
 </resources>

@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">ডিরেক্টরিতে লিখতে ব্যর্থ</string>
     <string name="new_file_name_does_not_pass_filter">নতুন ফাইলের নামের বিন্যাস সঠিক নয়</string>
     <string name="new_file_name_already_exists">নতুন ফাইলের নাম ইতিমধ্যেই বিদ্যমান</string>
+    <string name="press_back_button_again_to_exit">বাতিল করার জন্য \'ব্যাক\' চাপুন</string>
+    <string name="press_up_button_again_to_exit">বাতিল করতে \'আপ\' প্রেস করা হবে</string>
 </resources>

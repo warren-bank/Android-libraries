@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Do adresáře nelze zapisovat</string>
     <string name="new_file_name_does_not_pass_filter">Formát nového názvu souboru není správný</string>
     <string name="new_file_name_already_exists">Nový název souboru již existuje</string>
+    <string name="press_back_button_again_to_exit">Stiskněte tlačítko \'Zpět\' pro zrušení</string>
+    <string name="press_up_button_again_to_exit">Opětovným stiskem tlačítka \'Nahoru\' zrušíte</string>
 </resources>

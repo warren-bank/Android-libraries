@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">ඩිරෙක්ටරියට ලියන්න බෑ</string>
     <string name="new_file_name_does_not_pass_filter">නව ගොනු නාමයේ සංයුතිය නිවැරදි නොවේ</string>
     <string name="new_file_name_already_exists">නව ගොනු නාමය දැනටමත් පවතී</string>
+    <string name="press_back_button_again_to_exit">නැවත අවලංගු කරන්න \'ආපසු\' ඔබන්න</string>
+    <string name="press_up_button_again_to_exit">\'ඉහළට\' නැවතත් අවලංගු කරන්න</string>
 </resources>

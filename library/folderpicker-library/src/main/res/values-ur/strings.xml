@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">ڈائریکٹری کو نہیں لکھتے</string>
     <string name="new_file_name_does_not_pass_filter">نئے فائل نام کی فارمیٹ درست نہیں</string>
     <string name="new_file_name_already_exists">نیا فائل نام پہلے سے موجود</string>
+    <string name="press_back_button_again_to_exit">منسوخ کرنے کے لئے دوبارہ پریس \' واپس \'</string>
+    <string name="press_up_button_again_to_exit">پریس \'اپ\' پھر منسوخ کرنے کے لئے</string>
 </resources>

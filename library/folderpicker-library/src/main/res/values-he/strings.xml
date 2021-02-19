@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">לא ניתן לכתוב למדריך</string>
     <string name="new_file_name_does_not_pass_filter">מבנה שם הקובץ החדש שגוי.</string>
     <string name="new_file_name_already_exists">שם קובץ חדש כבר קיים.</string>
+    <string name="press_back_button_again_to_exit">לחצו על \'חזרה\' כדי לבטל</string>
+    <string name="press_up_button_again_to_exit">לחצו על \'למעלה\' כדי לבטל</string>
 </resources>

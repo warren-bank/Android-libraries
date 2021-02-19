@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Schrijven naar map is niet mogelijk</string>
     <string name="new_file_name_does_not_pass_filter">Indeling van nieuwe bestandsnaam is onjuist</string>
     <string name="new_file_name_already_exists">Nieuwe bestandsnaam bestaat al</string>
+    <string name="press_back_button_again_to_exit">Druk opnieuw op \'Terug\' om te annuleren</string>
+    <string name="press_up_button_again_to_exit">Druk opnieuw op \'Omhoog\' om te annuleren</string>
 </resources>

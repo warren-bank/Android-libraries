@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">निर्देशिका में लिख नहीं सकता है</string>
     <string name="new_file_name_does_not_pass_filter">नए फ़ाइल नाम का प्रारूप सही नहीं है</string>
     <string name="new_file_name_already_exists">नया फ़ाइल नाम पहले से मौजूद है</string>
+    <string name="press_back_button_again_to_exit">रद्द करने के लिए फिर से \'पीछे\' दबाएँ</string>
+    <string name="press_up_button_again_to_exit">रद्द करने के लिए फिर से \'अप\' दबाएँ</string>
 </resources>

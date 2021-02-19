@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">无法写入目录</string>
     <string name="new_file_name_does_not_pass_filter">新文件名的格式不正确</string>
     <string name="new_file_name_already_exists">新文件名已存在</string>
+    <string name="press_back_button_again_to_exit">再次按 \"上一步 \" 取消</string>
+    <string name="press_up_button_again_to_exit">再次按 \"上移 \" 以取消</string>
 </resources>

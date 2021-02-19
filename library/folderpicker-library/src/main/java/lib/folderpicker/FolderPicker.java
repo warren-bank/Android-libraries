@@ -56,6 +56,8 @@ public class FolderPicker extends Activity {
     protected String     mLocation;
     protected View       mListView;
 
+    private   boolean    mExitOnNextBackPressed;
+
     public static FolderPickerBuilder withBuilder() {
         return new FolderPickerBuilder();
     }
@@ -305,6 +307,7 @@ public class FolderPicker extends Activity {
     private boolean checkAndLoadLists(String location, boolean showToast) {
         if (checkLocation(location, showToast)) {
             mLocation = location;
+            mExitOnNextBackPressed = false;
             loadLists();
             return true;
         }
@@ -564,16 +567,40 @@ public class FolderPicker extends Activity {
      * note: called from xml layout
      */
     public void goBack(View v) {
-        if (mLocation != null && !mLocation.equals("") && !mLocation.equals("/")) {
-            int start = mLocation.lastIndexOf('/');
-            String newLocation = (start == 0) ? File.separator : mLocation.substring(0, start);
+        boolean is_target_up_button = (v != null);
 
-            if (!checkAndLoadLists(newLocation, false)) {
-                exit();
-            }
-        } else {
+        if ((mLocation == null) || mLocation.isEmpty() || (mLocation.equals("/") && mExitOnNextBackPressed)) {
             exit();
+            return;
         }
+
+        if (mLocation.equals("/")) {
+            cannotGoBack(is_target_up_button);
+            return;
+        }
+
+        int start          = mLocation.lastIndexOf('/');
+        String newLocation = (start == 0) ? File.separator : mLocation.substring(0, start);
+        boolean showToast  = !mExitOnNextBackPressed;
+        boolean OK         = checkAndLoadLists(newLocation, showToast);
+
+        if (OK) {
+          //mExitOnNextBackPressed = false;
+          return;
+        }
+
+        if (mExitOnNextBackPressed) {
+            exit();
+            return;
+        }
+
+        cannotGoBack(is_target_up_button);
+    }
+
+    private void cannotGoBack(boolean is_target_up_button) {
+        int resId = is_target_up_button ? R.string.press_up_button_again_to_exit : R.string.press_back_button_again_to_exit;
+        Toast.makeText(FolderPicker.this, getString(resId), Toast.LENGTH_LONG).show();
+        mExitOnNextBackPressed = true;
     }
 
     @Override

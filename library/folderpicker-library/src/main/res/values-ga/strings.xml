@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Ní féidir scríobh a scríobh</string>
     <string name="new_file_name_does_not_pass_filter">Ní féidir an t-ainm comhaid nua a cheartú</string>
     <string name="new_file_name_already_exists">Tá ainm nua an chomhaid ann cheana</string>
+    <string name="press_back_button_again_to_exit">Brúigh \'Ar ais\' arís chun é a chealú</string>
+    <string name="press_up_button_again_to_exit">Brúigh \'Suas\' arís chun é a chealú</string>
 </resources>

@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">디렉토리에 쓸 수 없음</string>
     <string name="new_file_name_does_not_pass_filter">새 파일 이름의 형식이 올바르지 않습니다.</string>
     <string name="new_file_name_already_exists">새 파일 이름이 이미 있습니다.</string>
+    <string name="press_back_button_again_to_exit">취소하려면 \'이전\' 을 다시 누르십시오.</string>
+    <string name="press_up_button_again_to_exit">취소하려면 \'위로\' 를 다시 누르십시오.</string>
 </resources>

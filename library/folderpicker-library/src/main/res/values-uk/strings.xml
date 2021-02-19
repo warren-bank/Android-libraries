@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Неможливо записати у каталог</string>
     <string name="new_file_name_does_not_pass_filter">Не вказано формат назви нового файла</string>
     <string name="new_file_name_already_exists">Нова назва файла вже існує</string>
+    <string name="press_back_button_again_to_exit">Натисніть кнопку \"Назад\" знову, щоб скасувати</string>
+    <string name="press_up_button_again_to_exit">Натисніть \"Вгору\" знову, щоб скасувати</string>
 </resources>

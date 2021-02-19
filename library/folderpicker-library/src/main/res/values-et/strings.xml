@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Kataloogi kirjutamine nurjus</string>
     <string name="new_file_name_does_not_pass_filter">Uue failinime vorming ei ole korrektne</string>
     <string name="new_file_name_already_exists">Uus failinimi on juba olemas</string>
+    <string name="press_back_button_again_to_exit">Vajuta uuesti \'Tagasi\', et tühistada</string>
+    <string name="press_up_button_again_to_exit">Vajuta uuesti \'Üles\', et tühistada</string>
 </resources>

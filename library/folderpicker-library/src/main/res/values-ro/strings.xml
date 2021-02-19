@@ -22,4 +22,6 @@
     <string name="dir_write_permission_denied">Nu se poate scrie în director</string>
     <string name="new_file_name_does_not_pass_filter">Formatul noului nume de fişier nu este corect</string>
     <string name="new_file_name_already_exists">Numele de fişier nou există deja</string>
+    <string name="press_back_button_again_to_exit">Apăsaţi \'Înapoi\' din nou pentru a anula</string>
+    <string name="press_up_button_again_to_exit">Apăsaţi \'Sus\' din nou pentru a anula</string>
 </resources>
