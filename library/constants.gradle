@@ -1,7 +1,7 @@
 project.ext {
   // used by: library, sample, support-library, support-sample
-  releaseVersionCode          = 16
-  releaseVersion              = '2.5.2'
+  releaseVersionCode          = 17
+  releaseVersion              = '2.5.3'
   javaVersion                 = JavaVersion.VERSION_1_8
   targetSdkVersion            = 30
   compileSdkVersion           = 30

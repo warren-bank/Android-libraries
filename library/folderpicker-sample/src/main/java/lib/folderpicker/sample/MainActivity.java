@@ -127,6 +127,7 @@ public class MainActivity extends Activity {
             .withActivity(MainActivity.this)
             .withRequestCode(NEW_FILE_PICKER_CODE)
             .withNewFilePrompt( getString(R.string.prompt_newfile) )
+            .withNewFileName("export.json")
             .withFileFilter("^.*\\.(?:json|txt)$")
             .withTitle("JSON Data Export")
             .withPath("/storage")
