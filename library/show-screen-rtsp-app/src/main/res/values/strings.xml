@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AndroidShow</string>
+
+    <string name="label_rtsp_server_endpoint">RTSP server listening at:</string>
+    <string name="button_start">START</string>
+    <string name="button_stop">STOP</string>
+
+    <string name="error_port_unavailable_title">Port is already in use</string>
+    <string name="error_port_unavailable_message">You need to choose another port for the RTSP server</string>
+
+    <string name="error_rtsp_server_endpoint">Error: RTSP server is not running</string>
+
+    <string name="error_media_projection">Error: Could not obtain screen MediaProjection</string>
+
+    <string name="notice_rtsp_stream_started">RTSP STREAM STARTED</string>
+    <string name="notice_rtsp_stream_stopped">RTSP STREAM STOPPED</string>
+</resources>

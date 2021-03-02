@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AndroidShow</string>
+
+    <string name="label_rtsp_server_endpoint">RTSP服务器在以下位置监听:</string>
+    <string name="button_start">开始录像</string>
+    <string name="button_stop">结束录像</string>
+
+    <string name="error_port_unavailable_title">端口已在使用中</string>
+    <string name="error_port_unavailable_message">您需要为RTSP服务器选择另一个端口</string>
+
+    <string name="error_rtsp_server_endpoint">错误：RTSP服务器未运行</string>
+
+    <string name="error_media_projection">错误：无法获取屏幕MediaProjection</string>
+
+    <string name="notice_rtsp_stream_started">RTSP流开始</string>
+    <string name="notice_rtsp_stream_stopped">RTSP流已停止</string>
+</resources>
