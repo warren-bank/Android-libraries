@@ -2,14 +2,17 @@ package net.rdrei.android.dirchooser;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.FileObserver;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -211,13 +214,20 @@ public class DirectoryChooserFragment extends DialogFragment {
     private void checkPermissionsAndOpenInitialDirectory() {
         if (Build.VERSION.SDK_INT < 23) {
             openInitialDirectory();
-        } else {
+        } else if (Build.VERSION.SDK_INT < 30) {
             String permission = Manifest.permission.READ_EXTERNAL_STORAGE;
 
             if (ContextCompat.checkSelfPermission(getContext(), permission) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(new String[]{permission}, PERMISSIONS_REQUEST_CODE);
             } else {
                 openInitialDirectory();
+            }
+        } else {
+            if (Environment.isExternalStorageManager()) {
+                openInitialDirectory();
+            } else {
+                Intent permissionIntent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, Uri.parse("package:" + getActivity().getPackageName()));
+                startActivityForResult(permissionIntent, PERMISSIONS_REQUEST_CODE);
             }
         }
     }
@@ -227,6 +237,21 @@ public class DirectoryChooserFragment extends DialogFragment {
         switch (requestCode) {
             case PERMISSIONS_REQUEST_CODE: {
                 if ((grantResults.length > 0) && (grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
+                    openInitialDirectory();
+                } else {
+                    // permission denied: cancel
+                    mSelectedDir = null;
+                    returnSelectedFolder();
+                }
+            }
+        }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case PERMISSIONS_REQUEST_CODE: {
+                if (Environment.isExternalStorageManager()) {
                     openInitialDirectory();
                 } else {
                     // permission denied: cancel
