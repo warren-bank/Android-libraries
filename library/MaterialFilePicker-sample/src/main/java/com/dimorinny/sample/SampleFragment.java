@@ -3,6 +3,7 @@ package com.dimorinny.sample;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,8 @@ import androidx.fragment.app.Fragment;
 
 import com.nbsp.materialfilepicker.MaterialFilePicker;
 import com.nbsp.materialfilepicker.ui.FilePickerActivity;
+
+import java.io.File;
 
 public class SampleFragment extends Fragment {
 
@@ -44,10 +47,17 @@ public class SampleFragment extends Fragment {
     }
 
     private void openFilePicker() {
+        String rootPath = (
+            new File(
+                Environment.getExternalStorageDirectory(),
+                "DCIM"
+            )
+        ).getAbsolutePath();
+
         new MaterialFilePicker()
                 .withSupportFragment(this)
                 .withRequestCode(FILE_PICKER_REQUEST_CODE)
-                .withRootPath("/")
+                .withRootPath(rootPath)
                 .withHiddenFiles(true)
                 .start();
     }

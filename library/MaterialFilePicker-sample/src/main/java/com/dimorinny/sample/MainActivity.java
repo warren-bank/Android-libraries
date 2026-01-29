@@ -2,6 +2,7 @@ package com.dimorinny.sample;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.nbsp.materialfilepicker.MaterialFilePicker;
 import com.nbsp.materialfilepicker.ui.FilePickerActivity;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,10 +33,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openFilePicker() {
+        String rootPath = (
+            new File(
+                Environment.getExternalStorageDirectory(),
+                "Download"
+            )
+        ).getAbsolutePath();
+
         new MaterialFilePicker()
                 .withActivity(this)
                 .withRequestCode(FILE_PICKER_REQUEST_CODE)
-                .withRootPath("/storage/")
+                .withRootPath(rootPath)
                 .withHiddenFiles(true)
                 .withTitle("MaterialFilePicker Activity")
                 .start();
