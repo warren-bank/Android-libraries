@@ -3,7 +3,7 @@ project.ext {
   releaseVersionCode          = 17
   releaseVersion              = '2.5.3'
   javaVersion                 = JavaVersion.VERSION_1_8
-  targetSdkVersion            = 30
+  targetSdkVersion            = 35
   compileSdkVersion           = 35
   buildToolsVersion           = '35.0.0'
 

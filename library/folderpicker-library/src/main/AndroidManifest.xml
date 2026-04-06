@@ -8,7 +8,8 @@
   <application>
 
     <activity
-      android:name=".FolderPicker" />
+      android:name=".FolderPicker"
+      android:exported="true" />
 
   </application>
 </manifest>
