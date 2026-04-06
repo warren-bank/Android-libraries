@@ -4,8 +4,8 @@ project.ext {
   releaseVersion              = '2.5.3'
   javaVersion                 = JavaVersion.VERSION_1_8
   targetSdkVersion            = 30
-  compileSdkVersion           = 30
-  buildToolsVersion           = '30.0.3'
+  compileSdkVersion           = 35
+  buildToolsVersion           = '35.0.0'
 
   // used by: library, sample
   minSdkVersion               = 9

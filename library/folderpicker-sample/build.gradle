@@ -2,6 +2,8 @@ apply from: '../constants.gradle'
 apply plugin: 'com.android.application'
 
 android {
+  namespace "lib.folderpicker.sample"
+
   compileSdkVersion project.ext.compileSdkVersion
   buildToolsVersion project.ext.buildToolsVersion
 
@@ -26,15 +28,20 @@ android {
 
   buildTypes {
     release {
+      debuggable      false
+      jniDebuggable   false
+      minifyEnabled   true
       shrinkResources true
-      minifyEnabled true
       proguardFiles = [
         "proguard-rules.txt",
         getDefaultProguardFile('proguard-android.txt')
       ]
     }
     debug {
-      jniDebuggable = true
+      debuggable      true
+      jniDebuggable   true
+      minifyEnabled   false
+      shrinkResources false
     }
   }
 }
