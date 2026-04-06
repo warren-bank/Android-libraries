@@ -1,11 +1,16 @@
 package lib.folderpicker;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -42,6 +47,8 @@ public class FolderPicker extends Activity {
             return f1.getName().compareTo(f2.getName());
         }
     };
+
+    private static final int PERMISSIONS_REQUEST_CODE = 0;
 
     protected final ArrayList<FilePojo> mFolderAndFileList = new ArrayList<FilePojo>();
 
@@ -92,7 +99,7 @@ public class FolderPicker extends Activity {
         if (mHomeLocation == null)
             mHomeLocation = Environment.getExternalStorageDirectory().getAbsolutePath();
 
-        checkAndLoadLists(mHomeLocation);
+        checkPermissionsAndLoadLists();
     }
 
     protected void initContentView() {
@@ -700,5 +707,58 @@ public class FolderPicker extends Activity {
             setResult(RESULT_OK, mReceivedIntent);
         }
         finish();
+    }
+
+    // =========================================================================
+    // Check Runtime Permissions
+    // =========================================================================
+
+    private void checkPermissionsAndLoadLists() {
+        if (Build.VERSION.SDK_INT < 23) {
+            checkAndLoadLists(mHomeLocation);
+        } else if (Build.VERSION.SDK_INT < 30) {
+            String permission = Manifest.permission.WRITE_EXTERNAL_STORAGE;
+
+            if (checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{permission}, PERMISSIONS_REQUEST_CODE);
+            } else {
+                checkAndLoadLists(mHomeLocation);
+            }
+        } else {
+            if (Environment.isExternalStorageManager()) {
+                checkAndLoadLists(mHomeLocation);
+            } else {
+                Intent permissionIntent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, Uri.parse("package:" + getPackageName()));
+                startActivityForResult(permissionIntent, PERMISSIONS_REQUEST_CODE);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case PERMISSIONS_REQUEST_CODE: {
+                if ((grantResults.length > 0) && (grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
+                    checkAndLoadLists(mHomeLocation);
+                } else {
+                    // permission denied: cancel
+                    exit();
+                }
+            }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case PERMISSIONS_REQUEST_CODE: {
+                if (Environment.isExternalStorageManager()) {
+                    checkAndLoadLists(mHomeLocation);
+                } else {
+                    // permission denied: cancel
+                    exit();
+                }
+            }
+        }
     }
 }

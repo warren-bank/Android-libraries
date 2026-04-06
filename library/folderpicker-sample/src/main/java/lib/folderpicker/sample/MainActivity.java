@@ -4,7 +4,6 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.text.Html;
@@ -16,11 +15,10 @@ import lib.folderpicker.FolderPicker;
 
 public class MainActivity extends Activity {
 
-    private static final int SDCARD_PERMISSION = 1,
-            FOLDER_PICKER_CODE       = 2,
-            EMPTY_FOLDER_PICKER_CODE = 3,
-            FILE_PICKER_CODE         = 4,
-            NEW_FILE_PICKER_CODE     = 5;
+    private static final int FOLDER_PICKER_CODE       = 1;
+    private static final int EMPTY_FOLDER_PICKER_CODE = 2;
+    private static final int FILE_PICKER_CODE         = 3;
+    private static final int NEW_FILE_PICKER_CODE     = 4;
 
     TextView tvFolder, tvEmptyFolder, tvFile, tvNewFile;
 
@@ -28,25 +26,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        checkStoragePermission();
         initUI();
-    }
-
-    void checkStoragePermission() {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-
-            //Write permission is required so that folder picker can create new folder.
-            //If you just want to pick files, Read permission is enough.
-
-            if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                    != PackageManager.PERMISSION_GRANTED) {
-
-                requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                        SDCARD_PERMISSION);
-            }
-        }
-
     }
 
     void initUI() {
