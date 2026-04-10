@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ဖိုလ်ဒါရွေးစက် ပြသချက်</string>
+    <string name="select_folder">ဖိုလ်ဒါကိုရွေးပါ</string>
+    <string name="folder_not_selected">ဖိုလ်ဒါကို မရွေးချယ်ရသေးပါ။</string>
+    <string name="folder_pick_cancelled">ဖိုလ်ဒါရွေးချယ်ခြင်း ဖျက်သိမ်းသွားပါပြီ။</string>
+    <string name="select_file">ဖိုင်ကိုရွေးပါ</string>
+    <string name="file_not_selected">ဖိုင်ကို မရွေးချယ်ရသေးပါ။</string>
+    <string name="file_pick_cancelled">ဖိုင်ရွေးချယ်မှု ဖျက်သိမ်းသွားပါပြီ။</string>
+    <string name="select_newfile">အသစ် ဖိုင်ကို ရွေးပါ</string>
+    <string name="newfile_not_selected">ဖိုင်လမ်းကြောင်းအသစ်ကို မရွေးချယ်ရသေးပါ။</string>
+    <string name="newfile_pick_cancelled">ဖိုင်လမ်းကြောင်းရွေးချယ်မှုအသစ် ဖျက်သိမ်းသွားပါပြီ။</string>
+    <string name="pick_emptyfolder_title">ဖိုလ်ဒါကိုရွေးပါ</string>
+    <string name="pick_emptyfolder_description">ဖိုင်များ သို့မဟုတ် အောက်ဖိုလ်ဒါများ မပါဝင်နိုင်ပါ။</string>
+    <string name="pick_file_title">ဖိုင်ရွေး၍ တင်ပါ။</string>
+    <string name="pick_file_description">ဖြစ်နိုင်သမျှ လှပတစ်ခု PNG ပုံ?</string>
+    <string name="pick_newfile_title">JSON ဒေတာ ထုတ်ပို့ခြင်း</string>
+    <string name="pick_newfile_prompt">အသစ်ဖိုင်ကို သိမ်းဆည်းရန်:</string>
+    <string name="pick_newfile_filename">တင်ပို့</string>
+    <string name="label_result_folder_location">ရွေးထားသော ဖိုလ်ဒါ</string>
+    <string name="label_result_file_location">ရွေးချယ်ထားသော ဖိုင်</string>
+</resources>

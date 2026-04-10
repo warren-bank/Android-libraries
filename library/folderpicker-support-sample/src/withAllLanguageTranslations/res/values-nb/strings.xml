@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Mappe Picker Demo</string>
+    <string name="app_name">Demo av mappevelger</string>
     <string name="select_folder">Velg mappe</string>
-    <string name="folder_not_selected">Mappen er ikke plukket ennå</string>
-    <string name="folder_pick_cancelled">Mappe som plukker avbrutt</string>
+    <string name="folder_not_selected">Mappen er ikke valgt ennå</string>
+    <string name="folder_pick_cancelled">Valg av mappe avbrutt</string>
     <string name="select_file">Velg fil</string>
-    <string name="file_not_selected">Filen er ennå ikke plukket</string>
-    <string name="file_pick_cancelled">Filplukking avbrutt</string>
-    <string name="select_newfile">Velg ny fil</string>
-    <string name="newfile_not_selected">Ny filepat er foreløpig ikke valgt</string>
-    <string name="newfile_pick_cancelled">Nytt filepath-valg annullert</string>
-    <string name="prompt_newfile">Lagre ny fil til:</string>
+    <string name="file_not_selected">Filen er ikke valgt ennå</string>
+    <string name="file_pick_cancelled">Filvalg avbrutt</string>
+    <string name="select_newfile">Velg Ny fil</string>
+    <string name="newfile_not_selected">Den nye filbanen er ennå ikke valgt</string>
+    <string name="newfile_pick_cancelled">Valg av ny filbane avbrutt</string>
+    <string name="pick_emptyfolder_title">Velg mappe</string>
+    <string name="pick_emptyfolder_description">Kan ikke inneholde filer eller underkataloger</string>
+    <string name="pick_file_title">Velg fil å laste opp</string>
+    <string name="pick_file_description">Kanskje en ganske PNG bilde?</string>
+    <string name="pick_newfile_title">JSON Dataeksport</string>
+    <string name="pick_newfile_prompt">Lagre ny fil i:</string>
+    <string name="pick_newfile_filename">eksport</string>
+    <string name="label_result_folder_location">Valgt mappe</string>
+    <string name="label_result_file_location">Valgt fil</string>
 </resources>

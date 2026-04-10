@@ -1,13 +1,21 @@
 <resources>
     <string name="app_name">ફોલ્ડર પિકર ડેમો</string>
-    <string name="select_folder">ફોલ્ડર (_P)</string>
-    <string name="folder_not_selected">ફોલ્ડર હજુ પણ શોધાયુ નથી</string>
-    <string name="folder_pick_cancelled">ફોલ્ડર રદ થયેલ છે</string>
-    <string name="select_file">Pick ફાઇલ</string>
-    <string name="file_not_selected">ફાઇલ હજુ પણ પહોંચેલ નથી</string>
-    <string name="file_pick_cancelled">ફાઇલ ને રદ થયેલ છે</string>
-    <string name="select_newfile">નવી ફાઈલ પસંદ કરો</string>
-    <string name="newfile_not_selected">નવી ફાઇલપાથ હજુ પસંદ થયેલ નથી</string>
-    <string name="newfile_pick_cancelled">નવી filepath પસંદગી રદ થયેલ છે</string>
-    <string name="prompt_newfile">નવી ફાઇલ ને સંગ્રહો:</string>
+    <string name="select_folder">ફોલ્ડર પસંદ કરો</string>
+    <string name="folder_not_selected">ફોલ્ડર હજી પસંદ કરવામાં આવ્યું નથી</string>
+    <string name="folder_pick_cancelled">ફોલ્ડર પિકિંગ રદ</string>
+    <string name="select_file">ફાઇલ પસંદ કરો</string>
+    <string name="file_not_selected">ફાઇલ હજી પસંદ કરવામાં આવી નથી</string>
+    <string name="file_pick_cancelled">ફાઇલ પિકિંગ રદ</string>
+    <string name="select_newfile">નવી ફાઇલ પસંદ કરો</string>
+    <string name="newfile_not_selected">નવું ફાઇલપથ હજી પસંદ કરવામાં આવ્યું નથી</string>
+    <string name="newfile_pick_cancelled">નવી ફાઇલપાથ પસંદગી રદ કરવામાં આવી</string>
+    <string name="pick_emptyfolder_title">ફોલ્ડર પસંદ કરો</string>
+    <string name="pick_emptyfolder_description">કોઈ ફાઇલો અથવા ઉપડિરેક્ટરીઓ સમાવી શકતું નથી</string>
+    <string name="pick_file_title">અપલોડ કરવા માટે ફાઇલ પસંદ કરો</string>
+    <string name="pick_file_description">શાયદ એક સુંદર PNG ચિત્ર?</string>
+    <string name="pick_newfile_title">JSON ડેટા નિકાસ</string>
+    <string name="pick_newfile_prompt">નવી ફાઇલ સાચવો:</string>
+    <string name="pick_newfile_filename">નિકાસ</string>
+    <string name="label_result_folder_location">પસંદ કરેલ ફોલ્ડર</string>
+    <string name="label_result_file_location">પસંદ કરેલી ફાઇલ</string>
 </resources>

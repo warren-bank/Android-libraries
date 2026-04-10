@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Папка сайлаучы демо</string>
+    <string name="select_folder">Папканы сайлагыз</string>
+    <string name="folder_not_selected">Папка әле сайланмаган</string>
+    <string name="folder_pick_cancelled">Фолдер сайлау туктатылды</string>
+    <string name="select_file">Файлны сайлагыз</string>
+    <string name="file_not_selected">Файл әле сайланмаган</string>
+    <string name="file_pick_cancelled">Файл сайлау туктатылды</string>
+    <string name="select_newfile">Яңа файлны сайлагыз</string>
+    <string name="newfile_not_selected">Яңа файл юлы әле сайланмаган</string>
+    <string name="newfile_pick_cancelled">Яңа файл юлы сайлау туктатылды</string>
+    <string name="pick_emptyfolder_title">Папканы сайлагыз</string>
+    <string name="pick_emptyfolder_description">Теләсә нинди файлларны яки подпапкаларны үз эченә ала алмый.</string>
+    <string name="pick_file_title">Йөкләү өчен файл сайлагыз</string>
+    <string name="pick_file_description">Мөгаен, матурдыр PNG рәсем?</string>
+    <string name="pick_newfile_title">JSON Мәгълүматны экспортлау</string>
+    <string name="pick_newfile_prompt">Яңа файлны саклау:</string>
+    <string name="pick_newfile_filename">Читкә чыгару</string>
+    <string name="label_result_folder_location">Сайланган папка</string>
+    <string name="label_result_file_location">Сайланган файл</string>
+</resources>

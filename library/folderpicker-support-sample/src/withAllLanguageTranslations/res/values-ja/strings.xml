@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">フォルダー・ピッカー・デモ</string>
-    <string name="select_folder">フォルダーの選択</string>
-    <string name="folder_not_selected">フォルダーはまだピックされてい</string>
-    <string name="folder_pick_cancelled">フォルダー・ピッキング</string>
-    <string name="select_file">ファイルの選出</string>
-    <string name="file_not_selected">ファイルはまだピックされてい</string>
-    <string name="file_pick_cancelled">ファイル・ピッキング</string>
-    <string name="select_newfile">新規ファイルの選択</string>
-    <string name="newfile_not_selected">新規ファイル・パスはまだ選択されていません</string>
-    <string name="newfile_pick_cancelled">新規ファイル・パス選択が取り消されました</string>
-    <string name="prompt_newfile">新規ファイルの保存先:</string>
+    <string name="app_name">フォルダピッカーのデモ</string>
+    <string name="select_folder">フォルダを選択</string>
+    <string name="folder_not_selected">フォルダはまだ選択されていません</string>
+    <string name="folder_pick_cancelled">フォルダの選択がキャンセルされました</string>
+    <string name="select_file">ファイルを選択</string>
+    <string name="file_not_selected">ファイルはまだ選択されていません</string>
+    <string name="file_pick_cancelled">ファイルの選択がキャンセルされました</string>
+    <string name="select_newfile">「新規ファイル」を選択</string>
+    <string name="newfile_not_selected">新しいファイルパスはまだ選択されていません</string>
+    <string name="newfile_pick_cancelled">新しいファイルパスの選択がキャンセルされました</string>
+    <string name="pick_emptyfolder_title">フォルダを選択</string>
+    <string name="pick_emptyfolder_description">ファイルやサブディレクトリを含めることはできません</string>
+    <string name="pick_file_title">アップロードするファイルを選択してください</string>
+    <string name="pick_file_description">たぶん、かなり PNG 写真?</string>
+    <string name="pick_newfile_title">JSON データのエクスポート</string>
+    <string name="pick_newfile_prompt">新しいファイルを保存する場所:</string>
+    <string name="pick_newfile_filename">エクスポート</string>
+    <string name="label_result_folder_location">選択したフォルダ</string>
+    <string name="label_result_file_location">選択したファイル</string>
 </resources>

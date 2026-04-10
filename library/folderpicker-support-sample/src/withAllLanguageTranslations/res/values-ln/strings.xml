@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Démonstration ya kopona dosié</string>
+    <string name="select_folder">Pona dosié</string>
+    <string name="folder_not_selected">Dosie eponami naino te</string>
+    <string name="folder_pick_cancelled">Kopona ya folder esukisami</string>
+    <string name="select_file">Pona Fisyé</string>
+    <string name="file_not_selected">Fichier eponami naino te</string>
+    <string name="file_pick_cancelled">Kopona fisyé ekanselami</string>
+    <string name="select_newfile">Pona Fisyé ya sika</string>
+    <string name="newfile_not_selected">Nzela ya sika ya fisyé eponami naino te</string>
+    <string name="newfile_pick_cancelled">Kopona nzela ya fisyé ya sika ekanselami</string>
+    <string name="pick_emptyfolder_title">Pona dosié</string>
+    <string name="pick_emptyfolder_description">Ekoki kozala na ba fisyé to ba répertoire ya mike te.</string>
+    <string name="pick_file_title">Pona fisyé mpo na kotinda</string>
+    <string name="pick_file_description">Mbala mosusu kitoko PNG Elilingi?</string>
+    <string name="pick_newfile_title">JSON Kobimisa ba données</string>
+    <string name="pick_newfile_prompt">Bomba Fisyé ya Sika na:</string>
+    <string name="pick_newfile_filename">kotinda na libanda</string>
+    <string name="label_result_folder_location">Dossier eponami</string>
+    <string name="label_result_file_location">Fichier eponami</string>
+</resources>

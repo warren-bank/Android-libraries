@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Umboniso woKukhetha Ifolda</string>
+    <string name="select_folder">Khetha ifolda</string>
+    <string name="folder_not_selected">Ifolda ayikakhethwa</string>
+    <string name="folder_pick_cancelled">Ukukhethwa kwefolda kurhoxisiwe</string>
+    <string name="select_file">Khetha Ifayile</string>
+    <string name="file_not_selected">Ifayile ayikakhethwa</string>
+    <string name="file_pick_cancelled">Ukukhetha ifayile kurhoxisiwe</string>
+    <string name="select_newfile">Khetha Ifayile Entsha</string>
+    <string name="newfile_not_selected">Indlela yefayile entsha ayikakhethwa okwangoku</string>
+    <string name="newfile_pick_cancelled">Ukhetho lwendlela yefayile entsha lurhoxisiwe</string>
+    <string name="pick_emptyfolder_title">Khetha ifolda</string>
+    <string name="pick_emptyfolder_description">Akunakubandakanya naziphi na iifayile okanye iifolda ezingaphantsi</string>
+    <string name="pick_file_title">Khetha ifayile ukuze ulayishe</string>
+    <string name="pick_file_description">Mhlawumbi intombazana entle PNG umfanekiso?</string>
+    <string name="pick_newfile_title">JSON Ukuthunyelwa kwedatha</string>
+    <string name="pick_newfile_prompt">Gcina Ifayile Entsha Kwi:</string>
+    <string name="pick_newfile_filename">Thumela ngaphandle</string>
+    <string name="label_result_folder_location">Ifolda ekhethiweyo</string>
+    <string name="label_result_file_location">Ifayile ekhethiweyo</string>
+</resources>

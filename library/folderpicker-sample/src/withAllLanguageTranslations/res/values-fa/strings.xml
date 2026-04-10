@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">نمایشگر انتخاب پوشه</string>
+    <string name="select_folder">پوشه را انتخاب کنید</string>
+    <string name="folder_not_selected">پوشه هنوز انتخاب نشده است</string>
+    <string name="folder_pick_cancelled">انتخاب پوشه لغو شد</string>
+    <string name="select_file">انتخاب فایل</string>
+    <string name="file_not_selected">فایل هنوز انتخاب نشده است</string>
+    <string name="file_pick_cancelled">انتخاب فایل لغو شد</string>
+    <string name="select_newfile">انتخاب فایل جدید</string>
+    <string name="newfile_not_selected">مسیر فایل جدید هنوز انتخاب نشده است</string>
+    <string name="newfile_pick_cancelled">انتخاب مسیر فایل جدید لغو شد</string>
+    <string name="pick_emptyfolder_title">پوشه را انتخاب کنید</string>
+    <string name="pick_emptyfolder_description">نمی‌تواند حاوی هیچ فایل یا زیرپوشه‌ای باشد</string>
+    <string name="pick_file_title">برای بارگذاری فایل را انتخاب کنید</string>
+    <string name="pick_file_description">شاید یک زیبا PNG تصویر?</string>
+    <string name="pick_newfile_title">JSON صادرات داده</string>
+    <string name="pick_newfile_prompt">ذخیره فایل جدید در:</string>
+    <string name="pick_newfile_filename">صادرات</string>
+    <string name="label_result_folder_location">پوشهٔ انتخاب‌شده</string>
+    <string name="label_result_file_location">فایل انتخاب‌شده</string>
+</resources>

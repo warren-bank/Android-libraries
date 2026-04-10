@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pontšo ea Khetho ea Lephate</string>
+    <string name="select_folder">Kgetha foldara</string>
+    <string name="folder_not_selected">Foldara ha e so kgethwe</string>
+    <string name="folder_pick_cancelled">Ho khetha foldara ho hlakotsoe</string>
+    <string name="select_file">Kgetha Faele</string>
+    <string name="file_not_selected">Faele ha e so kgethwe</string>
+    <string name="file_pick_cancelled">Khetho ea faele e hlakotsoe</string>
+    <string name="select_newfile">Kgetha Faele e Ntjha</string>
+    <string name="newfile_not_selected">Tsela e ncha ea faele ha e so khethoe.</string>
+    <string name="newfile_pick_cancelled">Khetho ea tsela e ncha ea faele e hlakotsoe</string>
+    <string name="pick_emptyfolder_title">Kgetha foldara</string>
+    <string name="pick_emptyfolder_description">Ha e ka ke ya ba le difaele kapa di-subdirectory.</string>
+    <string name="pick_file_title">Kgetha faele ho kenya</string>
+    <string name="pick_file_description">Mohlomong popi e ntle PNG setšoantšo?</string>
+    <string name="pick_newfile_title">JSON Thomello ea Lintlha</string>
+    <string name="pick_newfile_prompt">Boloka Faele e Ncha ho:</string>
+    <string name="pick_newfile_filename">Thomella kantle</string>
+    <string name="label_result_folder_location">Foldara e kgethilweng</string>
+    <string name="label_result_file_location">Faele e kgethilweng</string>
+</resources>

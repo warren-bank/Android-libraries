@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demostración del selector de carpetas</string>
+    <string name="select_folder">Seleccionar carpeta</string>
+    <string name="folder_not_selected">Aún no se ha seleccionado ninguna carpeta</string>
+    <string name="folder_pick_cancelled">Selección de carpeta cancelada</string>
+    <string name="select_file">Seleccionar archivo</string>
+    <string name="file_not_selected">Aún no se ha seleccionado ningún archivo</string>
+    <string name="file_pick_cancelled">Selección de archivos cancelada</string>
+    <string name="select_newfile">Seleccionar archivo nuevo</string>
+    <string name="newfile_not_selected">Aún no se ha seleccionado la nueva ruta de archivo</string>
+    <string name="newfile_pick_cancelled">Se ha cancelado la selección de la nueva ruta de archivo</string>
+    <string name="pick_emptyfolder_title">Seleccionar carpeta</string>
+    <string name="pick_emptyfolder_description">No puede contener archivos ni subdirectorios</string>
+    <string name="pick_file_title">Selecciona el archivo que deseas subir</string>
+    <string name="pick_file_description">Quizás una bonita PNG imagen?</string>
+    <string name="pick_newfile_title">JSON Exportación de datos</string>
+    <string name="pick_newfile_prompt">Guardar el nuevo archivo en:</string>
+    <string name="pick_newfile_filename">exportar</string>
+    <string name="label_result_folder_location">Carpeta seleccionada</string>
+    <string name="label_result_file_location">Archivo seleccionado</string>
+</resources>

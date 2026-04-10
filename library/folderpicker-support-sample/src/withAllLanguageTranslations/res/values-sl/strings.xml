@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Predstavitev Izbiralnika Mape</string>
-    <string name="select_folder">Izberite mapo</string>
-    <string name="folder_not_selected">Mapa še ni bila nabrala</string>
-    <string name="folder_pick_cancelled">Izbira mape je preklica</string>
-    <string name="select_file">Izberite datoteko</string>
-    <string name="file_not_selected">Datoteka še ni bila nabrala</string>
-    <string name="file_pick_cancelled">Izbira datoteke je preklica</string>
+    <string name="app_name">Predstavitev izbirnika map</string>
+    <string name="select_folder">Izberi mapo</string>
+    <string name="folder_not_selected">Mapa še ni izbrana</string>
+    <string name="folder_pick_cancelled">Izbiranje mape je bilo preklicano</string>
+    <string name="select_file">Izberi datoteko</string>
+    <string name="file_not_selected">Datoteka še ni izbrana</string>
+    <string name="file_pick_cancelled">Izbiranje datotek je bilo preklicano</string>
     <string name="select_newfile">Izberi novo datoteko</string>
-    <string name="newfile_not_selected">Nova pot datoteke še ni izbrana</string>
-    <string name="newfile_pick_cancelled">Nova izbira poti do datoteke je preklica</string>
-    <string name="prompt_newfile">Shrani novo datoteko v:</string>
+    <string name="newfile_not_selected">Nova pot do datoteke še ni izbrana</string>
+    <string name="newfile_pick_cancelled">Izbor nove poti do datoteke je bil preklican</string>
+    <string name="pick_emptyfolder_title">Izberi mapo</string>
+    <string name="pick_emptyfolder_description">Ne sme vsebovati nobenih datotek ali podmap</string>
+    <string name="pick_file_title">Izberite datoteko za prenos</string>
+    <string name="pick_file_description">Morda kar lepa PNG slika?</string>
+    <string name="pick_newfile_title">JSON Izvoz podatkov</string>
+    <string name="pick_newfile_prompt">Shrani novo datoteko v:</string>
+    <string name="pick_newfile_filename">izvoz</string>
+    <string name="label_result_folder_location">Izbrana mapa</string>
+    <string name="label_result_file_location">Izbrana datoteka</string>
 </resources>

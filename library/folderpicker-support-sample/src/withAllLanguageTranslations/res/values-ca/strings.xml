@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demostració de l\'escollidor de carpetes</string>
+    <string name="select_folder">Selecciona carpeta</string>
+    <string name="folder_not_selected">La carpeta encara no s\'ha seleccionat</string>
+    <string name="folder_pick_cancelled">S\'ha cancel·lat la selecció de carpeta</string>
+    <string name="select_file">Selecciona fitxer</string>
+    <string name="file_not_selected">El fitxer encara no s\'ha seleccionat</string>
+    <string name="file_pick_cancelled">Cancel·lació de la selecció de fitxers</string>
+    <string name="select_newfile">Seleccioneu un fitxer nou</string>
+    <string name="newfile_not_selected">El nou camí de fitxer encara no està seleccionat</string>
+    <string name="newfile_pick_cancelled">Selecció de nova ruta de fitxer cancel·lada</string>
+    <string name="pick_emptyfolder_title">Selecciona carpeta</string>
+    <string name="pick_emptyfolder_description">No pot contenir cap fitxer ni cap subdirectori.</string>
+    <string name="pick_file_title">Seleccioneu un fitxer per pujar-lo</string>
+    <string name="pick_file_description">Possiblement una bonica PNG imatge?</string>
+    <string name="pick_newfile_title">JSON Exportació de dades</string>
+    <string name="pick_newfile_prompt">Desa un fitxer nou a:</string>
+    <string name="pick_newfile_filename">exportar</string>
+    <string name="label_result_folder_location">Cartera seleccionada</string>
+    <string name="label_result_file_location">Fitxer seleccionat</string>
+</resources>

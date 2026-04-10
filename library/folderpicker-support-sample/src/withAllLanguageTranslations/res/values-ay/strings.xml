@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">P\'anqa Ajlliri Uñacht\'äwi</string>
+    <string name="select_folder">Mä karpeta ajlltaña</string>
+    <string name="folder_not_selected">Q\'ipixa janira ajllitakiti</string>
+    <string name="folder_pick_cancelled">Q\'ipi ajlliñax jittayatäxiwa</string>
+    <string name="select_file">Archivo ajlliña</string>
+    <string name="file_not_selected">Qillqatax janïraw ajllitäkiti</string>
+    <string name="file_pick_cancelled">Qillqatanaka ajlliñax jittayatäxiwa.</string>
+    <string name="select_newfile">Machaqa Archivo ajlliña</string>
+    <string name="newfile_not_selected">Machaqa qillqat thakhi janïraw ajllitäkiti</string>
+    <string name="newfile_pick_cancelled">Machaqa qillqat thakhi ajlliwixa sayt\'ayatawa</string>
+    <string name="pick_emptyfolder_title">Mä karpeta ajlliña</string>
+    <string name="pick_emptyfolder_description">Janiw kuna archivonakas jan ukax subdirectoriokas utjaspati.</string>
+    <string name="pick_file_title">Apkatañatak qillqata ajllt\'am</string>
+    <string name="pick_file_description">Inas mä suma PNG Uñacht\'äwi?</string>
+    <string name="pick_newfile_title">JSON Yatiyäwinaka Apayaña</string>
+    <string name="pick_newfile_prompt">Machaqa Archivo Imantaña:</string>
+    <string name="pick_newfile_filename">Aparayaña</string>
+    <string name="label_result_folder_location">Ajllita Carpeta</string>
+    <string name="label_result_file_location">Ajllita Archivo</string>
+</resources>

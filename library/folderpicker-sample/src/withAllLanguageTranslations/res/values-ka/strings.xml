@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ფოლდერის ამომრჩეველის დემო</string>
+    <string name="select_folder">ფაილების საქაღალდის არჩევა</string>
+    <string name="folder_not_selected">ფაილი ჯერ არ არის შერჩეული</string>
+    <string name="folder_pick_cancelled">ფოლდერის არჩევა გაუქმდა</string>
+    <string name="select_file">ფაილის არჩევა</string>
+    <string name="file_not_selected">ფაილი ჯერ არ არის არჩეული</string>
+    <string name="file_pick_cancelled">ფაილის არჩევა გაუქმდა</string>
+    <string name="select_newfile">ახალი ფაილის არჩევა</string>
+    <string name="newfile_not_selected">ახალი ფაილის მისამართი ჯერ არ არის შერჩეული</string>
+    <string name="newfile_pick_cancelled">ახალი ფაილის მისამართის არჩევის გაუქმება</string>
+    <string name="pick_emptyfolder_title">ფაილების საქაღალდის არჩევა</string>
+    <string name="pick_emptyfolder_description">არ შეიძლება შეიცავდეს ფაილებს ან ქვესარჩევებს</string>
+    <string name="pick_file_title">აირჩიეთ ფაილი ასატვირთად</string>
+    <string name="pick_file_description">შესაძლოა, ლამაზი PNG სურათი?</string>
+    <string name="pick_newfile_title">JSON მონაცემების ექსპორტი</string>
+    <string name="pick_newfile_prompt">ახალი ფაილის შენახვა:</string>
+    <string name="pick_newfile_filename">ექსპორტი</string>
+    <string name="label_result_folder_location">არჩეული საქაღალდე</string>
+    <string name="label_result_file_location">არჩეული ფაილი</string>
+</resources>

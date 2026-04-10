@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demonstraĵo de dosierujelektilo</string>
+    <string name="select_folder">Elektu dosierujon</string>
+    <string name="folder_not_selected">Dosierujo ankoraŭ ne estas elektita</string>
+    <string name="folder_pick_cancelled">La selektado de dosierujo nuligita</string>
+    <string name="select_file">Elektu dosieron</string>
+    <string name="file_not_selected">Dosiero ankoraŭ ne estas elektita</string>
+    <string name="file_pick_cancelled">Dosierelekto nuligita</string>
+    <string name="select_newfile">Elektu novan dosieron</string>
+    <string name="newfile_not_selected">La nova dosiervojo ankoraŭ ne estas elektita</string>
+    <string name="newfile_pick_cancelled">Nova elekto de dosiervojo nuligita</string>
+    <string name="pick_emptyfolder_title">Elektu dosierujon</string>
+    <string name="pick_emptyfolder_description">Ne povas enhavi iujn ajn dosierojn aŭ subdosierujojn</string>
+    <string name="pick_file_title">Elektu dosieron por alŝuti</string>
+    <string name="pick_file_description">Eble bela PNG bildo?</string>
+    <string name="pick_newfile_title">JSON Datuma Eksporto</string>
+    <string name="pick_newfile_prompt">Konservi novan dosieron al:</string>
+    <string name="pick_newfile_filename">eksporti</string>
+    <string name="label_result_folder_location">Elektita dosierujo</string>
+    <string name="label_result_file_location">Elektita dosiero</string>
+</resources>

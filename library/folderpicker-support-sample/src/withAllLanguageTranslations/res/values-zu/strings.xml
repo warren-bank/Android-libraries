@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Isiboniso Sokukhetha Ifolda</string>
+    <string name="select_folder">Khetha ifolda</string>
+    <string name="folder_not_selected">Ifolda ayikakhethwa okwamanje</string>
+    <string name="folder_pick_cancelled">Ukukhetha ifolda kumisiwe</string>
+    <string name="select_file">Khetha Ifayela</string>
+    <string name="file_not_selected">Ifayela alikakhethwa okwamanje</string>
+    <string name="file_pick_cancelled">Ukukhetha ifayela kumisiwe</string>
+    <string name="select_newfile">Khetha ifayela elisha</string>
+    <string name="newfile_not_selected">Indlela yefayela entsha ayikakhethwa okwamanje</string>
+    <string name="newfile_pick_cancelled">Ukukhethwa komzila wefayela omusha kumisiwe</string>
+    <string name="pick_emptyfolder_title">Khetha ifolda</string>
+    <string name="pick_emptyfolder_description">Ayikwazi ukuba namafayela noma izifolda ezingaphansi</string>
+    <string name="pick_file_title">Khetha ifayela ongathumela</string>
+    <string name="pick_file_description">Mhlawumbe muhle PNG isithombe?</string>
+    <string name="pick_newfile_title">JSON Ukuthumela Idatha Ngaphandle</string>
+    <string name="pick_newfile_prompt">Londoloza ifayela entsha ku:</string>
+    <string name="pick_newfile_filename">Thumela ngaphandle</string>
+    <string name="label_result_folder_location">Ifolda ekhethiwe</string>
+    <string name="label_result_file_location">Ifayela elikhethiwe</string>
+</resources>

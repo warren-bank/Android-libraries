@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Dossier-Auswiel-Demo</string>
+    <string name="select_folder">Ordner auswielen</string>
+    <string name="folder_not_selected">Dossier ass nach net ausgewielt</string>
+    <string name="folder_pick_cancelled">D\'Folder-Auswiel gouf ofgesot.</string>
+    <string name="select_file">Datei auswielen</string>
+    <string name="file_not_selected">D\'Datei gouf nach net ausgewielt.</string>
+    <string name="file_pick_cancelled">D\'Dateiauswiel gouf ofgesot.</string>
+    <string name="select_newfile">Nei Datei auswielen</string>
+    <string name="newfile_not_selected">De neie Dateipath ass nach net ausgewielt</string>
+    <string name="newfile_pick_cancelled">Nei Dateipath-Auswiel ofgesot</string>
+    <string name="pick_emptyfolder_title">Ordner auswielen</string>
+    <string name="pick_emptyfolder_description">Kann keng Dateien oder Ënnerverzeechnisser enthalen</string>
+    <string name="pick_file_title">Wielt eng Datei fir eropzelueden</string>
+    <string name="pick_file_description">Vläicht e schéint PNG Bild?</string>
+    <string name="pick_newfile_title">JSON Datenexport</string>
+    <string name="pick_newfile_prompt">Späichert nei Datei op:</string>
+    <string name="pick_newfile_filename">Exportéieren</string>
+    <string name="label_result_folder_location">Ausgewielte Mappe</string>
+    <string name="label_result_file_location">Ausgewielte Datei</string>
+</resources>

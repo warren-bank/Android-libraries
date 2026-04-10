@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">폴더 피커 데모</string>
-    <string name="select_folder">선택 폴더</string>
-    <string name="folder_not_selected">폴더가 아직 선택되지 않았습니다.</string>
-    <string name="folder_pick_cancelled">폴더 피킹 취소</string>
-    <string name="select_file">피킹 파일</string>
-    <string name="file_not_selected">파일이 아직 선택되지 않았습니다.</string>
-    <string name="file_pick_cancelled">파일 피킹 취소</string>
+    <string name="app_name">폴더 선택기 데모</string>
+    <string name="select_folder">폴더 선택</string>
+    <string name="folder_not_selected">폴더가 아직 선택되지 않았습니다</string>
+    <string name="folder_pick_cancelled">폴더 선택이 취소되었습니다</string>
+    <string name="select_file">파일 선택</string>
+    <string name="file_not_selected">파일이 아직 선택되지 않았습니다</string>
+    <string name="file_pick_cancelled">파일 선택이 취소되었습니다</string>
     <string name="select_newfile">새 파일 선택</string>
-    <string name="newfile_not_selected">새 파일 경로가 아직 선택되지 않았습니다.</string>
-    <string name="newfile_pick_cancelled">새 파일 경로 선택사항이 취소되었습니다.</string>
-    <string name="prompt_newfile">새 파일 저장:</string>
+    <string name="newfile_not_selected">새 파일 경로가 아직 선택되지 않았습니다</string>
+    <string name="newfile_pick_cancelled">새 파일 경로 선택이 취소되었습니다</string>
+    <string name="pick_emptyfolder_title">폴더 선택</string>
+    <string name="pick_emptyfolder_description">파일이나 하위 디렉터리를 포함할 수 없습니다</string>
+    <string name="pick_file_title">업로드할 파일을 선택하세요</string>
+    <string name="pick_file_description">아마도 꽤 PNG 사진?</string>
+    <string name="pick_newfile_title">JSON 데이터 내보내기</string>
+    <string name="pick_newfile_prompt">새 파일을 다음 위치에 저장:</string>
+    <string name="pick_newfile_filename">내보내기</string>
+    <string name="label_result_folder_location">선택된 폴더</string>
+    <string name="label_result_file_location">선택된 파일</string>
 </resources>

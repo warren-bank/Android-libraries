@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Whakaaturanga Kōwhiri Kōpaki</string>
+    <string name="select_folder">Tīpako kōpaki</string>
+    <string name="folder_not_selected">Kāore anō kia tīpakohia te kōpaki.</string>
+    <string name="folder_pick_cancelled">Kua whakakorehia te kōwhiri kōpaki</string>
+    <string name="select_file">Tīpako Kōnae</string>
+    <string name="file_not_selected">Kāore anō kia tīpakohia te kōnae.</string>
+    <string name="file_pick_cancelled">Kua whakakore te kōwhiri kōnae</string>
+    <string name="select_newfile">Tīpakohia te Kōnae Hou</string>
+    <string name="newfile_not_selected">Kāore anō kia tīpakohia te ara kōnae hou</string>
+    <string name="newfile_pick_cancelled">Kua whakakore te kōwhiri ara kōnae hou</string>
+    <string name="pick_emptyfolder_title">Tīpako kōpaki</string>
+    <string name="pick_emptyfolder_description">Kāore e taea te whai kōnae, whai kōpaki iti rānei</string>
+    <string name="pick_file_title">Tīpakohia te kōnae hei tuku</string>
+    <string name="pick_file_description">Tērā pea he ātaahua PNG ahua?</string>
+    <string name="pick_newfile_title">JSON Kaweake Raraunga</string>
+    <string name="pick_newfile_prompt">Tārewa i te Kōnae Hou ki:</string>
+    <string name="pick_newfile_filename">Tukunga atu</string>
+    <string name="label_result_folder_location">Kōpaki kua tohua</string>
+    <string name="label_result_file_location">Kōnae kua tohua</string>
+</resources>

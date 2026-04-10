@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Folder Picker Demo</string>
-    <string name="select_folder">Folder اٹھاؤ</string>
-    <string name="folder_not_selected">فولڈر ابھی تک نہیں اٹھایا</string>
-    <string name="folder_pick_cancelled">فولڈرز نے منسوخ کردیا</string>
-    <string name="select_file">فائل فوٹو</string>
-    <string name="file_not_selected">فائل ابھی نہیں پکڑی گئی</string>
-    <string name="file_pick_cancelled">فائل منسوخ</string>
+    <string name="app_name">فولڈر پِکر ڈیمو</string>
+    <string name="select_folder">فولڈر منتخب کریں</string>
+    <string name="folder_not_selected">فولڈر ابھی منتخب نہیں ہوا۔</string>
+    <string name="folder_pick_cancelled">فولڈر پک کرنے کا عمل منسوخ کر دیا گیا۔</string>
+    <string name="select_file">فائل منتخب کریں</string>
+    <string name="file_not_selected">فائل ابھی تک منتخب نہیں ہوئی۔</string>
+    <string name="file_pick_cancelled">فائل منتخب کرنا منسوخ</string>
     <string name="select_newfile">نئی فائل منتخب کریں</string>
-    <string name="newfile_not_selected">نیا filepath ابھی تک منتخب نہیں کیا</string>
-    <string name="newfile_pick_cancelled">نئے filepath کا انتخاب منسوخ</string>
-    <string name="prompt_newfile">نئی فائل کو محفوظ کریں:</string>
+    <string name="newfile_not_selected">نیا فائل پاتھ ابھی منتخب نہیں ہوا۔</string>
+    <string name="newfile_pick_cancelled">نئی فائل پاتھ کے انتخاب منسوخ کر دیا گیا۔</string>
+    <string name="pick_emptyfolder_title">فولڈر منتخب کریں</string>
+    <string name="pick_emptyfolder_description">کسی بھی فائل یا ذیلی ڈائریکٹری کو شامل نہیں کیا جا سکتا۔</string>
+    <string name="pick_file_title">اپلوڈ کے لیے فائل منتخب کریں</string>
+    <string name="pick_file_description">ممکن ہے کہ ایک خوبصورت PNG تصویر?</string>
+    <string name="pick_newfile_title">JSON ڈیٹا برآمد</string>
+    <string name="pick_newfile_prompt">نئی فائل محفوظ کریں:</string>
+    <string name="pick_newfile_filename">برآمد</string>
+    <string name="label_result_folder_location">منتخب فولڈر</string>
+    <string name="label_result_file_location">منتخب فائل</string>
 </resources>

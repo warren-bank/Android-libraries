@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Demo Selector Folder</string>
-    <string name="select_folder">Selectare folder</string>
-    <string name="folder_not_selected">Folderul nu este încă ales</string>
-    <string name="folder_pick_cancelled">Alegere folder anulată</string>
-    <string name="select_file">Fişier de selecţie</string>
-    <string name="file_not_selected">Fişierul nu este încă ales</string>
-    <string name="file_pick_cancelled">Alegere fişier anulată</string>
-    <string name="select_newfile">Selectare fişier nou</string>
-    <string name="newfile_not_selected">Noul fişier de fişiere nu este încă selectat</string>
-    <string name="newfile_pick_cancelled">Selecţie nouă de fişiere anulată</string>
-    <string name="prompt_newfile">Salvare fişier nou la:</string>
+    <string name="app_name">Demonstrație Selector de foldere</string>
+    <string name="select_folder">Alege un dosar</string>
+    <string name="folder_not_selected">Dosarul nu a fost încă selectat</string>
+    <string name="folder_pick_cancelled">Selectarea folderului a fost anulată</string>
+    <string name="select_file">Alegeți fișierul</string>
+    <string name="file_not_selected">Fișierul nu a fost încă selectat</string>
+    <string name="file_pick_cancelled">Selectarea fișierului a fost anulată</string>
+    <string name="select_newfile">Selectează „Fișier nou”</string>
+    <string name="newfile_not_selected">Nu a fost selectată încă o nouă cale de acces</string>
+    <string name="newfile_pick_cancelled">Anularea selecției noii căi de acces</string>
+    <string name="pick_emptyfolder_title">Selectează folderul</string>
+    <string name="pick_emptyfolder_description">Nu poate conține fișiere sau subdirectoare</string>
+    <string name="pick_file_title">Selectează fișierul pe care dorești să îl încarci</string>
+    <string name="pick_file_description">Poate o fată drăguță PNG imagine?</string>
+    <string name="pick_newfile_title">JSON Export de date</string>
+    <string name="pick_newfile_prompt">Salvează fișierul nou în:</string>
+    <string name="pick_newfile_filename">export</string>
+    <string name="label_result_folder_location">Dosar selectat</string>
+    <string name="label_result_file_location">Fișier selectat</string>
 </resources>

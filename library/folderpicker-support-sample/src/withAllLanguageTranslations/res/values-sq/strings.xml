@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demo e Zgjedhësit të Dosjeve</string>
+    <string name="select_folder">Zgjidh dosjen</string>
+    <string name="folder_not_selected">Dosja ende nuk është zgjedhur</string>
+    <string name="folder_pick_cancelled">Anuluar zgjedhja e dosjes</string>
+    <string name="select_file">Zgjidh skedarin</string>
+    <string name="file_not_selected">Skedari ende nuk është zgjedhur</string>
+    <string name="file_pick_cancelled">Anuluar zgjedhja e skedarit</string>
+    <string name="select_newfile">Zgjidh skedar të ri</string>
+    <string name="newfile_not_selected">Ushtria e re nuk është zgjedhur ende</string>
+    <string name="newfile_pick_cancelled">Anuluar zgjedhja e rrugës së skedarit të ri</string>
+    <string name="pick_emptyfolder_title">Zgjidh dosjen</string>
+    <string name="pick_emptyfolder_description">Nuk mund të përmbajë asnjë skedar ose nën-dosje</string>
+    <string name="pick_file_title">Zgjidhni skedarin për t\'u ngarkuar</string>
+    <string name="pick_file_description">Ndoshta një e bukur PNG fotografi?</string>
+    <string name="pick_newfile_title">JSON Eksporti i të dhënave</string>
+    <string name="pick_newfile_prompt">Ruaj skedarin e ri në:</string>
+    <string name="pick_newfile_filename">eksport</string>
+    <string name="label_result_folder_location">Dosja e zgjedhur</string>
+    <string name="label_result_file_location">Skedar i zgjedhur</string>
+</resources>

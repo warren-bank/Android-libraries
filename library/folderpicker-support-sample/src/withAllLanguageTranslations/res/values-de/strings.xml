@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Ordner-Picker-Demo</string>
+    <string name="app_name">Demo zur Ordnerauswahl</string>
     <string name="select_folder">Ordner auswählen</string>
-    <string name="folder_not_selected">Ordner ist noch nicht ausgewählt</string>
-    <string name="folder_pick_cancelled">Ordnerentnahme abgebrochen</string>
+    <string name="folder_not_selected">Der Ordner wurde noch nicht ausgewählt</string>
+    <string name="folder_pick_cancelled">Die Ordnerauswahl wurde abgebrochen</string>
     <string name="select_file">Datei auswählen</string>
-    <string name="file_not_selected">Datei ist noch nicht ausgewählt</string>
-    <string name="file_pick_cancelled">Dateientnahme abgebrochen</string>
-    <string name="select_newfile">Neue Datei auswählen</string>
-    <string name="newfile_not_selected">Neuer Dateipfad ist noch nicht ausgewählt</string>
-    <string name="newfile_pick_cancelled">Neue Dateipfadauswahl abgebrochen</string>
-    <string name="prompt_newfile">Neue Datei speichern in:</string>
+    <string name="file_not_selected">Die Datei wurde noch nicht ausgewählt</string>
+    <string name="file_pick_cancelled">Dateiauswahl abgebrochen</string>
+    <string name="select_newfile">„Neue Datei“ auswählen</string>
+    <string name="newfile_not_selected">Der neue Dateipfad wurde noch nicht ausgewählt</string>
+    <string name="newfile_pick_cancelled">Auswahl eines neuen Dateipfads abgebrochen</string>
+    <string name="pick_emptyfolder_title">Ordner auswählen</string>
+    <string name="pick_emptyfolder_description">Darf keine Dateien oder Unterverzeichnisse enthalten</string>
+    <string name="pick_file_title">Datei zum Hochladen auswählen</string>
+    <string name="pick_file_description">Vielleicht ein hübsches PNG Bild?</string>
+    <string name="pick_newfile_title">JSON Datenexport</string>
+    <string name="pick_newfile_prompt">Neue Datei speichern unter:</string>
+    <string name="pick_newfile_filename">Export</string>
+    <string name="label_result_folder_location">Ausgewählter Ordner</string>
+    <string name="label_result_file_location">Ausgewählte Datei</string>
 </resources>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">د فولډر غوره کوونکي ډیمو</string>
+    <string name="select_folder">فولډر غوره کړئ</string>
+    <string name="folder_not_selected">فولډر لا تر اوسه نه دی غوره شوی</string>
+    <string name="folder_pick_cancelled">د فولډر غوره کول لغوه شول</string>
+    <string name="select_file">فایل غوره کړئ</string>
+    <string name="file_not_selected">فایل لا تر اوسه نه دی غوره شوی</string>
+    <string name="file_pick_cancelled">د فایل غوره کول لغوه شول</string>
+    <string name="select_newfile">نوې فایل وټاکئ</string>
+    <string name="newfile_not_selected">د فایل نوی مسیر لا تر اوسه نه دی غوره شوی</string>
+    <string name="newfile_pick_cancelled">د فایل نوي لارې انتخاب لغوه شو</string>
+    <string name="pick_emptyfolder_title">فولډر غوره کړئ</string>
+    <string name="pick_emptyfolder_description">هیڅ فایلونه یا فرعي فولډرونه نشي ساتل کیدای</string>
+    <string name="pick_file_title">د اپلوډ لپاره فایل وټاکئ</string>
+    <string name="pick_file_description">شاید یو ښکلی PNG انځور?</string>
+    <string name="pick_newfile_title">JSON د معلوماتو صادرول</string>
+    <string name="pick_newfile_prompt">نوې فایل خوندي کړئ په:</string>
+    <string name="pick_newfile_filename">صادر کول</string>
+    <string name="label_result_folder_location">غوره شوې فولډر</string>
+    <string name="label_result_file_location">غوره شوې فایل</string>
+</resources>

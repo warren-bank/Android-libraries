@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Papka tanlovchi namoyishi</string>
+    <string name="select_folder">Papka tanlang</string>
+    <string name="folder_not_selected">Papka hali tanlanmagan</string>
+    <string name="folder_pick_cancelled">Folder tanlash bekor qilindi</string>
+    <string name="select_file">Faylni tanlang</string>
+    <string name="file_not_selected">Hujjat hali tanlanmagan</string>
+    <string name="file_pick_cancelled">Fayl tanlash bekor qilindi</string>
+    <string name="select_newfile">Yangi faylni tanlang</string>
+    <string name="newfile_not_selected">Yangi fayl yo\'li hali tanlanmagan</string>
+    <string name="newfile_pick_cancelled">Yangi fayl yo\'li tanlovi bekor qilindi</string>
+    <string name="pick_emptyfolder_title">Papka tanlang</string>
+    <string name="pick_emptyfolder_description">Hech qanday fayl yoki ostki papkalar bo\'lishi mumkin emas</string>
+    <string name="pick_file_title">Yuklash uchun faylni tanlang</string>
+    <string name="pick_file_description">Ehtimol, chiroyli PNG rasm?</string>
+    <string name="pick_newfile_title">JSON Ma\'lumotlarni eksport qilish</string>
+    <string name="pick_newfile_prompt">Yangi faylni saqlash:</string>
+    <string name="pick_newfile_filename">eksport</string>
+    <string name="label_result_folder_location">Tanlangan papka</string>
+    <string name="label_result_file_location">Tanlangan fayl</string>
+</resources>

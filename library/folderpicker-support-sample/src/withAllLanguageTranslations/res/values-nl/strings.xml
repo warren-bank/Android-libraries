@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Folder Picker Demo</string>
-    <string name="select_folder">Map kiezen</string>
-    <string name="folder_not_selected">Map is nog niet geplukt</string>
-    <string name="folder_pick_cancelled">Mappicking is geannuleerd</string>
-    <string name="select_file">Bestand kiezen</string>
-    <string name="file_not_selected">Bestand is nog niet geplukt</string>
-    <string name="file_pick_cancelled">Opslaan van bestanden is geannuleerd</string>
-    <string name="select_newfile">Nieuw bestand selecteren</string>
-    <string name="newfile_not_selected">Nieuwe bestandspad is nog niet geselecteerd</string>
-    <string name="newfile_pick_cancelled">Nieuwe bestandsselectie geannuleerd</string>
-    <string name="prompt_newfile">Nieuw bestand opslaan in:</string>
+    <string name="app_name">Demo van de mapkiezer</string>
+    <string name="select_folder">Map selecteren</string>
+    <string name="folder_not_selected">De map is nog niet geselecteerd</string>
+    <string name="folder_pick_cancelled">Het selecteren van mappen is geannuleerd</string>
+    <string name="select_file">Bestand selecteren</string>
+    <string name="file_not_selected">Het bestand is nog niet geselecteerd</string>
+    <string name="file_pick_cancelled">Bestand selecteren geannuleerd</string>
+    <string name="select_newfile">Selecteer Nieuw bestand</string>
+    <string name="newfile_not_selected">Het nieuwe bestandspad is nog niet geselecteerd</string>
+    <string name="newfile_pick_cancelled">Selectie van nieuw bestandspad geannuleerd</string>
+    <string name="pick_emptyfolder_title">Selecteer map</string>
+    <string name="pick_emptyfolder_description">Mag geen bestanden of submappen bevatten</string>
+    <string name="pick_file_title">Selecteer het bestand dat u wilt uploaden</string>
+    <string name="pick_file_description">Misschien wel een mooie PNG foto?</string>
+    <string name="pick_newfile_title">JSON Gegevens exporteren</string>
+    <string name="pick_newfile_prompt">Nieuw bestand opslaan in:</string>
+    <string name="pick_newfile_filename">exporteren</string>
+    <string name="label_result_folder_location">Geselecteerde map</string>
+    <string name="label_result_file_location">Geselecteerd bestand</string>
 </resources>

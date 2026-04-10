@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ফ\'ল্ডাৰ পিকাৰ ডেমো</string>
+    <string name="select_folder">ফ\'ল্ডাৰ বাছক</string>
+    <string name="folder_not_selected">ফ\'ল্ডাৰ এতিয়াও বাছনি কৰা হোৱা নাই।</string>
+    <string name="folder_pick_cancelled">ফ\'ল্ডাৰ বাছনি বাতিল কৰা হ\'ল</string>
+    <string name="select_file">ফাইল বাছক</string>
+    <string name="file_not_selected">ফাইলটো এতিয়াও বাছনি কৰা হোৱা নাই।</string>
+    <string name="file_pick_cancelled">ফাইল বাছনি বাতিল কৰা হ\'ল</string>
+    <string name="select_newfile">নতুন ফাইল বাছনি কৰক</string>
+    <string name="newfile_not_selected">নতুন ফাইলপথ এতিয়াও বাছনি কৰা হোৱা নাই।</string>
+    <string name="newfile_pick_cancelled">নতুন ফাইলপাথ বাছনি বাতিল কৰা হ\'ল</string>
+    <string name="pick_emptyfolder_title">ফ\'ল্ডাৰ বাছনি কৰক</string>
+    <string name="pick_emptyfolder_description">কোনো ফাইল বা উপ-ডাইৰেক্টৰী থাকিব নোৱাৰে</string>
+    <string name="pick_file_title">আপলোড কৰিবলৈ ফাইল বাছনি কৰক</string>
+    <string name="pick_file_description">সম্ভৱতঃ এটা ধুনীয়া PNG ছবি?</string>
+    <string name="pick_newfile_title">JSON তথ্য ৰপ্তানি</string>
+    <string name="pick_newfile_prompt">নতুন ফাইল সংৰক্ষণ কৰক:</string>
+    <string name="pick_newfile_filename">ৰপ্তানি</string>
+    <string name="label_result_folder_location">নিৰ্বাচিত ফোল্ডাৰ</string>
+    <string name="label_result_file_location">নিৰ্বাচিত ফাইল</string>
+</resources>

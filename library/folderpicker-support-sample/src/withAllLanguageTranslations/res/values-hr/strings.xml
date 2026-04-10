@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Demo Za Probirač Foldera</string>
+    <string name="app_name">Demo odabirača mapa</string>
     <string name="select_folder">Odaberi mapu</string>
-    <string name="folder_not_selected">Folder još nije izabran</string>
-    <string name="folder_pick_cancelled">Biranje foldera opozvano</string>
+    <string name="folder_not_selected">Mapa još nije odabrana</string>
+    <string name="folder_pick_cancelled">Otkazano preuzimanje mape</string>
     <string name="select_file">Odaberi datoteku</string>
-    <string name="file_not_selected">Datoteka još nije ubraja</string>
-    <string name="file_pick_cancelled">Otkazivanje datoteke opozv</string>
-    <string name="select_newfile">Izbor nove datoteke</string>
-    <string name="newfile_not_selected">Novi filepath još nije izabran</string>
-    <string name="newfile_pick_cancelled">Novi izbor filepath je opozvan</string>
-    <string name="prompt_newfile">Spremi novu datoteku u:</string>
+    <string name="file_not_selected">Datoteka još nije odabrana</string>
+    <string name="file_pick_cancelled">Otkazano odabiranje datoteke</string>
+    <string name="select_newfile">Odabir nove datoteke</string>
+    <string name="newfile_not_selected">Nova putanja datoteke još nije odabrana</string>
+    <string name="newfile_pick_cancelled">Otkazano odabiranje nove putanje datoteke</string>
+    <string name="pick_emptyfolder_title">Odaberi mapu</string>
+    <string name="pick_emptyfolder_description">Ne može sadržavati nijedne datoteke ili poddirektorije</string>
+    <string name="pick_file_title">Odaberite datoteku za učitavanje</string>
+    <string name="pick_file_description">Možda lijepa PNG slika?</string>
+    <string name="pick_newfile_title">JSON Izvoz podataka</string>
+    <string name="pick_newfile_prompt">Sačuvaj novu datoteku u:</string>
+    <string name="pick_newfile_filename">izvoz</string>
+    <string name="label_result_folder_location">Odabrana mapa</string>
+    <string name="label_result_file_location">Odabrana datoteka</string>
 </resources>

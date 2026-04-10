@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demo d\'o Selector de Carpetas</string>
+    <string name="select_folder">Tría carpeta</string>
+    <string name="folder_not_selected">A carpeta encara no s\'ha trigau.</string>
+    <string name="folder_pick_cancelled">A recullida de contenedors s\'ha cancelau</string>
+    <string name="select_file">Tría Archivo</string>
+    <string name="file_not_selected">O fichero encara no s\'ha trigau.</string>
+    <string name="file_pick_cancelled">Cancelada a selección de fichero</string>
+    <string name="select_newfile">Trigar nuevo fichero</string>
+    <string name="newfile_not_selected">O nuevo camín de fichero encara no ye seleccionau.</string>
+    <string name="newfile_pick_cancelled">Canciada a nueva selección de camín de fichero</string>
+    <string name="pick_emptyfolder_title">Tría carpeta</string>
+    <string name="pick_emptyfolder_description">No puede contener garra fichero ni subdirectorio.</string>
+    <string name="pick_file_title">Tría o fichero pa puyar-lo</string>
+    <string name="pick_file_description">Posiblement una polida PNG Imachen?</string>
+    <string name="pick_newfile_title">JSON Exportación de datos</string>
+    <string name="pick_newfile_prompt">Alzar o nuevo fichero en:</string>
+    <string name="pick_newfile_filename">Exportar</string>
+    <string name="label_result_folder_location">Carpeta seleccionada</string>
+    <string name="label_result_file_location">Fichero seleccionau</string>
+</resources>

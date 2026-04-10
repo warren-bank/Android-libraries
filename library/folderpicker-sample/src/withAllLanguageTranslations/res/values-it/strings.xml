@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Cartella Picker Demo</string>
-    <string name="select_folder">Cartella Pick</string>
-    <string name="folder_not_selected">La cartella non è ancora prelevata</string>
-    <string name="folder_pick_cancelled">Cartella picking annullata</string>
-    <string name="select_file">Scegli file</string>
-    <string name="file_not_selected">Il file non è ancora scelto</string>
-    <string name="file_pick_cancelled">File picking annullato</string>
-    <string name="select_newfile">Seleziona nuovo file</string>
-    <string name="newfile_not_selected">Il nuovo filepath non è ancora selezionato</string>
-    <string name="newfile_pick_cancelled">Nuova selezione filepath annullata</string>
-    <string name="prompt_newfile">Salva nuovo file a:</string>
+    <string name="app_name">Dimostrazione del selettore di cartelle</string>
+    <string name="select_folder">Seleziona cartella</string>
+    <string name="folder_not_selected">La cartella non è ancora stata selezionata</string>
+    <string name="folder_pick_cancelled">Selezione cartella annullata</string>
+    <string name="select_file">Seleziona file</string>
+    <string name="file_not_selected">Il file non è ancora stato selezionato</string>
+    <string name="file_pick_cancelled">Selezione file annullata</string>
+    <string name="select_newfile">Seleziona Nuovo file</string>
+    <string name="newfile_not_selected">Il nuovo percorso del file non è ancora stato selezionato</string>
+    <string name="newfile_pick_cancelled">Selezione del nuovo percorso file annullata</string>
+    <string name="pick_emptyfolder_title">Seleziona cartella</string>
+    <string name="pick_emptyfolder_description">Non può contenere file o sottodirectory</string>
+    <string name="pick_file_title">Seleziona il file da caricare</string>
+    <string name="pick_file_description">Forse una bella PNG immagine?</string>
+    <string name="pick_newfile_title">JSON Esportazione dei dati</string>
+    <string name="pick_newfile_prompt">Salva nuovo file in:</string>
+    <string name="pick_newfile_filename">esportazione</string>
+    <string name="label_result_folder_location">Cartella selezionata</string>
+    <string name="label_result_file_location">File selezionato</string>
 </resources>

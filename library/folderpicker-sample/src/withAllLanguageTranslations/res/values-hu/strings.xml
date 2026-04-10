@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Mappa választó bemutató</string>
+    <string name="app_name">Mappa-választó bemutató</string>
     <string name="select_folder">Mappa kiválasztása</string>
     <string name="folder_not_selected">A mappa még nincs kiválasztva</string>
-    <string name="folder_pick_cancelled">Mappa megszakítva</string>
+    <string name="folder_pick_cancelled">A mappa kiválasztása megszakadt</string>
     <string name="select_file">Fájl kiválasztása</string>
     <string name="file_not_selected">A fájl még nincs kiválasztva</string>
-    <string name="file_pick_cancelled">Fájl kiválasztása megszakítva</string>
+    <string name="file_pick_cancelled">A fájl kiválasztása megszakadt</string>
     <string name="select_newfile">Új fájl kiválasztása</string>
-    <string name="newfile_not_selected">Az új filepath még nincs kiválasztva</string>
-    <string name="newfile_pick_cancelled">Új fájlútvonal kijelölés visszavonva</string>
-    <string name="prompt_newfile">Új fájl mentése ide:</string>
+    <string name="newfile_not_selected">Az új fájlútvonalat még nem választották ki</string>
+    <string name="newfile_pick_cancelled">Az új fájlútvonal kiválasztása megszakítva</string>
+    <string name="pick_emptyfolder_title">Mappa kiválasztása</string>
+    <string name="pick_emptyfolder_description">Nem tartalmazhat fájlokat vagy almappákat</string>
+    <string name="pick_file_title">Válassza ki a feltöltendő fájlt</string>
+    <string name="pick_file_description">Talán egy szép PNG kép?</string>
+    <string name="pick_newfile_title">JSON Adatexport</string>
+    <string name="pick_newfile_prompt">Új fájl mentése a következő helyre:</string>
+    <string name="pick_newfile_filename">export</string>
+    <string name="label_result_folder_location">Kiválasztott mappa</string>
+    <string name="label_result_file_location">Kiválasztott fájl</string>
 </resources>

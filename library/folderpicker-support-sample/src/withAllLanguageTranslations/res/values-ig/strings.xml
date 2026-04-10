@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Ngosipụta Nhọpụta Nchekwa</string>
+    <string name="select_folder">Họrọ nchekwa</string>
+    <string name="folder_not_selected">A ka ahọghị folda</string>
+    <string name="folder_pick_cancelled">A kagburu ịhọrọ folda</string>
+    <string name="select_file">Họrọ Faịlụ</string>
+    <string name="file_not_selected">A ka ahọghị faịlụ ahụ</string>
+    <string name="file_pick_cancelled">A kagburu ịhọrọ faịlụ</string>
+    <string name="select_newfile">Họrọ faịlụ ọhụrụ</string>
+    <string name="newfile_not_selected">Ụzọ faịlụ ọhụrụ ka a naghị ahọrọ</string>
+    <string name="newfile_pick_cancelled">A kagburu nhọpụta ụzọ faịlụ ọhụrụ</string>
+    <string name="pick_emptyfolder_title">Họrọ akpa faịlụ</string>
+    <string name="pick_emptyfolder_description">Enweghị ike ịnwe faịlụ ọ bụla ma ọ bụ ndekọ n\'ime ya</string>
+    <string name="pick_file_title">Họrọ faịlụ iji bulite</string>
+    <string name="pick_file_description">O nwere ike ịbụ mara mma PNG Foto?</string>
+    <string name="pick_newfile_title">JSON Mbupụ Data</string>
+    <string name="pick_newfile_prompt">Chekwaa faịlụ ọhụrụ na:</string>
+    <string name="pick_newfile_filename">Bupụta</string>
+    <string name="label_result_folder_location">Akpa faịlụ ahọpụtara</string>
+    <string name="label_result_file_location">Faịl ahọpụtara</string>
+</resources>

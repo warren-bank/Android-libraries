@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Qovluq Seçicisi Demo</string>
+    <string name="select_folder">Qovluğu seçin</string>
+    <string name="folder_not_selected">Qovluq hələ seçilməyib</string>
+    <string name="folder_pick_cancelled">Qovluq seçimi ləğv edildi</string>
+    <string name="select_file">Faylı seçin</string>
+    <string name="file_not_selected">Fayl hələ seçilməyib</string>
+    <string name="file_pick_cancelled">Fayl seçimi ləğv edildi</string>
+    <string name="select_newfile">Yeni fayl seçin</string>
+    <string name="newfile_not_selected">Yeni fayl yolu hələ seçilməyib</string>
+    <string name="newfile_pick_cancelled">Yeni fayl yolu seçimi ləğv edildi</string>
+    <string name="pick_emptyfolder_title">Qovluğu seçin</string>
+    <string name="pick_emptyfolder_description">Heç bir fayl və ya alt qovluq ehtiva edə bilməz</string>
+    <string name="pick_file_title">Yükləmək üçün fayl seçin</string>
+    <string name="pick_file_description">Bəlkə də gözəl PNG şəkil?</string>
+    <string name="pick_newfile_title">JSON Məlumatların ixracı</string>
+    <string name="pick_newfile_prompt">Yeni faylı yadda saxla:</string>
+    <string name="pick_newfile_filename">ixrac</string>
+    <string name="label_result_folder_location">Seçilmiş qovluq</string>
+    <string name="label_result_file_location">Seçilmiş fayl</string>
+</resources>

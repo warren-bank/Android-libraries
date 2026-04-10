@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Klasor saýlaýjysy demonstrasiýasy</string>
+    <string name="select_folder">Papak saýlaň</string>
+    <string name="folder_not_selected">Klasor henizem saýlanmady</string>
+    <string name="folder_pick_cancelled">Folder saýlamagy ýatyryldy</string>
+    <string name="select_file">Faýly saýlaň</string>
+    <string name="file_not_selected">Faýl heniz saýlanmady</string>
+    <string name="file_pick_cancelled">Faýl saýlamagy ýatyryldy</string>
+    <string name="select_newfile">Täze faýly saýlaň</string>
+    <string name="newfile_not_selected">Täze faýl ýoly heniz saýlanmady</string>
+    <string name="newfile_pick_cancelled">Täze faýl ýoluny saýlamagyň ýatyrylmagy</string>
+    <string name="pick_emptyfolder_title">Klasory saýlaň</string>
+    <string name="pick_emptyfolder_description">Hiç hili faýllary ýa-da alt kütükleri öz içine alyp bilmez.</string>
+    <string name="pick_file_title">Ýükläp goýmak üçin faýly saýlaň</string>
+    <string name="pick_file_description">Mümkin, owadan bir PNG surat?</string>
+    <string name="pick_newfile_title">JSON Maglumatlary eksport etmek</string>
+    <string name="pick_newfile_prompt">Täze faýly ýazga sakla:</string>
+    <string name="pick_newfile_filename">eksport</string>
+    <string name="label_result_folder_location">Saýlanan bukja</string>
+    <string name="label_result_file_location">Saýlanan faýl</string>
+</resources>

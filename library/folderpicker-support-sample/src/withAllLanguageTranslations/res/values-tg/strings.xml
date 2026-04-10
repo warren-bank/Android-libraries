@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Намоиши интихоби папка</string>
+    <string name="select_folder">Зарфро интихоб кунед</string>
+    <string name="folder_not_selected">Зиёда интихоб нашудааст</string>
+    <string name="folder_pick_cancelled">Интихоби фолдер бекор карда шуд</string>
+    <string name="select_file">Файлро интихоб кунед</string>
+    <string name="file_not_selected">Файл ҳанӯз интихоб нашудааст</string>
+    <string name="file_pick_cancelled">Интихоби файл бекор карда шуд</string>
+    <string name="select_newfile">Файли навро интихоб кунед</string>
+    <string name="newfile_not_selected">Роҳи нави файл ҳанӯз интихоб нашудааст</string>
+    <string name="newfile_pick_cancelled">Интихоби нави масири файл бекор карда шуд</string>
+    <string name="pick_emptyfolder_title">Зебобаро интихоб кунед</string>
+    <string name="pick_emptyfolder_description">Наметавонад ягон файл ё зерпапка дошта бошад</string>
+    <string name="pick_file_title">Файлро барои боргирӣ интихоб кунед</string>
+    <string name="pick_file_description">Шояд як зебо PNG расм?</string>
+    <string name="pick_newfile_title">JSON Содироти маълумот</string>
+    <string name="pick_newfile_prompt">Наҷоти файли нав ба:</string>
+    <string name="pick_newfile_filename">Содирот</string>
+    <string name="label_result_folder_location">Зарфчаи интихобшуда</string>
+    <string name="label_result_file_location">Файли интихобшуда</string>
+</resources>

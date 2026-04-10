@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ਫੋਲਡਰ ਚੁਣਕੂ ਡੈਮੋ</string>
+    <string name="select_folder">ਫੋਲਡਰ ਚੁਣੋ</string>
+    <string name="folder_not_selected">ਫੋਲਡਰ ਅਜੇ ਚੁਣਿਆ ਨਹੀਂ ਗਿਆ ਹੈ।</string>
+    <string name="folder_pick_cancelled">ਫੋਲਡਰ ਚੁਣਨਾ ਰੱਦ ਕਰ ਦਿੱਤਾ ਗਿਆ</string>
+    <string name="select_file">ਫਾਈਲ ਚੁਣੋ</string>
+    <string name="file_not_selected">ਫਾਈਲ ਅਜੇ ਚੁਣੀ ਨਹੀਂ ਗਈ</string>
+    <string name="file_pick_cancelled">ਫਾਈਲ ਚੁਣਨਾ ਰੱਦ ਹੋ ਗਿਆ</string>
+    <string name="select_newfile">ਨਵੀਂ ਫਾਈਲ ਚੁਣੋ</string>
+    <string name="newfile_not_selected">ਨਵਾਂ ਫਾਈਲਪਾਥ ਅਜੇ ਚੁਣਿਆ ਨਹੀਂ ਗਿਆ ਹੈ।</string>
+    <string name="newfile_pick_cancelled">ਨਵੀਂ ਫਾਈਲਪਾਥ ਚੋਣ ਰੱਦ ਹੋ ਗਈ</string>
+    <string name="pick_emptyfolder_title">ਫੋਲਡਰ ਚੁਣੋ</string>
+    <string name="pick_emptyfolder_description">ਕੋਈ ਫਾਈਲਾਂ ਜਾਂ ਉਪ-ਡਾਇਰੈਕਟਰੀਆਂ ਨਹੀਂ ਰੱਖ ਸਕਦਾ</string>
+    <string name="pick_file_title">ਅੱਪਲੋਡ ਕਰਨ ਲਈ ਫਾਈਲ ਚੁਣੋ</string>
+    <string name="pick_file_description">ਸ਼ਾਇਦ ਇੱਕ ਸੋਹਣਾ PNG ਤਸਵੀਰ?</string>
+    <string name="pick_newfile_title">JSON ਡੇਟਾ ਨਿਰਯਾਤ</string>
+    <string name="pick_newfile_prompt">ਨਵੀਂ ਫਾਈਲ ਸੇਵ ਕਰੋ:</string>
+    <string name="pick_newfile_filename">ਨਿਰਯਾਤ</string>
+    <string name="label_result_folder_location">ਚੁਣਿਆ ਹੋਇਆ ਫੋਲਡਰ</string>
+    <string name="label_result_file_location">ਚੁਣੀ ਹੋਈ ਫਾਈਲ</string>
+</resources>

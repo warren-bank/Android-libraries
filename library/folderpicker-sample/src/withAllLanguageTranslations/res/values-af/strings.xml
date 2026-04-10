@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mapkiezer-demo</string>
+    <string name="select_folder">Kies vouer</string>
+    <string name="folder_not_selected">Vouer is nog nie gekies nie</string>
+    <string name="folder_pick_cancelled">Vouerseleksie gekanselleer</string>
+    <string name="select_file">Kies lêer</string>
+    <string name="file_not_selected">Lêer is nog nie gekies nie</string>
+    <string name="file_pick_cancelled">Lêerkeuse gekanselleer</string>
+    <string name="select_newfile">Kies nuwe lêer</string>
+    <string name="newfile_not_selected">Nuwe lêerpad is nog nie gekies nie</string>
+    <string name="newfile_pick_cancelled">Nuwe lêerpadkeuse gekanselleer</string>
+    <string name="pick_emptyfolder_title">Kies vouer</string>
+    <string name="pick_emptyfolder_description">Kan nie enige lêers of subdirektories bevat nie</string>
+    <string name="pick_file_title">Kies lêer om op te laai</string>
+    <string name="pick_file_description">Miskien \'n pragtige PNG prent?</string>
+    <string name="pick_newfile_title">JSON Dataleiersuitvoer</string>
+    <string name="pick_newfile_prompt">Bewaar nuwe lêer na:</string>
+    <string name="pick_newfile_filename">uitvoer</string>
+    <string name="label_result_folder_location">Gekose vouer</string>
+    <string name="label_result_file_location">Gekose lêer</string>
+</resources>

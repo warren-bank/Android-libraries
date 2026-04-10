@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demo Pemilih Folder</string>
+    <string name="select_folder">Pilih folder</string>
+    <string name="folder_not_selected">Folder durung dipilih</string>
+    <string name="folder_pick_cancelled">Pemilihan folder dibatalake</string>
+    <string name="select_file">Pilih Berkas</string>
+    <string name="file_not_selected">File durung dipilih</string>
+    <string name="file_pick_cancelled">Pilih file dibatalake</string>
+    <string name="select_newfile">Pilih Berkas Anyar</string>
+    <string name="newfile_not_selected">Jalan file anyar durung dipilih</string>
+    <string name="newfile_pick_cancelled">Pilih jalur file anyar dibatalake</string>
+    <string name="pick_emptyfolder_title">Pilih folder</string>
+    <string name="pick_emptyfolder_description">Ora bisa ngemot file apa wae utawa subdirektori</string>
+    <string name="pick_file_title">Pilih file kanggo diunggah</string>
+    <string name="pick_file_description">Mbok menawa ayu PNG gambar?</string>
+    <string name="pick_newfile_title">JSON Ekspor Data</string>
+    <string name="pick_newfile_prompt">Simpen File Anyar Ing:</string>
+    <string name="pick_newfile_filename">ekspor</string>
+    <string name="label_result_folder_location">Map sing dipilih</string>
+    <string name="label_result_file_location">File sing dipilih</string>
+</resources>

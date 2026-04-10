@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">फोल्डर्-चयन-प्रदर्शनम्</string>
+    <string name="select_folder">फोल्डरं चयनय</string>
+    <string name="folder_not_selected">फोल्डरः अद्यापि न चयनितः।</string>
+    <string name="folder_pick_cancelled">फोल्डर्-पिकिङ् रद्दम्</string>
+    <string name="select_file">फाइल् चयनय</string>
+    <string name="file_not_selected">फाइल् अद्यापि न चयनितम्।</string>
+    <string name="file_pick_cancelled">फाइल्-चयनं रद्दम्।</string>
+    <string name="select_newfile">नवीनं सञ्चिकाम् चयनय</string>
+    <string name="newfile_not_selected">नवीनः सञ्चिकापथः अद्यापि न चयनितः।</string>
+    <string name="newfile_pick_cancelled">नवीनदत्तांशपथचयनं रद्धम्।</string>
+    <string name="pick_emptyfolder_title">निर्देशिकां चयनय</string>
+    <string name="pick_emptyfolder_description">कोऽपि सञ्चिकाः वा उपनिर्देशिकाः समावेशयितुं न शक्यते।</string>
+    <string name="pick_file_title">अपलोड् कर्तुं फाइल् चयनयतु।</string>
+    <string name="pick_file_description">संभवतः सुन्दरी PNG चित्रम्?</string>
+    <string name="pick_newfile_title">JSON दत्तांश निर्यातः</string>
+    <string name="pick_newfile_prompt">नवीनं सञ्चिकां रक्षतु:</string>
+    <string name="pick_newfile_filename">निर्यात</string>
+    <string name="label_result_folder_location">चयनितं फोल्डरम्</string>
+    <string name="label_result_file_location">चयनितं सञ्चिकाम्</string>
+</resources>

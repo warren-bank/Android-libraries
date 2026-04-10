@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Xikombiso xo Hlawula Foldera</string>
+    <string name="select_folder">Hlawula Foldera</string>
+    <string name="folder_not_selected">Folda a yi si hlawuriwa</string>
+    <string name="folder_pick_cancelled">Ku hlawula folder ku yimisiwile</string>
+    <string name="select_file">Hlawula Fayili</string>
+    <string name="file_not_selected">Fayili a yi si hlawuriwa</string>
+    <string name="file_pick_cancelled">Ku hlawula fayili ku yimisiwile</string>
+    <string name="select_newfile">Hlawula Fayili leyintshwa</string>
+    <string name="newfile_not_selected">Ndlela ya fayili leyintshwa a yi si hlawuriwa</string>
+    <string name="newfile_pick_cancelled">Ku hlawula ndlela ya fayili leyintshwa ku yimisiwile</string>
+    <string name="pick_emptyfolder_title">Hlawula foldara</string>
+    <string name="pick_emptyfolder_description">A swi nge vi na tifayili kumbe swiphemu-dayirektori.</string>
+    <string name="pick_file_title">Hlawula fayili yo layicha</string>
+    <string name="pick_file_description">Kumbexana xitshuri PNG Xifaniso?</string>
+    <string name="pick_newfile_title">JSON Ku humesa datha</string>
+    <string name="pick_newfile_prompt">Hlayisa Fayili Leyintshwa Eka:</string>
+    <string name="pick_newfile_filename">Rhumela ehandle</string>
+    <string name="label_result_folder_location">Folda leyi hlawuriweke</string>
+    <string name="label_result_file_location">Fayili leyi hlawuriweke</string>
+</resources>

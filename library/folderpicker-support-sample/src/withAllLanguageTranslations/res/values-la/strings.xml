@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Eligendi Plutei Demonstratio</string>
+    <string name="select_folder">Elige Thecam</string>
+    <string name="folder_not_selected">Theca nondum delecta est.</string>
+    <string name="folder_pick_cancelled">Capsulae delectio revocata</string>
+    <string name="select_file">Elige Fasciculum</string>
+    <string name="file_not_selected">Fasciculus nondum delectus est.</string>
+    <string name="file_pick_cancelled">Selectio documenti revocata</string>
+    <string name="select_newfile">Elige Novum Documentum</string>
+    <string name="newfile_not_selected">Nova via documenti nondum selecta est.</string>
+    <string name="newfile_pick_cancelled">Nova selectio itineris documenti cancellata</string>
+    <string name="pick_emptyfolder_title">Thecam selige</string>
+    <string name="pick_emptyfolder_description">Non potest continere ullos fasciculos aut subdirectoria.</string>
+    <string name="pick_file_title">Elige documentum ad imponendum</string>
+    <string name="pick_file_description">Fortasse pulchra PNG Imago?</string>
+    <string name="pick_newfile_title">JSON Exportatio Datorum</string>
+    <string name="pick_newfile_prompt">Serva Novum Documentum Ad:</string>
+    <string name="pick_newfile_filename">Exportare</string>
+    <string name="label_result_folder_location">Theca Delecta</string>
+    <string name="label_result_file_location">Documentum Delectum</string>
+</resources>

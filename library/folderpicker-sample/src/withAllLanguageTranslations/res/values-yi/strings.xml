@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">טעקע־אויסקלייבער דעמאָ</string>
+    <string name="select_folder">קלײַבן טעקע</string>
+    <string name="folder_not_selected">טעקע איז נאָך נישט אויסגעקליבן</string>
+    <string name="folder_pick_cancelled">פֿאָלדער־פּיקינג אָפּגערופֿן</string>
+    <string name="select_file">קלײַבט אויס טעקע</string>
+    <string name="file_not_selected">די טעקע איז נאָך נישט אויסגעקליבן</string>
+    <string name="file_pick_cancelled">טעקע־אויסקלײַב אָפּגעשטעלט</string>
+    <string name="select_newfile">קלײַבט אויס אַ נײַע טעקע</string>
+    <string name="newfile_not_selected">דער נײַער טעקע־וועג איז נאָך נישט אויסגעקליבן</string>
+    <string name="newfile_pick_cancelled">נײַע טעקע־וועג אויסקלײַב אָפּגערופֿן</string>
+    <string name="pick_emptyfolder_title">אויסקלײַבן טעקע</string>
+    <string name="pick_emptyfolder_description">קען נישט אַנטהאַלטן קיין טעקעס אָדער אונטערטעקעס</string>
+    <string name="pick_file_title">קלײַבט אויס אַ טעקע צו אַרויפֿלאָדן</string>
+    <string name="pick_file_description">אולי אַ שיינע PNG בילד?</string>
+    <string name="pick_newfile_title">JSON דאַטן־עקספּאָרט</string>
+    <string name="pick_newfile_prompt">שפּאַרן נײַע טעקע צו:</string>
+    <string name="pick_newfile_filename">אויספֿירן</string>
+    <string name="label_result_folder_location">אויסגעקליבענער פֿאָלדער</string>
+    <string name="label_result_file_location">אויסגעקליבענע טעקע</string>
+</resources>

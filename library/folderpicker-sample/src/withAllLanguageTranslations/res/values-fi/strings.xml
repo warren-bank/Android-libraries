@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Folder Picker Demo</string>
+    <string name="app_name">Kansionvalitsimen esittely</string>
     <string name="select_folder">Valitse kansio</string>
-    <string name="folder_not_selected">Kansio ei ole vielä valittu</string>
-    <string name="folder_pick_cancelled">Kansion peruutus on peruutettu</string>
+    <string name="folder_not_selected">Kansiota ei ole vielä valittu</string>
+    <string name="folder_pick_cancelled">Kansion valinta peruutettu</string>
     <string name="select_file">Valitse tiedosto</string>
     <string name="file_not_selected">Tiedostoa ei ole vielä valittu</string>
-    <string name="file_pick_cancelled">Tiedoston valinta on peruutettu</string>
-    <string name="select_newfile">Valitse uusi tiedosto</string>
-    <string name="newfile_not_selected">Uutta filepolkua ei ole vielä valittu</string>
-    <string name="newfile_pick_cancelled">Uusi tiedostopolun valinta on peruutettu</string>
-    <string name="prompt_newfile">Tallenna uusi tiedosto:</string>
+    <string name="file_pick_cancelled">Tiedoston valinta peruutettu</string>
+    <string name="select_newfile">Valitse Uusi tiedosto</string>
+    <string name="newfile_not_selected">Uutta tiedostopolkua ei ole vielä valittu</string>
+    <string name="newfile_pick_cancelled">Uuden tiedostopolun valinta peruutettu</string>
+    <string name="pick_emptyfolder_title">Valitse kansio</string>
+    <string name="pick_emptyfolder_description">Ei saa sisältää tiedostoja tai alihakemistoja</string>
+    <string name="pick_file_title">Valitse ladattava tiedosto</string>
+    <string name="pick_file_description">Ehkäpä kaunis PNG kuva?</string>
+    <string name="pick_newfile_title">JSON Tietojen vienti</string>
+    <string name="pick_newfile_prompt">Tallenna uusi tiedosto kohteeseen:</string>
+    <string name="pick_newfile_filename">vienti</string>
+    <string name="label_result_folder_location">Valittu kansio</string>
+    <string name="label_result_file_location">Valittu tiedosto</string>
 </resources>

@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Демонстрационная демонстрация папки</string>
+    <string name="app_name">Демонстрация выбора папки</string>
     <string name="select_folder">Выбрать папку</string>
-    <string name="folder_not_selected">Папка еще не подобрана</string>
+    <string name="folder_not_selected">Папка ещё не выбрана</string>
     <string name="folder_pick_cancelled">Выбор папки отменен</string>
     <string name="select_file">Выбрать файл</string>
-    <string name="file_not_selected">Файл еще не выбран</string>
-    <string name="file_pick_cancelled">Комплектация файла отменена</string>
-    <string name="select_newfile">Выбрать новый файл</string>
-    <string name="newfile_not_selected">Новая файловая система еще не выбрана</string>
-    <string name="newfile_pick_cancelled">Новый выбор filepath отменен</string>
-    <string name="prompt_newfile">Сохранить новый файл в:</string>
+    <string name="file_not_selected">Файл ещё не выбран</string>
+    <string name="file_pick_cancelled">Выбор файла отменен</string>
+    <string name="select_newfile">Выбрать «Новый файл»</string>
+    <string name="newfile_not_selected">Новый путь к файлу ещё не выбран</string>
+    <string name="newfile_pick_cancelled">Выбор нового пути к файлу отменен</string>
+    <string name="pick_emptyfolder_title">Выбрать папку</string>
+    <string name="pick_emptyfolder_description">Не может содержать никаких файлов или подкаталогов</string>
+    <string name="pick_file_title">Выберите файл для загрузки</string>
+    <string name="pick_file_description">Возможно, довольно PNG изображение?</string>
+    <string name="pick_newfile_title">JSON Экспорт данных</string>
+    <string name="pick_newfile_prompt">Сохранить новый файл в:</string>
+    <string name="pick_newfile_filename">экспорт</string>
+    <string name="label_result_folder_location">Выбранная папка</string>
+    <string name="label_result_file_location">Выбранный файл</string>
 </resources>

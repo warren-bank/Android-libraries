@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Թղթապանակների ընտրիչի ցուցադրություն</string>
+    <string name="select_folder">Ընտրեք թղթապանակ</string>
+    <string name="folder_not_selected">Թղթապանակը դեռ չի ընտրվել</string>
+    <string name="folder_pick_cancelled">Փոլդեր պիկինգը չեղարկվել է</string>
+    <string name="select_file">Ընտրեք ֆայլ</string>
+    <string name="file_not_selected">Ֆայլը դեռ չի ընտրվել</string>
+    <string name="file_pick_cancelled">Ֆայլի ընտրությունը չեղարկվել է</string>
+    <string name="select_newfile">Ընտրեք նոր ֆայլ</string>
+    <string name="newfile_not_selected">Նոր ֆայլի ճանապարհը դեռ չի ընտրվել</string>
+    <string name="newfile_pick_cancelled">Նոր ֆայլի ուղու ընտրությունը չեղարկվել է</string>
+    <string name="pick_emptyfolder_title">Ընտրեք թղթապանակը</string>
+    <string name="pick_emptyfolder_description">Չի կարող պարունակել որևէ ֆայլ կամ ենթահատոր</string>
+    <string name="pick_file_title">Ընտրեք ֆայլ վերբեռնելու համար</string>
+    <string name="pick_file_description">Հնարավոր է, որ գեղեցիկ PNG Նկար?</string>
+    <string name="pick_newfile_title">JSON Տվյալների արտահանման</string>
+    <string name="pick_newfile_prompt">Նոր ֆայլը պահպանել:</string>
+    <string name="pick_newfile_filename">արտահանել</string>
+    <string name="label_result_folder_location">Ընտրված թղթապանակ</string>
+    <string name="label_result_file_location">Ընտրված ֆայլ</string>
+</resources>

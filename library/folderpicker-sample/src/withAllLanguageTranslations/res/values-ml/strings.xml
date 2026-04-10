@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">ഫോള്ഡര് പികര് ഡെമോ</string>
-    <string name="select_folder">ഫോള്ഡര് പകര്ത്തുക</string>
-    <string name="folder_not_selected">ഫോള്ഡര് ഇതുവരെ തിരഞ്ഞെടുത്തിട്ടില്ല</string>
-    <string name="folder_pick_cancelled">ഫോള്ഡര് ചിത്രീകരണം റദ്ദാക്കി</string>
-    <string name="select_file">ഫയല് പകര്ത്തുക</string>
-    <string name="file_not_selected">ഫയല് ഇതുവരെ തിരഞ്ഞെടുത്തിട്ടില്ല</string>
-    <string name="file_pick_cancelled">ഫയല് ചിത്രീകരണം റദ്ദാക്കി</string>
-    <string name="select_newfile">പുതിയ ഫയല് തെരഞ്ഞെടുക്കുക</string>
-    <string name="newfile_not_selected">പുതിയ filepath ഇനിയും തെരഞ്ഞെടുത്തിട്ടില്ല</string>
-    <string name="newfile_pick_cancelled">പുതിയ ഫിലിപ്പ് തെരഞ്ഞെടുത്തത് റദ്ദാക്കിയിരിക്കുന്നു</string>
-    <string name="prompt_newfile">പുതിയ ഫയല് സൂക്ഷിക്കുക:</string>
+    <string name="app_name">ഫോൾഡർ പിക്കർ ഡെമോ</string>
+    <string name="select_folder">ഫോൾഡർ തിരഞ്ഞെടുക്കുക</string>
+    <string name="folder_not_selected">ഫോൾഡർ ഇതുവരെ തിരഞ്ഞെടുത്തിട്ടില്ല</string>
+    <string name="folder_pick_cancelled">ഫോൾഡർ പിക്കിംഗ് റദ്ദാക്കി</string>
+    <string name="select_file">ഫയൽ തിരഞ്ഞെടുക്കുക</string>
+    <string name="file_not_selected">ഫയൽ ഇതുവരെ തിരഞ്ഞെടുത്തിട്ടില്ല</string>
+    <string name="file_pick_cancelled">ഫയൽ തിരഞ്ഞെടുക്കൽ റദ്ദാക്കി</string>
+    <string name="select_newfile">പുതിയ ഫയൽ തിരഞ്ഞെടുക്കുക</string>
+    <string name="newfile_not_selected">പുതിയ ഫയൽ പാത്ത് ഇതുവരെ തിരഞ്ഞെടുത്തിട്ടില്ല</string>
+    <string name="newfile_pick_cancelled">പുതിയ ഫയൽപാത്ത് തിരഞ്ഞെടുക്കൽ റദ്ദാക്കി</string>
+    <string name="pick_emptyfolder_title">ഫോൾഡർ തിരഞ്ഞെടുക്കുക</string>
+    <string name="pick_emptyfolder_description">ഫയലുകളോ ഉപഡയറക്ടറികളോ ഉൾക്കൊള്ളാൻ കഴിയില്ല</string>
+    <string name="pick_file_title">അപ്‌ലോഡ് ചെയ്യാനായി ഫയൽ തിരഞ്ഞെടുക്കുക</string>
+    <string name="pick_file_description">ഒരുപക്ഷേ മനോഹരമായ PNG ചിത്രം?</string>
+    <string name="pick_newfile_title">JSON ഡാറ്റ കയറ്റുമതി</string>
+    <string name="pick_newfile_prompt">പുതിയ ഫയൽ സേവ് ചെയ്യുക:</string>
+    <string name="pick_newfile_filename">പുറത്തേക്ക് കയറ്റുക</string>
+    <string name="label_result_folder_location">തിരഞ്ഞെടുത്ത ഫോൾഡർ</string>
+    <string name="label_result_file_location">ഫയൽ തിരഞ്ഞെടുത്തു</string>
 </resources>

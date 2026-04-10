@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Folder Picker Demo</string>
+    <string name="app_name">Demo Pemilih Folder</string>
     <string name="select_folder">Pilih Folder</string>
-    <string name="folder_not_selected">Folder tidak dapat ditemukan.</string>
-    <string name="folder_pick_cancelled">Memilih folder dibatalkan</string>
+    <string name="folder_not_selected">Folder belum dipilih</string>
+    <string name="folder_pick_cancelled">Pemilihan folder dibatalkan</string>
     <string name="select_file">Pilih Berkas</string>
-    <string name="file_not_selected">Berkas belum dipilih</string>
-    <string name="file_pick_cancelled">Memilih berkas dibatalkan</string>
-    <string name="select_newfile">Pilih Berkas Baru</string>
-    <string name="newfile_not_selected">Filepath baru belum dipilih</string>
-    <string name="newfile_pick_cancelled">Pemilihan filepath baru dibatalkan</string>
-    <string name="prompt_newfile">Simpan Berkas Baru Ke:</string>
+    <string name="file_not_selected">File belum dipilih</string>
+    <string name="file_pick_cancelled">Pemilihan file dibatalkan</string>
+    <string name="select_newfile">Pilih File Baru</string>
+    <string name="newfile_not_selected">Jalur file baru belum dipilih</string>
+    <string name="newfile_pick_cancelled">Pemilihan jalur file baru dibatalkan</string>
+    <string name="pick_emptyfolder_title">Pilih folder</string>
+    <string name="pick_emptyfolder_description">Tidak boleh berisi file atau subdirektori apa pun</string>
+    <string name="pick_file_title">Pilih file yang akan diunggah</string>
+    <string name="pick_file_description">Mungkin cukup PNG gambar?</string>
+    <string name="pick_newfile_title">JSON Ekspor Data</string>
+    <string name="pick_newfile_prompt">Simpan File Baru ke:</string>
+    <string name="pick_newfile_filename">ekspor</string>
+    <string name="label_result_folder_location">Folder yang Dipilih</string>
+    <string name="label_result_file_location">File yang Dipilih</string>
 </resources>

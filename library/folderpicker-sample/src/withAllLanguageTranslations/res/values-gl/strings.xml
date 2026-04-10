@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demo do Selector de Carpetas</string>
+    <string name="select_folder">Escoller carpeta</string>
+    <string name="folder_not_selected">A carpeta aínda non foi escollida</string>
+    <string name="folder_pick_cancelled">Cancelouse a recollida de contedores</string>
+    <string name="select_file">Escoller ficheiro</string>
+    <string name="file_not_selected">O ficheiro aínda non foi seleccionado</string>
+    <string name="file_pick_cancelled">Cancelada a selección de ficheiros</string>
+    <string name="select_newfile">Seleccionar novo ficheiro</string>
+    <string name="newfile_not_selected">A nova ruta de ficheiro aínda non está seleccionada</string>
+    <string name="newfile_pick_cancelled">Selección de nova ruta de ficheiro cancelada</string>
+    <string name="pick_emptyfolder_title">Seleccionar carpeta</string>
+    <string name="pick_emptyfolder_description">Non pode conter ningún ficheiro nin subdirectorio.</string>
+    <string name="pick_file_title">Selecciona o ficheiro para subir</string>
+    <string name="pick_file_description">Posiblemente unha fermosa PNG imaxe?</string>
+    <string name="pick_newfile_title">JSON Exportación de datos</string>
+    <string name="pick_newfile_prompt">Garda novo ficheiro en:</string>
+    <string name="pick_newfile_filename">exportar</string>
+    <string name="label_result_folder_location">Cartafol seleccionado</string>
+    <string name="label_result_file_location">Ficheiro seleccionado</string>
+</resources>

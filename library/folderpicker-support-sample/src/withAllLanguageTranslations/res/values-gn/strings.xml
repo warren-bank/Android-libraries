@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Kuatia Rupa Poravoha Jehechauka</string>
+    <string name="select_folder">Eiporavo karpéta</string>
+    <string name="folder_not_selected">Karpetã ne\'ĩra oñeporavo</string>
+    <string name="folder_pick_cancelled">Ojeheja pe karameg̃ua jeporavo</string>
+    <string name="select_file">Eiporavo Archivo</string>
+    <string name="file_not_selected">Tembiporu ndojeiporavói gueteri</string>
+    <string name="file_pick_cancelled">Ojeheja rei kuatiarogue jeporavo</string>
+    <string name="select_newfile">Eiporavo Kuatiarogue Pyahu</string>
+    <string name="newfile_not_selected">Tape pyahu ndojeiporavói gueteri</string>
+    <string name="newfile_pick_cancelled">Ojejoko pe tape pyahu jeporavo</string>
+    <string name="pick_emptyfolder_title">Eiporavo karpéta</string>
+    <string name="pick_emptyfolder_description">Ndaikatúi oguereko avave vore térã vore\'i.</string>
+    <string name="pick_file_title">Eiporavo pe vore remoinge hag̃ua</string>
+    <string name="pick_file_description">Ikatu peteĩ iporãva PNG Ta\'anga?</string>
+    <string name="pick_newfile_title">JSON Marandu Ñeguenohẽ</string>
+    <string name="pick_newfile_prompt">Eñongatu Kuatiarogue Pyahu Ko\'ápe:</string>
+    <string name="pick_newfile_filename">Ñemondo okápe</string>
+    <string name="label_result_folder_location">Karpetaha ojeiporavóva</string>
+    <string name="label_result_file_location">Tembiporu oñeporavopyréva</string>
+</resources>

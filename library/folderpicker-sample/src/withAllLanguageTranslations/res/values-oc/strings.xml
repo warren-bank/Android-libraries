@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demo del Selector de Dossièrs</string>
+    <string name="select_folder">Causissètz un dorsièr</string>
+    <string name="folder_not_selected">Lo dorsièr es pas encara causit.</string>
+    <string name="folder_pick_cancelled">La seleccion de dorsièrs es anulada</string>
+    <string name="select_file">Seleccionar fichièr</string>
+    <string name="file_not_selected">Lo fichièr es pas encara estat causit.</string>
+    <string name="file_pick_cancelled">L\'escolhida de fichièrs es anulada</string>
+    <string name="select_newfile">Seleccionatz un fichièr novèl</string>
+    <string name="newfile_not_selected">Lo camin de fichièr novèl es pas encara seleccionat</string>
+    <string name="newfile_pick_cancelled">La seleccion novèla del camin de fichièr es anulada</string>
+    <string name="pick_emptyfolder_title">Seleccionatz lo dorsièr</string>
+    <string name="pick_emptyfolder_description">Pòt pas contenir cap de fichièr ni de sosdossiers</string>
+    <string name="pick_file_title">Seleccionatz lo fichièr per telecargar</string>
+    <string name="pick_file_description">Benlèu una polida PNG imatge?</string>
+    <string name="pick_newfile_title">JSON Exportacion de donadas</string>
+    <string name="pick_newfile_prompt">Enregistrar lo fichièr novèl dins:</string>
+    <string name="pick_newfile_filename">exportar</string>
+    <string name="label_result_folder_location">Dossier seleccionat</string>
+    <string name="label_result_file_location">Fichièr seleccionat</string>
+</resources>

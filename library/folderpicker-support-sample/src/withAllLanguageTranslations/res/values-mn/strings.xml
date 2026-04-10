@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Фолдер сонгогч демо</string>
+    <string name="select_folder">Фолдер сонгох</string>
+    <string name="folder_not_selected">Фолдер одоогоор сонгогдоогүй байна</string>
+    <string name="folder_pick_cancelled">Фолдер сонгох цуцлагдсан</string>
+    <string name="select_file">Файл сонго</string>
+    <string name="file_not_selected">Файл одоогоор сонгогдоогүй байна</string>
+    <string name="file_pick_cancelled">Файл сонгох цуцлагдсан</string>
+    <string name="select_newfile">Шинэ файл сонгох</string>
+    <string name="newfile_not_selected">Шинэ файл зам одоогоор сонгогдоогүй байна</string>
+    <string name="newfile_pick_cancelled">Шинэ файл замын сонголтыг цуцалсан</string>
+    <string name="pick_emptyfolder_title">Фолдер сонгох</string>
+    <string name="pick_emptyfolder_description">Ямар ч файл эсвэл дэд хавтас агуулах боломжгүй</string>
+    <string name="pick_file_title">Байршуулах файлыг сонгоно уу</string>
+    <string name="pick_file_description">Магадгүй үзэсгэлэнтэй PNG зураг?</string>
+    <string name="pick_newfile_title">JSON Өгөгдөл экспорт</string>
+    <string name="pick_newfile_prompt">Шинэ файлыг хадгалах:</string>
+    <string name="pick_newfile_filename">Экспортлох</string>
+    <string name="label_result_folder_location">Сонгогдсон хавтас</string>
+    <string name="label_result_file_location">Сонгогдсон файл</string>
+</resources>

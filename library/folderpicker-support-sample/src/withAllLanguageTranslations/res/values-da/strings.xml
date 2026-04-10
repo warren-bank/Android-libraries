@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Demo af folderen Picker</string>
-    <string name="select_folder">Vælg folder</string>
-    <string name="folder_not_selected">Folderen er endnu ikke valgt</string>
-    <string name="folder_pick_cancelled">Folderen er annulleret</string>
+    <string name="app_name">Demo af mappevælger</string>
+    <string name="select_folder">Vælg mappe</string>
+    <string name="folder_not_selected">Mappen er endnu ikke valgt</string>
+    <string name="folder_pick_cancelled">Valg af mappe afbrudt</string>
     <string name="select_file">Vælg fil</string>
     <string name="file_not_selected">Filen er endnu ikke valgt</string>
-    <string name="file_pick_cancelled">Filplukning annulleret</string>
-    <string name="select_newfile">Vælg ny fil</string>
-    <string name="newfile_not_selected">Ny filsti er endnu ikke valgt</string>
-    <string name="newfile_pick_cancelled">Nyt valg af filsti er annulleret</string>
-    <string name="prompt_newfile">Gem ny fil til:</string>
+    <string name="file_pick_cancelled">Filvalg annulleret</string>
+    <string name="select_newfile">Vælg Ny fil</string>
+    <string name="newfile_not_selected">Den nye filsti er endnu ikke valgt</string>
+    <string name="newfile_pick_cancelled">Valg af ny filsti annulleret</string>
+    <string name="pick_emptyfolder_title">Vælg mappe</string>
+    <string name="pick_emptyfolder_description">Må ikke indeholde filer eller undermapper</string>
+    <string name="pick_file_title">Vælg fil, der skal uploades</string>
+    <string name="pick_file_description">Måske en smuk PNG billede?</string>
+    <string name="pick_newfile_title">JSON Dataeksport</string>
+    <string name="pick_newfile_prompt">Gem ny fil i:</string>
+    <string name="pick_newfile_filename">eksport</string>
+    <string name="label_result_folder_location">Valgt mappe</string>
+    <string name="label_result_file_location">Valgt fil</string>
 </resources>

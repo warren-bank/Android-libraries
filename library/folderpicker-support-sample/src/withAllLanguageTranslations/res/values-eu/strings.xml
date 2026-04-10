@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Karpetak hautatzeko demoa</string>
+    <string name="select_folder">Aukeratu karpeta</string>
+    <string name="folder_not_selected">Karpetarik oraindik ez da hautatu</string>
+    <string name="folder_pick_cancelled">Karpetaren aukeraketa bertan behera utzi da</string>
+    <string name="select_file">Aukeratu fitxategia</string>
+    <string name="file_not_selected">Fitxategia oraindik ez da hautatu</string>
+    <string name="file_pick_cancelled">Fitxategi hautaketa bertan behera utzi da</string>
+    <string name="select_newfile">Aukeratu fitxategi berria</string>
+    <string name="newfile_not_selected">Fitxategi-bidea berria oraindik ez da hautatuta</string>
+    <string name="newfile_pick_cancelled">Fitxategi-bide berria hautatzea bertan behera utzi da</string>
+    <string name="pick_emptyfolder_title">Aukeratu karpeta</string>
+    <string name="pick_emptyfolder_description">Ez du fitxategi edo azpidirektorioik izan dezakeenik.</string>
+    <string name="pick_file_title">Hautatu igo nahi duzun fitxategia</string>
+    <string name="pick_file_description">Agian ederra bat PNG argazkia?</string>
+    <string name="pick_newfile_title">JSON Datu-esportazioa</string>
+    <string name="pick_newfile_prompt">Gorde fitxategi berria:</string>
+    <string name="pick_newfile_filename">esportatu</string>
+    <string name="label_result_folder_location">Hautatutako karpeta</string>
+    <string name="label_result_file_location">Hautatutako fitxategia</string>
+</resources>

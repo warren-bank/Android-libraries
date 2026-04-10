@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demo Chwazè Dosye</string>
+    <string name="select_folder">Chwazi dosye</string>
+    <string name="folder_not_selected">Dosye a poko chwazi</string>
+    <string name="folder_pick_cancelled">Kansele chwazi dosye</string>
+    <string name="select_file">Chwazi Fichye</string>
+    <string name="file_not_selected">Fichye a poko chwazi</string>
+    <string name="file_pick_cancelled">Anilasyon seleksyon fichye</string>
+    <string name="select_newfile">Chwazi Nouvo Fichye</string>
+    <string name="newfile_not_selected">Nouvo chemen fichye a poko chwazi</string>
+    <string name="newfile_pick_cancelled">Seleksyon nouvo chemen fichye a anile.</string>
+    <string name="pick_emptyfolder_title">Chwazi dosye</string>
+    <string name="pick_emptyfolder_description">Pa ka genyen okenn fichye oswa sou-dosye</string>
+    <string name="pick_file_title">Chwazi fichye pou telechaje</string>
+    <string name="pick_file_description">Petèt yon bèl PNG Foto?</string>
+    <string name="pick_newfile_title">JSON Ekspòtasyon Done</string>
+    <string name="pick_newfile_prompt">Sove nouvo fichye nan:</string>
+    <string name="pick_newfile_filename">Egzpòte</string>
+    <string name="label_result_folder_location">Dosye chwazi</string>
+    <string name="label_result_file_location">Fichye chwazi</string>
+</resources>

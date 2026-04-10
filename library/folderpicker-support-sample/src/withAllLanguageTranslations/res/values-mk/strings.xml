@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Демо за избирач на папка</string>
+    <string name="select_folder">Изберете папка</string>
+    <string name="folder_not_selected">Папката сè уште не е избрана</string>
+    <string name="folder_pick_cancelled">Поништено избирање на папка</string>
+    <string name="select_file">Изберете датотека</string>
+    <string name="file_not_selected">Датотеката сè уште не е избрана</string>
+    <string name="file_pick_cancelled">Откажување на избор на датотека</string>
+    <string name="select_newfile">Изберете нова датотека</string>
+    <string name="newfile_not_selected">Новата патека на датотека сè уште не е избрана</string>
+    <string name="newfile_pick_cancelled">Откажано е избирањето на нов пат до датотека</string>
+    <string name="pick_emptyfolder_title">Изберете папка</string>
+    <string name="pick_emptyfolder_description">Не може да содржи никакви датотеки или поддиректориуми</string>
+    <string name="pick_file_title">Изберете датотека за прикачување</string>
+    <string name="pick_file_description">Можеби убаво PNG слика?</string>
+    <string name="pick_newfile_title">JSON Извоз на податоци</string>
+    <string name="pick_newfile_prompt">Зачувај нова датотека во:</string>
+    <string name="pick_newfile_filename">извоз</string>
+    <string name="label_result_folder_location">Избрана папка</string>
+    <string name="label_result_file_location">Избрана датотека</string>
+</resources>

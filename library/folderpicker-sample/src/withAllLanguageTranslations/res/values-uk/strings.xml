@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Демонстрація теки Picker</string>
-    <string name="select_folder">Вибрати теку</string>
-    <string name="folder_not_selected">Тека ще не відібрана</string>
-    <string name="folder_pick_cancelled">Тека з \' ємне</string>
+    <string name="app_name">Демонстрація вибору папок</string>
+    <string name="select_folder">Вибрати папку</string>
+    <string name="folder_not_selected">Папка ще не обрана</string>
+    <string name="folder_pick_cancelled">Вибір папки скасовано</string>
     <string name="select_file">Вибрати файл</string>
-    <string name="file_not_selected">Файл ще не відібрано</string>
-    <string name="file_pick_cancelled">Збирання файла скасовано</string>
+    <string name="file_not_selected">Файл ще не обрано</string>
+    <string name="file_pick_cancelled">Вибір файлу скасовано</string>
     <string name="select_newfile">Вибрати новий файл</string>
-    <string name="newfile_not_selected">Нова файлова система ще не вибрано</string>
-    <string name="newfile_pick_cancelled">Вибір нового набору файлів скасовано</string>
-    <string name="prompt_newfile">Зберегти новий файл до:</string>
+    <string name="newfile_not_selected">Новий шлях до файлу ще не обрано</string>
+    <string name="newfile_pick_cancelled">Вибір нового шляху до файлу скасовано</string>
+    <string name="pick_emptyfolder_title">Вибрати папку</string>
+    <string name="pick_emptyfolder_description">Не може містити жодних файлів або підкаталогів</string>
+    <string name="pick_file_title">Виберіть файл для завантаження</string>
+    <string name="pick_file_description">Можливо, гарна PNG зображення?</string>
+    <string name="pick_newfile_title">JSON Експорт даних</string>
+    <string name="pick_newfile_prompt">Зберегти новий файл у:</string>
+    <string name="pick_newfile_filename">експорт</string>
+    <string name="label_result_folder_location">Вибрана папка</string>
+    <string name="label_result_file_location">Вибраний файл</string>
 </resources>

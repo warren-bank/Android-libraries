@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Onyesho la Kichagua Foldi</string>
+    <string name="select_folder">Chagua folda</string>
+    <string name="folder_not_selected">Folda bado haijachaguliwa</string>
+    <string name="folder_pick_cancelled">Uchukuaji wa foleni umefutwa</string>
+    <string name="select_file">Chagua Faili</string>
+    <string name="file_not_selected">Faili bado haijachaguliwa</string>
+    <string name="file_pick_cancelled">Uchaguzi wa faili umefutwa</string>
+    <string name="select_newfile">Chagua Faili Mpya</string>
+    <string name="newfile_not_selected">Njia mpya ya faili bado haijachaguliwa</string>
+    <string name="newfile_pick_cancelled">Uchaguzi wa njia mpya ya faili umefutwa</string>
+    <string name="pick_emptyfolder_title">Chagua folda</string>
+    <string name="pick_emptyfolder_description">Haiwezi kuwa na faili yoyote au saraka ndogo</string>
+    <string name="pick_file_title">Chagua faili ili kupakia</string>
+    <string name="pick_file_description">Huenda ni nzuri PNG picha?</string>
+    <string name="pick_newfile_title">JSON Utoaji wa data</string>
+    <string name="pick_newfile_prompt">Hifadhi Faili Mpya Kwenye:</string>
+    <string name="pick_newfile_filename">kusafirisha nje</string>
+    <string name="label_result_folder_location">Folda iliyochaguliwa</string>
+    <string name="label_result_file_location">Faili lililochaguliwa</string>
+</resources>

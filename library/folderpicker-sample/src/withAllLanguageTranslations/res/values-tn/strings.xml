@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pontsho ya Tlhophi ya Folotara</string>
+    <string name="select_folder">Tlhopha Folotara</string>
+    <string name="folder_not_selected">Lokwalo ga le ise le tlhophiwe</string>
+    <string name="folder_pick_cancelled">Go kgetha folder go phimotswe</string>
+    <string name="select_file">Tlhopha Faele</string>
+    <string name="file_not_selected">Faele ga e ise e tlhophiwe</string>
+    <string name="file_pick_cancelled">Go kgaotswe go tlhopha faele</string>
+    <string name="select_newfile">Tlhopha Faele e Ntšha</string>
+    <string name="newfile_not_selected">Tsela e ntšha ya faele ga e ise e tlhophiwe</string>
+    <string name="newfile_pick_cancelled">Kgetho ya tsela ya faele e ntšhwa e phimotswe</string>
+    <string name="pick_emptyfolder_title">Tlhopha foldara</string>
+    <string name="pick_emptyfolder_description">Ga e ka ke ya nna le difaele kgotsa ditlhakana.</string>
+    <string name="pick_file_title">Tlhopha faele go e tsenya</string>
+    <string name="pick_file_description">Gongwe popi e ntle PNG Setshwantsho?</string>
+    <string name="pick_newfile_title">JSON Thomelo ya Datha</string>
+    <string name="pick_newfile_prompt">Boloka Faele e Ntšha kwa:</string>
+    <string name="pick_newfile_filename">Romela kwa ntle</string>
+    <string name="label_result_folder_location">Mokwalo o tlhophilwe</string>
+    <string name="label_result_file_location">Faele e e tlhophilweng</string>
+</resources>

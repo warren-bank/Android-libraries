@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">ఫోల్డర్ పికెర్ డెమో</string>
-    <string name="select_folder">పిక్ ఫోల్డర్</string>
-    <string name="folder_not_selected">ఫోల్డర్ ఇంకా ఎంపికచేయబడలేదు</string>
-    <string name="folder_pick_cancelled">ఫోల్డర్ పిక్చింగ్ రద్దుచేయబడింది</string>
-    <string name="select_file">పిక్ దస్త్రం</string>
-    <string name="file_not_selected">దస్త్రం ఇంకా ఎంపిక చేయబడలేదు</string>
-    <string name="file_pick_cancelled">\@ info: status</string>
-    <string name="select_newfile">కొత్త ఫైలును యెంపికచేయుము</string>
-    <string name="newfile_not_selected">కొత్త filepath ఇంకా ఎన్నుకోలేదు</string>
-    <string name="newfile_pick_cancelled">కొత్త filepath ఎంపిక రద్దు</string>
-    <string name="prompt_newfile">\@ action: button:</string>
+    <string name="app_name">ఫోల్డర్ పికర్ డెమో</string>
+    <string name="select_folder">ఫోల్డర్‌ను ఎంచుకోండి</string>
+    <string name="folder_not_selected">ఫోల్డర్ ఇంకా ఎంపిక కాలేదు</string>
+    <string name="folder_pick_cancelled">ఫోల్డర్ పికింగ్ రద్దు చేయబడింది</string>
+    <string name="select_file">ఫైల్‌ను ఎంచుకోండి</string>
+    <string name="file_not_selected">ఫైల్ ఇంకా ఎంపిక కాలేదు</string>
+    <string name="file_pick_cancelled">ఫైల్ ఎంపిక రద్దు చేయబడింది</string>
+    <string name="select_newfile">కొత్త ఫైల్‌ను ఎంచుకోండి</string>
+    <string name="newfile_not_selected">కొత్త ఫైల్ మార్గం ఇంకా ఎంపిక కాలేదు</string>
+    <string name="newfile_pick_cancelled">కొత్త ఫైల్‌పాత్ ఎంపిక రద్దు చేయబడింది</string>
+    <string name="pick_emptyfolder_title">ఫోల్డర్‌ను ఎంచుకోండి</string>
+    <string name="pick_emptyfolder_description">ఎలాంటి ఫైళ్లు లేదా సబ్‌డైరెక్టరీలను కలిగి ఉండలేదు</string>
+    <string name="pick_file_title">అప్‌లోడ్ చేయడానికి ఫైల్‌ను ఎంచుకోండి</string>
+    <string name="pick_file_description">బహుశా ఒక అందమైన PNG చిత్రం?</string>
+    <string name="pick_newfile_title">JSON డేటా ఎగుమతి</string>
+    <string name="pick_newfile_prompt">కొత్త ఫైల్‌ను సేవ్ చేయండి:</string>
+    <string name="pick_newfile_filename">ఎగుమతి</string>
+    <string name="label_result_folder_location">ఎంచుకున్న ఫోల్డర్</string>
+    <string name="label_result_file_location">ఎంచుకున్న ఫైల్</string>
 </resources>

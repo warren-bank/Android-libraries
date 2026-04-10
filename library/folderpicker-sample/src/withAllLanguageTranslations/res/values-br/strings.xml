@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Dibaber Teuliadoù Diskouezadeg</string>
+    <string name="select_folder">Dibabit teuliad</string>
+    <string name="folder_not_selected">N\'eo ket bet dibabet ar follen c\'hoazh.</string>
+    <string name="folder_pick_cancelled">Dilezet eo bet an dibab teuliadoù</string>
+    <string name="select_file">Dibab restr</string>
+    <string name="file_not_selected">N\'eo ket bet dibabet ar restr c\'hoazh.</string>
+    <string name="file_pick_cancelled">Dilezet an dibab restroù</string>
+    <string name="select_newfile">Diuzit ur restr nevez</string>
+    <string name="newfile_not_selected">N\'eo ket bet dibabet c\'hoazh an hentad restr nevez.</string>
+    <string name="newfile_pick_cancelled">Dilezet an dibab hentad nevez</string>
+    <string name="pick_emptyfolder_title">Diuzit ar follen</string>
+    <string name="pick_emptyfolder_description">N\'hall ket endelc\'her restroù na isdirektorioù.</string>
+    <string name="pick_file_title">Diuzit ur restr da bellgargañ</string>
+    <string name="pick_file_description">Marteze ur bravig PNG skeudenn?</string>
+    <string name="pick_newfile_title">JSON Ezporzhiañ roadennoù</string>
+    <string name="pick_newfile_prompt">Enrollañ ar restr nevez e:</string>
+    <string name="pick_newfile_filename">Eksportiñ</string>
+    <string name="label_result_folder_location">Teulenn zibabet</string>
+    <string name="label_result_file_location">Restr dibabet</string>
+</resources>

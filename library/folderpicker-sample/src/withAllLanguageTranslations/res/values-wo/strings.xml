@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Woneg Tànnkaayu Dossie</string>
+    <string name="select_folder">Tànnal dosye</string>
+    <string name="folder_not_selected">Téere bi tànnaguñu ko ba léegi.</string>
+    <string name="folder_pick_cancelled">Tànneefu dosiye bi dafa dakku</string>
+    <string name="select_file">Tànnal Dosye</string>
+    <string name="file_not_selected">Fisiye bi tànnaguñu ko ba léegi.</string>
+    <string name="file_pick_cancelled">Tànneeku dosiye bi dafa dakku</string>
+    <string name="select_newfile">Tànnal dosiye bu bees</string>
+    <string name="newfile_not_selected">Yoonu dosiye bu bees bi tànnaguñu ko ba léegi.</string>
+    <string name="newfile_pick_cancelled">Tànneefu yoonu dosiye bu bees bi dañu ko dakkal</string>
+    <string name="pick_emptyfolder_title">Tànnal dosye bi</string>
+    <string name="pick_emptyfolder_description">Mënul am benn fisiye walla benn dosiye bu ndaw.</string>
+    <string name="pick_file_title">Tànnal ab fisiye ngir yéegal ko</string>
+    <string name="pick_file_description">Xëy na ab bu rafet PNG Nataal?</string>
+    <string name="pick_newfile_title">JSON Jubal xibaar yi</string>
+    <string name="pick_newfile_prompt">Denc Fise bu Bees ci:</string>
+    <string name="pick_newfile_filename">Jaay ci bitim réew</string>
+    <string name="label_result_folder_location">Dossier buñu tànn</string>
+    <string name="label_result_file_location">Dosiye buñu tànn</string>
+</resources>

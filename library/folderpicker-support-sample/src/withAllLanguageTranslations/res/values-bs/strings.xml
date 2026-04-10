@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Demo za probirač mapa</string>
-    <string name="select_folder">Izaberite folder</string>
-    <string name="folder_not_selected">Mapa još nije izabrana</string>
-    <string name="folder_pick_cancelled">Biranje foldera je otkazano</string>
-    <string name="select_file">Izaberite datoteku</string>
-    <string name="file_not_selected">Datoteka još nije izabrana</string>
-    <string name="file_pick_cancelled">Opozvano biranje datoteke</string>
-    <string name="select_newfile">Izaberi novu datoteku</string>
-    <string name="newfile_not_selected">Novi filepath još nije izabran</string>
-    <string name="newfile_pick_cancelled">Novi izbor fipaleta je opozvan</string>
-    <string name="prompt_newfile">Spremi novu datoteku u:</string>
+    <string name="app_name">Demo za odabir mape</string>
+    <string name="select_folder">Odaberi mapu</string>
+    <string name="folder_not_selected">Mapa još nije odabrana</string>
+    <string name="folder_pick_cancelled">Otkazano biranje mape</string>
+    <string name="select_file">Odaberi datoteku</string>
+    <string name="file_not_selected">Datoteka još nije odabrana</string>
+    <string name="file_pick_cancelled">Otkazano odabiranje datoteke</string>
+    <string name="select_newfile">Odaberite novu datoteku</string>
+    <string name="newfile_not_selected">Nova putanja datoteke još nije odabrana</string>
+    <string name="newfile_pick_cancelled">Otkazano odabiranje nove putanje datoteke</string>
+    <string name="pick_emptyfolder_title">Odaberite mapu</string>
+    <string name="pick_emptyfolder_description">Ne može sadržavati nijedne datoteke ili poddirektorije</string>
+    <string name="pick_file_title">Odaberite datoteku za učitavanje</string>
+    <string name="pick_file_description">Možda lijepa PNG slika?</string>
+    <string name="pick_newfile_title">JSON Izvoz podataka</string>
+    <string name="pick_newfile_prompt">Sačuvaj novu datoteku u:</string>
+    <string name="pick_newfile_filename">izvoz</string>
+    <string name="label_result_folder_location">Odabrana mapa</string>
+    <string name="label_result_file_location">Odabrana datoteka</string>
 </resources>

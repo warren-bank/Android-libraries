@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Gabatarwar Zaɓin Fayil</string>
+    <string name="select_folder">Zaɓi Fayil</string>
+    <string name="folder_not_selected">Ba a zaɓi babban fayil ɗin ba tukuna.</string>
+    <string name="folder_pick_cancelled">An soke zaɓen fayil</string>
+    <string name="select_file">Zaɓi Fayil</string>
+    <string name="file_not_selected">Ba a ɗauki fayil ɗin ba tukuna</string>
+    <string name="file_pick_cancelled">An soke zaɓin fayil</string>
+    <string name="select_newfile">Zaɓi Sabuwar Fayil</string>
+    <string name="newfile_not_selected">Ba a zaɓi sabon hanyar fayil ba tukuna</string>
+    <string name="newfile_pick_cancelled">Zaɓin sabon hanyar fayil an soke</string>
+    <string name="pick_emptyfolder_title">Zaɓi babban fayil</string>
+    <string name="pick_emptyfolder_description">Ba za a iya ƙunsar kowane fayil ko ƙananan kundin adireshi ba</string>
+    <string name="pick_file_title">Zaɓi fayil don loda</string>
+    <string name="pick_file_description">Wataƙila kyakkyawa PNG hoto?</string>
+    <string name="pick_newfile_title">JSON Fitar da bayanai</string>
+    <string name="pick_newfile_prompt">Ajiye sabon fayil zuwa:</string>
+    <string name="pick_newfile_filename">Fitarwa</string>
+    <string name="label_result_folder_location">Folda da aka zaɓa</string>
+    <string name="label_result_file_location">Fayil da aka zaɓa</string>
+</resources>

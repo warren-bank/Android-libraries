@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Aplankų pikapas demo</string>
-    <string name="select_folder">Pasirinkti aplanką</string>
-    <string name="folder_not_selected">Aplankas dar nepateiktas</string>
-    <string name="folder_pick_cancelled">Aplankas išlaipinti</string>
-    <string name="select_file">Pasirinkti failą</string>
-    <string name="file_not_selected">Failas dar nepateiktas</string>
-    <string name="file_pick_cancelled">Failas išskleidžiama.</string>
-    <string name="select_newfile">Pasirinkite naują failą</string>
-    <string name="newfile_not_selected">Naujas filepatas dar nepasirinktas</string>
-    <string name="newfile_pick_cancelled">Nauja filepah atranka atšaukta</string>
-    <string name="prompt_newfile">Įrašyti naują failą į:</string>
+    <string name="app_name">Aplankų pasirinkimo demonstracija</string>
+    <string name="select_folder">Pasirinkite aplanką</string>
+    <string name="folder_not_selected">Aplankas dar nepasirinktas</string>
+    <string name="folder_pick_cancelled">Aplankų pasirinkimas atšauktas</string>
+    <string name="select_file">Pasirinkite failą</string>
+    <string name="file_not_selected">Failas dar nepasirinktas</string>
+    <string name="file_pick_cancelled">Failo pasirinkimas atšauktas</string>
+    <string name="select_newfile">Pasirinkite „Naujas failas“</string>
+    <string name="newfile_not_selected">Naujas failo kelias dar nėra pasirinktas</string>
+    <string name="newfile_pick_cancelled">Naujo failo kelio pasirinkimas atšauktas</string>
+    <string name="pick_emptyfolder_title">Pasirinkite aplanką</string>
+    <string name="pick_emptyfolder_description">Negali būti jokių failų ar pakatalogių</string>
+    <string name="pick_file_title">Pasirinkite failą, kurį norite įkelti</string>
+    <string name="pick_file_description">Galbūt graži PNG nuotrauka?</string>
+    <string name="pick_newfile_title">JSON Duomenų eksportavimas</string>
+    <string name="pick_newfile_prompt">Išsaugoti naują failą į:</string>
+    <string name="pick_newfile_filename">eksportas</string>
+    <string name="label_result_folder_location">Pasirinkta aplankas</string>
+    <string name="label_result_file_location">Pasirinktas failas</string>
 </resources>

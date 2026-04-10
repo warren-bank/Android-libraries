@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Папка һайлаусы демонстрацияһы</string>
+    <string name="select_folder">Папканы һайла</string>
+    <string name="folder_not_selected">Папка әле һайланмаған</string>
+    <string name="folder_pick_cancelled">Фолдер һайлау туҡтатылды</string>
+    <string name="select_file">Файлды һайла</string>
+    <string name="file_not_selected">Файл әле һайланмаған</string>
+    <string name="file_pick_cancelled">Файл һайлау туҡтатылды</string>
+    <string name="select_newfile">Яңы файлды һайла</string>
+    <string name="newfile_not_selected">Яңы файл юлы әле һайланмаған</string>
+    <string name="newfile_pick_cancelled">Яңы файл юлы һайлау туҡтатылды</string>
+    <string name="pick_emptyfolder_title">Папканы һайлағыҙ</string>
+    <string name="pick_emptyfolder_description">Теләһә ниндәй файлдарҙы йәки подпапкаларҙы үҙ эсенә ала алмай</string>
+    <string name="pick_file_title">Йөкләү өсөн файл һайлағыҙ</string>
+    <string name="pick_file_description">Мөмкин, матур PNG рәсем?</string>
+    <string name="pick_newfile_title">JSON Мәғлүмәтте экспортлау</string>
+    <string name="pick_newfile_prompt">Яңы файлды һаҡлау:</string>
+    <string name="pick_newfile_filename">Экспорт</string>
+    <string name="label_result_folder_location">Һайланған папка</string>
+    <string name="label_result_file_location">Һайланған файл</string>
+</resources>

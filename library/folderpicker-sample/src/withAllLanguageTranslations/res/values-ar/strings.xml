@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">ديمو حافظة الحافظة</string>
-    <string name="select_folder">اختر حافظة</string>
-    <string name="folder_not_selected">لم يتم اختيار الحافظة بعد</string>
-    <string name="folder_pick_cancelled">تم الغاء التقاط الحافظة</string>
-    <string name="select_file">اختيار ملف</string>
+    <string name="app_name">عرض توضيحي لمُحدد المجلدات</string>
+    <string name="select_folder">اختر مجلدًا</string>
+    <string name="folder_not_selected">لم يتم اختيار المجلد بعد</string>
+    <string name="folder_pick_cancelled">تم إلغاء اختيار المجلد</string>
+    <string name="select_file">اختر ملفًا</string>
     <string name="file_not_selected">لم يتم اختيار الملف بعد</string>
-    <string name="file_pick_cancelled">تم الغاء اختيار ملف</string>
-    <string name="select_newfile">اختيار ملف جديد</string>
-    <string name="newfile_not_selected">لم يتم تحديد filepath جديد</string>
-    <string name="newfile_pick_cancelled">تم الغاء اختيار كشف الملفات الجديد</string>
-    <string name="prompt_newfile">حفظ ملف جديد الى:</string>
+    <string name="file_pick_cancelled">تم إلغاء اختيار الملف</string>
+    <string name="select_newfile">اختر ملف جديد</string>
+    <string name="newfile_not_selected">لم يتم تحديد مسار الملف الجديد بعد</string>
+    <string name="newfile_pick_cancelled">تم إلغاء اختيار مسار الملف الجديد</string>
+    <string name="pick_emptyfolder_title">اختر مجلدًا</string>
+    <string name="pick_emptyfolder_description">لا يجوز أن يحتوي على أي ملفات أو مجلدات فرعية</string>
+    <string name="pick_file_title">اختر الملف المراد تحميله</string>
+    <string name="pick_file_description">ربما جميلة PNG صورة?</string>
+    <string name="pick_newfile_title">JSON تصدير البيانات</string>
+    <string name="pick_newfile_prompt">حفظ الملف الجديد في:</string>
+    <string name="pick_newfile_filename">تصدير</string>
+    <string name="label_result_folder_location">المجلد المحدد</string>
+    <string name="label_result_file_location">الملف المحدد</string>
 </resources>

@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">資料夾選取器示範</string>
-    <string name="select_folder">挑選資料夾</string>
-    <string name="folder_not_selected">資料夾尚未取貨</string>
-    <string name="folder_pick_cancelled">已取消提取資料夾</string>
-    <string name="select_file">挑選檔案</string>
-    <string name="file_not_selected">檔案尚未取貨</string>
-    <string name="file_pick_cancelled">已取消擷取檔案</string>
-    <string name="select_newfile">選取新檔案</string>
+    <string name="app_name">資料夾選擇器示範</string>
+    <string name="select_folder">選擇資料夾</string>
+    <string name="folder_not_selected">尚未選取資料夾</string>
+    <string name="folder_pick_cancelled">取消選取資料夾</string>
+    <string name="select_file">選擇檔案</string>
+    <string name="file_not_selected">尚未選取檔案</string>
+    <string name="file_pick_cancelled">檔案選取已取消</string>
+    <string name="select_newfile">選擇「新檔案」</string>
     <string name="newfile_not_selected">尚未選取新的檔案路徑</string>
-    <string name="newfile_pick_cancelled">已取消新的檔案路徑選擇</string>
-    <string name="prompt_newfile">將新檔案儲存至:</string>
+    <string name="newfile_pick_cancelled">取消選擇新檔案路徑</string>
+    <string name="pick_emptyfolder_title">選擇資料夾</string>
+    <string name="pick_emptyfolder_description">不得包含任何檔案或子目錄</string>
+    <string name="pick_file_title">選擇要上傳的檔案</string>
+    <string name="pick_file_description">或許是一首相當 PNG 圖片?</string>
+    <string name="pick_newfile_title">JSON 資料匯出</string>
+    <string name="pick_newfile_prompt">將新檔案儲存至:</string>
+    <string name="pick_newfile_filename">匯出</string>
+    <string name="label_result_folder_location">已選取的資料夾</string>
+    <string name="label_result_file_location">已選取的檔案</string>
 </resources>

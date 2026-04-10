@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fanehoana ny Fifantenana lahatahiry</string>
+    <string name="select_folder">Safidio ny lahatahiry</string>
+    <string name="folder_not_selected">Tsy mbola voafidy ny lahatahiry</string>
+    <string name="folder_pick_cancelled">Voafana ny fisafidianana lahatahiry</string>
+    <string name="select_file">Safidio ny rakitra</string>
+    <string name="file_not_selected">Tsy mbola voafidy ny rakitra</string>
+    <string name="file_pick_cancelled">Foanana ny fisafidianana rakitra</string>
+    <string name="select_newfile">Safidio ny Rakitra Vaovao</string>
+    <string name="newfile_not_selected">Tsy mbola voafidy ny lalana rakitra vaovao</string>
+    <string name="newfile_pick_cancelled">Foanana ny fisafidianana lalana rakitra vaovao</string>
+    <string name="pick_emptyfolder_title">Safidio ny lahatahiry</string>
+    <string name="pick_emptyfolder_description">Tsy azo atao ny misy rakitra na lahatahiry zanany.</string>
+    <string name="pick_file_title">Safidio ny rakitra hampidirina</string>
+    <string name="pick_file_description">Angamba tsara tarehy PNG Sary?</string>
+    <string name="pick_newfile_title">JSON Fanondranana angon-drakitra</string>
+    <string name="pick_newfile_prompt">Tehirizo ny rakitra vaovao ao amin\'ny:</string>
+    <string name="pick_newfile_filename">Fanondranana</string>
+    <string name="label_result_folder_location">Lohahevitra voafantina</string>
+    <string name="label_result_file_location">Rakitra voafidy</string>
+</resources>

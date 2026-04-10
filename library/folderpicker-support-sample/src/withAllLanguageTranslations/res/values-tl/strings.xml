@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demo ng Tagapili ng Folder</string>
+    <string name="select_folder">Pumili ng Folder</string>
+    <string name="folder_not_selected">Hindi pa napipili ang folder</string>
+    <string name="folder_pick_cancelled">Kinansela ang pagpili ng folder</string>
+    <string name="select_file">Pumili ng File</string>
+    <string name="file_not_selected">Hindi pa napipili ang file.</string>
+    <string name="file_pick_cancelled">Kinansela ang pagpili ng file</string>
+    <string name="select_newfile">Pumili ng Bagong File</string>
+    <string name="newfile_not_selected">Hindi pa napipili ang bagong landas ng file.</string>
+    <string name="newfile_pick_cancelled">Bago na pagpili ng landas ng file ay nakansela</string>
+    <string name="pick_emptyfolder_title">Piliin ang folder</string>
+    <string name="pick_emptyfolder_description">Hindi maaaring maglaman ng anumang mga file o mga subdirektoryo.</string>
+    <string name="pick_file_title">Piliin ang file na ia-upload.</string>
+    <string name="pick_file_description">Marahil isang maganda PNG litrato?</string>
+    <string name="pick_newfile_title">JSON Pag-export ng Datos</string>
+    <string name="pick_newfile_prompt">I-save ang bagong file sa:</string>
+    <string name="pick_newfile_filename">Mag-export</string>
+    <string name="label_result_folder_location">Piniling Folder</string>
+    <string name="label_result_file_location">Piniling file</string>
+</resources>

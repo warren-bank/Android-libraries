@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Дэманстрацыя выбару папкі</string>
+    <string name="select_folder">Выберыце папку</string>
+    <string name="folder_not_selected">Паліца яшчэ не выбраная</string>
+    <string name="folder_pick_cancelled">Адмена выбару папкі</string>
+    <string name="select_file">Выбраць файл</string>
+    <string name="file_not_selected">Файл яшчэ не выбраны</string>
+    <string name="file_pick_cancelled">Скасавана выбара файлаў</string>
+    <string name="select_newfile">Выбраць новы файл</string>
+    <string name="newfile_not_selected">Новы шлях да файла яшчэ не выбраны</string>
+    <string name="newfile_pick_cancelled">Адмена выбару новага шляху файла</string>
+    <string name="pick_emptyfolder_title">Выберыце папку</string>
+    <string name="pick_emptyfolder_description">Не можа змяшчаць ніякіх файлаў або падпапак</string>
+    <string name="pick_file_title">Выберыце файл для загрузкі</string>
+    <string name="pick_file_description">Магчыма, прыгожая PNG Выява?</string>
+    <string name="pick_newfile_title">JSON Экспарт даных</string>
+    <string name="pick_newfile_prompt">Захаваць новы файл у:</string>
+    <string name="pick_newfile_filename">экспарт</string>
+    <string name="label_result_folder_location">Выбраная папка</string>
+    <string name="label_result_file_location">Выбраны файл</string>
+</resources>

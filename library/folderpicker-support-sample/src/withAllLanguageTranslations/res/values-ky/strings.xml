@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Папка тандоочу демонстрациясы</string>
+    <string name="select_folder">Папканы тандаңыз</string>
+    <string name="folder_not_selected">Папка азырынча тандалган жок</string>
+    <string name="folder_pick_cancelled">Фолдер тандоо токтотулду</string>
+    <string name="select_file">Файлды тандаңыз</string>
+    <string name="file_not_selected">Файл азырынча тандалган жок</string>
+    <string name="file_pick_cancelled">Файл тандоону жокко чыгаруу</string>
+    <string name="select_newfile">Жаңы файлды тандаңыз</string>
+    <string name="newfile_not_selected">Жаңы файл жолу азырынча тандалган жок</string>
+    <string name="newfile_pick_cancelled">Жаңы файл жолун тандоону токтотту</string>
+    <string name="pick_emptyfolder_title">Папканы тандаңыз</string>
+    <string name="pick_emptyfolder_description">Эч кандай файлдарды же подпапкаларды камтый албайт</string>
+    <string name="pick_file_title">Жүктөө үчүн файлды тандаңыз</string>
+    <string name="pick_file_description">Балким, сулуу PNG сүрөт?</string>
+    <string name="pick_newfile_title">JSON Маалыматтарды экспорттоо</string>
+    <string name="pick_newfile_prompt">Жаңы файлды сактоо:</string>
+    <string name="pick_newfile_filename">экспорттоо</string>
+    <string name="label_result_folder_location">Тандалган папка</string>
+    <string name="label_result_file_location">Тандалган файл</string>
+</resources>

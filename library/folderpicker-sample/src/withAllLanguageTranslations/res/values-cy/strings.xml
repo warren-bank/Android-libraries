@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Name</string>
-    <string name="select_folder">Dewis Plygell</string>
-    <string name="folder_not_selected">Nid yw\'r blygell wedi ei nodi eto</string>
-    <string name="folder_pick_cancelled">Diddymwyd y dewis plygell</string>
+    <string name="app_name">Dangosydd Dewisydd Ffolder</string>
+    <string name="select_folder">Dewis Ffolder</string>
+    <string name="folder_not_selected">Nid yw\'r ffolder wedi\'i ddewis eto.</string>
+    <string name="folder_pick_cancelled">Canslwyd dewis ffolder</string>
     <string name="select_file">Dewis Ffeil</string>
-    <string name="file_not_selected">Nid yw\'r ffeil wedi ei ddewis eto</string>
-    <string name="file_pick_cancelled">Diddymwyd y dewis ffeil</string>
+    <string name="file_not_selected">Nid yw\'r ffeil wedi\'i dewis eto.</string>
+    <string name="file_pick_cancelled">Canslo dewis ffeil</string>
     <string name="select_newfile">Dewis Ffeil Newydd</string>
-    <string name="newfile_not_selected">Nid yw\'r ffilath newydd wedi ei ddewis eto</string>
-    <string name="newfile_pick_cancelled">Canslwyd dewis ffilath newydd</string>
-    <string name="prompt_newfile">Cadw Ffeil Newydd i:</string>
+    <string name="newfile_not_selected">Nid yw\'r llwybr ffeil newydd wedi\'i ddewis eto.</string>
+    <string name="newfile_pick_cancelled">Canslwyd dewis llwybr ffeil newydd</string>
+    <string name="pick_emptyfolder_title">Dewiswch ffolder</string>
+    <string name="pick_emptyfolder_description">Ni all gynnwys unrhyw ffeiliau na is-gyfeiriaduron</string>
+    <string name="pick_file_title">Dewiswch ffeil i\'w huwchlwytho</string>
+    <string name="pick_file_description">O bosib, un bert PNG llun?</string>
+    <string name="pick_newfile_title">JSON Allforio Data</string>
+    <string name="pick_newfile_prompt">Cadw Ffeil Newydd i:</string>
+    <string name="pick_newfile_filename">allforio</string>
+    <string name="label_result_folder_location">Ffolder Ddewisedig</string>
+    <string name="label_result_file_location">Ffeil Ddewis</string>
 </resources>

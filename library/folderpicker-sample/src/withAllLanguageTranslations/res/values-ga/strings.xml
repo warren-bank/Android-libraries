@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">\@ info: info</string>
-    <string name="select_folder">Fillteán pictiúir</string>
-    <string name="folder_not_selected">Níl an fillteán ann go fóill</string>
-    <string name="folder_pick_cancelled">Cealaíodh an fillteán</string>
-    <string name="select_file">Comhad pictiúir</string>
-    <string name="file_not_selected">Níl an comhad roghnaithe go fóill</string>
-    <string name="file_pick_cancelled">Cealaíodh an comhad seo</string>
+    <string name="app_name">Taispeántas an Roghnóra Fillteán</string>
+    <string name="select_folder">Roghnaigh Fillteán</string>
+    <string name="folder_not_selected">Níl an t-fhillteán roghnaithe go fóill.</string>
+    <string name="folder_pick_cancelled">Curtha ar ceal: roghnú fillteán</string>
+    <string name="select_file">Roghnaigh Comhad</string>
+    <string name="file_not_selected">Níor roghnaíodh an comhad go fóill.</string>
+    <string name="file_pick_cancelled">Cuireadh cur ar ceal ar roghnú comhaid</string>
     <string name="select_newfile">Roghnaigh Comhad Nua</string>
-    <string name="newfile_not_selected">Níl an chonair nua roghnaithe go fóill</string>
-    <string name="newfile_pick_cancelled">Cealaíodh an roghnúchán nua conair nua</string>
-    <string name="prompt_newfile">Sábháil Comhad Nua Go:</string>
+    <string name="newfile_not_selected">Níl an cosán comhaid nua roghnaithe go fóill.</string>
+    <string name="newfile_pick_cancelled">Roghnaíocht nua cosáin comhaid curtha ar ceal</string>
+    <string name="pick_emptyfolder_title">Roghnaigh fillteán</string>
+    <string name="pick_emptyfolder_description">Ní féidir aon chomhaid ná fofhillteáin a bheith ann.</string>
+    <string name="pick_file_title">Roghnaigh comhad le híoslódáil</string>
+    <string name="pick_file_description">B\'fhéidir go bhfuil sé deas PNG pictiúr?</string>
+    <string name="pick_newfile_title">JSON Easpórtáil Sonraí</string>
+    <string name="pick_newfile_prompt">Sábháil Comhad Nua Chun:</string>
+    <string name="pick_newfile_filename">Easpórtáil</string>
+    <string name="label_result_folder_location">Fhillteán roghnaithe</string>
+    <string name="label_result_file_location">Comhad roghnaithe</string>
 </resources>

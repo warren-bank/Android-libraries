@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Agarsiisa Filataa Galmee</string>
+    <string name="select_folder">Galmee Filadhu</string>
+    <string name="folder_not_selected">Galmeen hin filatamne</string>
+    <string name="folder_pick_cancelled">Filannoon galmee haqame</string>
+    <string name="select_file">Faayilii Filadhu</string>
+    <string name="file_not_selected">Faayiliin hin filatamne</string>
+    <string name="file_pick_cancelled">Filannoon faayilii haqame</string>
+    <string name="select_newfile">Faayilii Haaraa Filadhu</string>
+    <string name="newfile_not_selected">Daandiin faayilii haaraan ammaaf hin filatamne</string>
+    <string name="newfile_pick_cancelled">Filannoon daandii faayilii haaraa haqame</string>
+    <string name="pick_emptyfolder_title">Galmee filadhu</string>
+    <string name="pick_emptyfolder_description">Faayiloota yookiin galmee gadi aanaa kamiyyuu qabachuu hin danda\'u.</string>
+    <string name="pick_file_title">Faayilii ol fe\'uuf filadhu</string>
+    <string name="pick_file_description">Tarii bareedduu PNG Suuraa?</string>
+    <string name="pick_newfile_title">JSON Ergama Ragaa</string>
+    <string name="pick_newfile_prompt">Faayilii Haaraa Olkaa\'i Gara:</string>
+    <string name="pick_newfile_filename">Gara Alaatti Erguu</string>
+    <string name="label_result_folder_location">Galmee Filatame</string>
+    <string name="label_result_file_location">Faayili Filame</string>
+</resources>

@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Kaustade valija demo</string>
-    <string name="select_folder">Vali kataloog</string>
-    <string name="folder_not_selected">Kausta pole veel valimata</string>
-    <string name="folder_pick_cancelled">Tühistatud kataloog</string>
+    <string name="app_name">Kausta valija demo</string>
+    <string name="select_folder">Vali kaust</string>
+    <string name="folder_not_selected">Kausta pole veel valitud</string>
+    <string name="folder_pick_cancelled">Kausta valimine tühistati</string>
     <string name="select_file">Vali fail</string>
-    <string name="file_not_selected">Fail pole veel valimata</string>
-    <string name="file_pick_cancelled">Tühistatud fail</string>
-    <string name="select_newfile">Uue faili valimine</string>
-    <string name="newfile_not_selected">Uus filepath pole veel valitud</string>
-    <string name="newfile_pick_cancelled">Tühistatud uus failivalik</string>
-    <string name="prompt_newfile">Salvesta uus fail kuni:</string>
+    <string name="file_not_selected">Faili pole veel valitud</string>
+    <string name="file_pick_cancelled">Faili valimine tühistati</string>
+    <string name="select_newfile">Vali uus fail</string>
+    <string name="newfile_not_selected">Uut failiteed pole veel valitud</string>
+    <string name="newfile_pick_cancelled">Uue failitee valik tühistati</string>
+    <string name="pick_emptyfolder_title">Vali kaust</string>
+    <string name="pick_emptyfolder_description">Ei tohi sisaldada faile ega alamkatalooge</string>
+    <string name="pick_file_title">Vali üleslaaditav fail</string>
+    <string name="pick_file_description">Võib-olla päris PNG pilt?</string>
+    <string name="pick_newfile_title">JSON Andmete eksport</string>
+    <string name="pick_newfile_prompt">Salvesta uus fail:</string>
+    <string name="pick_newfile_filename">eksport</string>
+    <string name="label_result_folder_location">Valitud kaust</string>
+    <string name="label_result_file_location">Valitud fail</string>
 </resources>

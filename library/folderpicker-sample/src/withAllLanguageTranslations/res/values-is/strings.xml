@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Sýning á möppuvali</string>
+    <string name="select_folder">Velja möppu</string>
+    <string name="folder_not_selected">Mappan hefur enn ekki verið valin</string>
+    <string name="folder_pick_cancelled">Brottköllun möppu felld niður</string>
+    <string name="select_file">Velja skrá</string>
+    <string name="file_not_selected">Skráin hefur enn ekki verið valin</string>
+    <string name="file_pick_cancelled">Hætt við skráarvali</string>
+    <string name="select_newfile">Veldu nýja skrá</string>
+    <string name="newfile_not_selected">Nýr skráarstígur er enn ekki valinn</string>
+    <string name="newfile_pick_cancelled">Ný val á skráarleið hefur verið aflýst</string>
+    <string name="pick_emptyfolder_title">Veldu möppu</string>
+    <string name="pick_emptyfolder_description">Má ekki innihalda neinar skrár né undirmappur</string>
+    <string name="pick_file_title">Veldu skrá til að hlaða upp</string>
+    <string name="pick_file_description">Kannski fallegt PNG mynd?</string>
+    <string name="pick_newfile_title">JSON Gagnaútflutningur</string>
+    <string name="pick_newfile_prompt">Vista nýja skrá á:</string>
+    <string name="pick_newfile_filename">útflutningur</string>
+    <string name="label_result_folder_location">Valin möppu</string>
+    <string name="label_result_file_location">Valin skrá</string>
+</resources>

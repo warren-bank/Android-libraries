@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">P\'anqa Akllana Rikuchina</string>
+    <string name="select_folder">P\'anq\'ata akllay</string>
+    <string name="folder_not_selected">Q\'ipi manaraq akllasqachu kachkan</string>
+    <string name="folder_pick_cancelled">Q\'ipi akllayqa qichusqa</string>
+    <string name="select_file">Akllay Willañiqita</string>
+    <string name="file_not_selected">Willakuqa manaraq akllasqachu kachkan</string>
+    <string name="file_pick_cancelled">Willaku akllayqa qichusqa</string>
+    <string name="select_newfile">Musuq Willañiqita Akllay</string>
+    <string name="newfile_not_selected">Musuq willaku ñan manaraq akllasqachu kachkan</string>
+    <string name="newfile_pick_cancelled">Musuq willañiqip ñan akllayqa qichusqa</string>
+    <string name="pick_emptyfolder_title">Akllay p\'anqachata</string>
+    <string name="pick_emptyfolder_description">Manam ima willañiqikunatapas nitaq ukhu qillqasqakunatapas hap\'iyta atinchu.</string>
+    <string name="pick_file_title">Akllay waraqata wicharichinapaq</string>
+    <string name="pick_file_description">Ichapas huk sumaq PNG rikcha?</string>
+    <string name="pick_newfile_title">JSON Willakuykunata Hawaman Apachiy</string>
+    <string name="pick_newfile_prompt">Musuq Willakuyta Waqaychay:</string>
+    <string name="pick_newfile_filename">Hawa llaqtaman apachiy</string>
+    <string name="label_result_folder_location">Akllasqa Q\'ipi</string>
+    <string name="label_result_file_location">Akllasqa willañiq\'i</string>
+</resources>

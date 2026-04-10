@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Демо за пикер фасцикле</string>
+    <string name="app_name">Демо за избор фасцикле</string>
     <string name="select_folder">Изабери фасциклу</string>
-    <string name="folder_not_selected">Фасцикла још није изабрана</string>
-    <string name="folder_pick_cancelled">Бирање фасцикле отказано</string>
-    <string name="select_file">Изаберите датотеку</string>
+    <string name="folder_not_selected">Фолдер још није изабран</string>
+    <string name="folder_pick_cancelled">Отказивање избора фасцикле</string>
+    <string name="select_file">Изабери датотеку</string>
     <string name="file_not_selected">Датотека још није изабрана</string>
-    <string name="file_pick_cancelled">Бирање отказивања датотеке</string>
+    <string name="file_pick_cancelled">Отказивање одабира датотеке</string>
     <string name="select_newfile">Изаберите нову датотеку</string>
-    <string name="newfile_not_selected">Нова путања датотека још није изабрана</string>
-    <string name="newfile_pick_cancelled">Нови избор fileath је отказан</string>
-    <string name="prompt_newfile">Сачувај нову датотеку у:</string>
+    <string name="newfile_not_selected">Нови пут до датотеке још није изабран</string>
+    <string name="newfile_pick_cancelled">Отказило се одабирање путање до нове датотеке</string>
+    <string name="pick_emptyfolder_title">Изаберите фасциклу</string>
+    <string name="pick_emptyfolder_description">Не може да садржи ниједан фајл или поддиректоријум</string>
+    <string name="pick_file_title">Изаберите датотеку за отпремање</string>
+    <string name="pick_file_description">Можда једна лепа PNG слика?</string>
+    <string name="pick_newfile_title">JSON Извоз података</string>
+    <string name="pick_newfile_prompt">Сачувај нову датотеку у:</string>
+    <string name="pick_newfile_filename">извоз</string>
+    <string name="label_result_folder_location">Изабрана фасцикла</string>
+    <string name="label_result_file_location">Изабрана датотека</string>
 </resources>

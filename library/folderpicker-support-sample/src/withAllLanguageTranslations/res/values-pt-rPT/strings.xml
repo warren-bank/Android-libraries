@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demonstração do Seletor de Pastas</string>
+    <string name="select_folder">Selecionar pasta</string>
+    <string name="folder_not_selected">A pasta ainda não foi selecionada</string>
+    <string name="folder_pick_cancelled">A seleção da pasta foi cancelada</string>
+    <string name="select_file">Selecionar ficheiro</string>
+    <string name="file_not_selected">O ficheiro ainda não foi selecionado</string>
+    <string name="file_pick_cancelled">A seleção do ficheiro foi cancelada</string>
+    <string name="select_newfile">Selecionar Novo Ficheiro</string>
+    <string name="newfile_not_selected">O novo caminho do ficheiro ainda não foi selecionado</string>
+    <string name="newfile_pick_cancelled">A seleção do novo caminho do ficheiro foi cancelada</string>
+    <string name="pick_emptyfolder_title">Selecionar pasta</string>
+    <string name="pick_emptyfolder_description">Não pode conter ficheiros nem subdiretórios</string>
+    <string name="pick_file_title">Selecione o ficheiro a carregar</string>
+    <string name="pick_file_description">Talvez uma bonita PNG imagem?</string>
+    <string name="pick_newfile_title">JSON Exportação de dados</string>
+    <string name="pick_newfile_prompt">Guardar novo ficheiro em:</string>
+    <string name="pick_newfile_filename">exportação</string>
+    <string name="label_result_folder_location">Pasta selecionada</string>
+    <string name="label_result_file_location">Ficheiro selecionado</string>
+</resources>

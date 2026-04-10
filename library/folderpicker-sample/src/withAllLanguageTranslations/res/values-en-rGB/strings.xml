@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Folder Picker Demo</string>
+    <string name="select_folder">Pick Folder</string>
+    <string name="folder_not_selected">Folder is not yet picked</string>
+    <string name="folder_pick_cancelled">Folder picking cancelled</string>
+    <string name="select_file">Pick File</string>
+    <string name="file_not_selected">File is not yet picked</string>
+    <string name="file_pick_cancelled">File picking cancelled</string>
+    <string name="select_newfile">Select New File</string>
+    <string name="newfile_not_selected">New filepath is not yet selected</string>
+    <string name="newfile_pick_cancelled">New filepath selection cancelled</string>
+    <string name="pick_emptyfolder_title">Select folder</string>
+    <string name="pick_emptyfolder_description">Cannot contain any files or subdirectories</string>
+    <string name="pick_file_title">Select file to upload</string>
+    <string name="pick_file_description">Possibly a pretty PNG picture?</string>
+    <string name="pick_newfile_title">JSON Data Export</string>
+    <string name="pick_newfile_prompt">Save New File To:</string>
+    <string name="pick_newfile_filename">export</string>
+    <string name="label_result_folder_location">Selected Folder</string>
+    <string name="label_result_file_location">Selected File</string>
+</resources>

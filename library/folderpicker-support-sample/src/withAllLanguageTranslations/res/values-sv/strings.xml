@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">Demo för mappväljaren</string>
+    <string name="app_name">Demonstration av mappväljaren</string>
     <string name="select_folder">Välj mapp</string>
-    <string name="folder_not_selected">Mappen är ännu inte vald</string>
-    <string name="folder_pick_cancelled">Mappplockning</string>
+    <string name="folder_not_selected">Mappen har ännu inte valts</string>
+    <string name="folder_pick_cancelled">Val av mapp avbrutet</string>
     <string name="select_file">Välj fil</string>
-    <string name="file_not_selected">Filen har ännu inte plockas</string>
-    <string name="file_pick_cancelled">Filplockning avbröts</string>
-    <string name="select_newfile">Välj ny fil</string>
-    <string name="newfile_not_selected">Ny filsökväg är ännu inte vald</string>
-    <string name="newfile_pick_cancelled">Ny markering av filsökväg avbröts</string>
-    <string name="prompt_newfile">Spara ny fil till:</string>
+    <string name="file_not_selected">Filen har ännu inte valts</string>
+    <string name="file_pick_cancelled">Filvalet har avbrutits</string>
+    <string name="select_newfile">Välj Ny fil</string>
+    <string name="newfile_not_selected">Den nya sökvägen har ännu inte valts</string>
+    <string name="newfile_pick_cancelled">Valet av ny filväg har avbrutits</string>
+    <string name="pick_emptyfolder_title">Välj mapp</string>
+    <string name="pick_emptyfolder_description">Får inte innehålla några filer eller underkataloger</string>
+    <string name="pick_file_title">Välj fil att ladda upp</string>
+    <string name="pick_file_description">Kanske en ganska PNG bild?</string>
+    <string name="pick_newfile_title">JSON Dataexport</string>
+    <string name="pick_newfile_prompt">Spara ny fil i:</string>
+    <string name="pick_newfile_filename">export</string>
+    <string name="label_result_folder_location">Valda mappar</string>
+    <string name="label_result_file_location">Valda filer</string>
 </resources>

@@ -1,13 +1,21 @@
 <resources>
-    <string name="app_name">அடைவு பிக்கர் டேமோ</string>
-    <string name="select_folder">அடைவு</string>
-    <string name="folder_not_selected">அடைவு இன்னும் தேர்வு செய்யப்படவில்லை</string>
-    <string name="folder_pick_cancelled">அடைவு ரத்து செய்யப்பட்டது</string>
-    <string name="select_file">Pick கோப்பு</string>
-    <string name="file_not_selected">கோப்பு இன்னும் தேர்வு செய்யப்படவில்லை</string>
-    <string name="file_pick_cancelled">கோப்பு ரத்து செய்யப்பட்டது</string>
-    <string name="select_newfile">புதிய கோப்பினை தேர்ந்தெடு</string>
-    <string name="newfile_not_selected">புதிய filepath இன்னும் தேர்ந்தெடுக்கப்படவில்லை</string>
-    <string name="newfile_pick_cancelled">புதிய filepath தேர்வு ரத்து</string>
-    <string name="prompt_newfile">புதிய கோப்பினை சேமி:</string>
+    <string name="app_name">கோப்புறை தேர்வான் செயல்விளக்கம்</string>
+    <string name="select_folder">கோப்புறையைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="folder_not_selected">கோப்புறை இன்னும் தேர்ந்தெடுக்கப்படவில்லை</string>
+    <string name="folder_pick_cancelled">ஃபோல்டர் பிக்கிங் ரத்து செய்யப்பட்டது</string>
+    <string name="select_file">கோப்பைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="file_not_selected">கோப்பு இன்னும் தேர்ந்தெடுக்கப்படவில்லை</string>
+    <string name="file_pick_cancelled">கோப்புத் தேர்வு ரத்து செய்யப்பட்டது</string>
+    <string name="select_newfile">புதிய கோப்பைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="newfile_not_selected">புதிய கோப்புப் பாதை இன்னும் தேர்ந்தெடுக்கப்படவில்லை</string>
+    <string name="newfile_pick_cancelled">புதிய கோப்பகப் பாதைத் தேர்வு ரத்து செய்யப்பட்டது</string>
+    <string name="pick_emptyfolder_title">கோப்புறையைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="pick_emptyfolder_description">கோப்புகள் அல்லது துணை கோப்பகங்களைக் கொண்டிருக்க முடியாது</string>
+    <string name="pick_file_title">மேல் ஏற்றக் கோப்பைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="pick_file_description">ஒருவேளை ஒரு அழகான PNG படம்?</string>
+    <string name="pick_newfile_title">JSON தரவு ஏற்றுமதி</string>
+    <string name="pick_newfile_prompt">புதிய கோப்பை சேமி:</string>
+    <string name="pick_newfile_filename">ஏற்றுமதி</string>
+    <string name="label_result_folder_location">தேர்ந்தெடுக்கப்பட்ட கோப்புறை</string>
+    <string name="label_result_file_location">தேர்ந்தெடுக்கப்பட்ட கோப்பு</string>
 </resources>

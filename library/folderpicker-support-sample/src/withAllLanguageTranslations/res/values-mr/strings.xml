@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">फोल्डर पिकर डेमो</string>
+    <string name="select_folder">फोल्डर निवडा</string>
+    <string name="folder_not_selected">फोल्डर अद्याप निवडलेले नाही</string>
+    <string name="folder_pick_cancelled">फोल्डर निवड रद्द करण्यात आली</string>
+    <string name="select_file">फाइल निवडा</string>
+    <string name="file_not_selected">फाइल अद्याप निवडलेली नाही</string>
+    <string name="file_pick_cancelled">फाइल निवड रद्द झाली</string>
+    <string name="select_newfile">नवीन फाइल निवडा</string>
+    <string name="newfile_not_selected">नवीन फाइलपथ अद्याप निवडलेला नाही</string>
+    <string name="newfile_pick_cancelled">नवीन फाइलपथ निवड रद्द झाली</string>
+    <string name="pick_emptyfolder_title">फोल्डर निवडा</string>
+    <string name="pick_emptyfolder_description">कोणतीही फाइल्स किंवा उपनिर्देशिका समाविष्ट करता येणार नाहीत</string>
+    <string name="pick_file_title">अपलोड करण्यासाठी फाइल निवडा</string>
+    <string name="pick_file_description">कदाचित एक सुंदर PNG चित्र?</string>
+    <string name="pick_newfile_title">JSON डेटा निर्यात</string>
+    <string name="pick_newfile_prompt">नवीन फाइल जतन करा:</string>
+    <string name="pick_newfile_filename">निर्यात</string>
+    <string name="label_result_folder_location">निवडलेली फोल्डर</string>
+    <string name="label_result_file_location">निवडलेली फाइल</string>
+</resources>
