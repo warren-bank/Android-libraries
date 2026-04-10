@@ -12,5 +12,17 @@
     <string name="select_newfile">Select New File</string>
     <string name="newfile_not_selected">New filepath is not yet selected</string>
     <string name="newfile_pick_cancelled">New filepath selection cancelled</string>
-    <string name="prompt_newfile">Save New File To:</string>
+
+    <string name="pick_emptyfolder_title">Select folder</string>
+    <string name="pick_emptyfolder_description">Cannot contain any files or subdirectories</string>
+
+    <string name="pick_file_title">Select file to upload</string>
+    <string name="pick_file_description">Possibly a pretty PNG picture?</string>
+
+    <string name="pick_newfile_title">JSON Data Export</string>
+    <string name="pick_newfile_prompt">Save New File To:</string>
+    <string name="pick_newfile_filename">export</string>
+
+    <string name="label_result_folder_location">Selected Folder</string>
+    <string name="label_result_file_location">Selected File</string>
 </resources>

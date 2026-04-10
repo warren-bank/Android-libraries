@@ -80,8 +80,8 @@ public class MainActivity extends Activity {
             .withBuilder()
             .withActivity(MainActivity.this)
             .withRequestCode(EMPTY_FOLDER_PICKER_CODE)
-            .withTitle("Select folder")
-            .withDescription("Cannot contain any files or subdirectories")
+            .withTitle( getString(R.string.pick_emptyfolder_title) )
+            .withDescription( getString(R.string.pick_emptyfolder_description) )
             .withEmptyFolder(true)
             .withTheme(android.R.style.Theme_Black_NoTitleBar_Fullscreen)
             .start();
@@ -94,8 +94,8 @@ public class MainActivity extends Activity {
             .withRequestCode(FILE_PICKER_CODE)
             .withFilePicker(true)
             .withFileFilter("^.*\\.(?:png|apng|jng|mng)$")
-            .withTitle("Select file to upload")
-            .withDescription("Possibly a pretty PNG picture?")
+            .withTitle( getString(R.string.pick_file_title) )
+            .withDescription( getString(R.string.pick_file_description) )
             .withHomeButton(true)
             .withPath(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getAbsolutePath())
             .start();
@@ -106,10 +106,10 @@ public class MainActivity extends Activity {
             .withBuilder()
             .withActivity(MainActivity.this)
             .withRequestCode(NEW_FILE_PICKER_CODE)
-            .withNewFilePrompt( getString(R.string.prompt_newfile) )
-            .withNewFileName("export.json")
+            .withNewFilePrompt( getString(R.string.pick_newfile_prompt) )
+            .withNewFileName( getString(R.string.pick_newfile_filename) + ".json" )
             .withFileFilter("^.*\\.(?:json|txt)$")
-            .withTitle("JSON Data Export")
+            .withTitle( getString(R.string.pick_newfile_title) )
             .withPath("/storage")
             .start();
     }
@@ -119,7 +119,7 @@ public class MainActivity extends Activity {
         if (requestCode == FOLDER_PICKER_CODE) {
 
             if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
-                String folderLocation = "<b>Selected Folder: </b>"+ intent.getExtras().getString(FolderPicker.EXTRA_DATA);
+                String folderLocation = "<b>" + getString(R.string.label_result_folder_location) + ": </b>" + intent.getExtras().getString(FolderPicker.EXTRA_DATA);
                 tvFolder.setText( Html.fromHtml(folderLocation) );
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 tvFolder.setText(R.string.folder_pick_cancelled);
@@ -128,7 +128,7 @@ public class MainActivity extends Activity {
         } else if (requestCode == EMPTY_FOLDER_PICKER_CODE) {
 
             if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
-                String folderLocation = "<b>Selected Folder: </b>"+ intent.getExtras().getString(FolderPicker.EXTRA_DATA);
+                String folderLocation = "<b>" + getString(R.string.label_result_folder_location) + ": </b>" + intent.getExtras().getString(FolderPicker.EXTRA_DATA);
                 tvEmptyFolder.setText( Html.fromHtml(folderLocation) );
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 tvEmptyFolder.setText(R.string.folder_pick_cancelled);
@@ -137,7 +137,7 @@ public class MainActivity extends Activity {
         } else if (requestCode == FILE_PICKER_CODE) {
 
             if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
-                String fileLocation = "<b>Selected File: </b>"+ intent.getExtras().getString(FolderPicker.EXTRA_DATA);
+                String fileLocation = "<b>" + getString(R.string.label_result_file_location) + ": </b>" + intent.getExtras().getString(FolderPicker.EXTRA_DATA);
                 tvFile.setText( Html.fromHtml(fileLocation) );
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 tvFile.setText(R.string.file_pick_cancelled);
@@ -146,7 +146,7 @@ public class MainActivity extends Activity {
         } else if (requestCode == NEW_FILE_PICKER_CODE) {
 
             if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
-                String fileLocation = "<b>Selected File: </b>"+ intent.getExtras().getString(FolderPicker.EXTRA_DATA);
+                String fileLocation = "<b>" + getString(R.string.label_result_file_location) + ": </b>" + intent.getExtras().getString(FolderPicker.EXTRA_DATA);
                 tvNewFile.setText( Html.fromHtml(fileLocation) );
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 tvNewFile.setText(R.string.newfile_pick_cancelled);
