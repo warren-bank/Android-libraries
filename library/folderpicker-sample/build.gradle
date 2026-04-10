@@ -21,6 +21,17 @@ android {
     versionCode project.ext.releaseVersionCode
   }
 
+  flavorDimensions "languageResources"
+
+  productFlavors {
+    english {
+      dimension "languageResources"
+    }
+    withAllLanguageTranslations {
+      dimension "languageResources"
+    }
+  }
+
   lintOptions {
     disable 'MissingTranslation'
     abortOnError true
